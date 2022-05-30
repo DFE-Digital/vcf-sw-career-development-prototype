@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+<!--
+If relevant:
+ADD HEADER INCLUDE
+ADD PAGE TITLE
+ADD BACK LINK
+-->
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="pass-values-result" method="post">
+          {{ govukRadios({
+            idPrefix: "question-name",
+            name: "question-name",
+            fieldset: {
+              legend: {
+                text: "Question?",
+                ispageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+            items: [
+              {
+                value: "yes",
+                text: "Yes"
+              },
+              {
+                value: "no",
+                text: "No"
+              }
+            ]
+          }) }}
+
+          {{ govukButton({
+            text: "Continue"
+          }) }}
+        </form>
+
+      </div>
+    </div>
+
+{% endblock %}

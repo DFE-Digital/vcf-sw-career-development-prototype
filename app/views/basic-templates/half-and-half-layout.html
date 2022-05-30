@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+<!--
+If relevant:
+ADD HEADER INCLUDE
+ADD PAGE TITLE
+ADD BACK LINK
+-->
+
+{% block beforeContent %}
+    {{ govukBackLink({
+        href: "javascript:window.history.back()",
+        text: "Back"
+    }) }}
+{% endblock %}
+
+{% block content %}
+
+        <div class='govuk-grid-row'>
+            <div class='govuk-grid-column-one-half'>
+                <h2 class='govuk-heading-xl'>One-half column</h2>
+                <p class='govuk-body'>This is a paragraph inside a half width column</p>
+            </div>
+            <div class='govuk-grid-column-one-half'>
+                <h2 class='govuk-heading-xl'>One-half column</h2>
+                <p class='govuk-body'>This is a paragraph inside a half width column</p>
+            </div>
+        </div>
+
+{% endblock %}

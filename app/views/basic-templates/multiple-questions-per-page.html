@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+<!--
+If relevant:
+ADD HEADER INCLUDE
+ADD PAGE TITLE
+ADD BACK LINK
+-->
+<!-- To add padding between questions add to the class, i.e.
+classes: "govuk-fieldset__legend--m govuk-!-padding-top-9"
+
+To add error messsages:
+            errorMessage: {
+              text: "The date is incorrect."
+            }
+After hint for instance.
+-->
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Page title</h1>
+
+        <form action="pass-values-result" method="post">
+          {{ govukInput({
+            label: {
+              text: "Enter something",
+              classes: "govuk-label--m"
+            },
+            hint: {
+              text: "For example, Hello"
+            },
+            classes: "govuk-input--width-10",
+            id: "field-name",
+            name: "field-name"
+          }) }}
+
+          {{ govukRadios({
+            idPrefix: "question-name",
+            name: "question-name",
+            fieldset: {
+              legend: {
+                text: "Question?",
+                classes: "govuk-fieldset__legend--m"
+              }
+            },
+            items: [
+              {
+                value: "yes",
+                text: "Yes"
+              },
+              {
+                value: "no",
+                text: "No"
+              }
+            ]
+          }) }}
+
+          {{ govukDateInput({
+            id: "date-field",
+            namePrefix: "date-field",
+            fieldset: {
+              legend: {
+              text: "Date",
+              classes: "govuk-fieldset__legend--m"
+              }
+            },
+            hint: {
+              text: "For example, 01 03 1986"
+            },
+            items: [
+              {
+                name: "day",
+                classes: "govuk-input--width-2",
+                value: ""
+              },
+              {
+                name: "month",
+                classes: "govuk-input--width-2",
+                value: ""
+              },
+              {
+                name: "year",
+                classes: "govuk-input--width-4",
+                value: ""
+              }
+            ]
+          }) }}
+
+          <div class="govuk-!-margin-top-6">
+            <button class="govuk-button">Continue</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+
+{% endblock %}

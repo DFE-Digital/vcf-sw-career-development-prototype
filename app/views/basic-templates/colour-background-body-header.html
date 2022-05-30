@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+<!--
+If relevant:
+ADD HEADER INCLUDE
+ADD PAGE TITLE
+ADD BACK LINK
+-->
+
+{% block beforeContent %}
+    {{ govukBackLink({
+        href: "javascript:window.history.back()",
+        text: "Back"
+    }) }}
+{% endblock %}
+
+{% block content %}
+
+        <div class="govuk-grid-row body-header-background">
+            <div class="govuk-grid-column-full govuk-!-padding-6">
+                <h1 class="govuk-heading-xl body-header-font">Social worker career development</h1>
+                <p class="govuk-body govuk-!-font-size-24 body-header-font">This is a paragraph inside a two-thirds wide column</p>
+            </div>
+        </div>
+
+{% endblock %}

@@ -6,13 +6,79 @@ Home – GOV.UK Prototype Kit
 
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <h1 class="govuk-heading-xl">Social worker career development</h1>
-    <p>
-      Welcome to the holding page for the Social Worker Career Development service.
-    </p>
-  </div>
-</div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">Social worker career development</h1>
+        <h2 class="govuk-heading-m">Latest prototype</h2>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        {% from "govuk/components/button/macro.njk" import govukButton %}
+
+        {{ govukButton({
+        text: "Start now",
+        href: "#",
+        isStartButton: true
+        }) }}
+        <p class="govuk-!-margin-bottom-9">(Coming soon)</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-m">Sprints</h2>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-margin-bottom-9">
+      <div class="govuk-grid-column-full">
+        <h3 class="govuk-heading-s">Sprint 1</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="landing-page-concepts/index">Concept homepage</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-margin-top-9">
+      <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-m">Basic pages</h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="basic-templates/full-width">Full width page</a>
+          </li>
+          <li>
+            <a href="basic-templates/two-thirds-layout">Two thirds page</a>
+          </li>
+          <li>
+            <a href="basic-templates/two-thirds-one-third-layout">Two thirds one third</a>
+          </li>
+          <li>
+            <a href="basic-templates/half-and-half-layout">Half and half</a>
+          </li>
+          <li>
+            <a href="basic-templates/half-and-half-with-cards">Section card example</a>
+          </li>
+          <li>
+            <a href="basic-templates/colour-background-body-header">Page with solid header</a>
+          </li>
+          <li>
+            <a href="basic-templates/one-question-per-page">One question per page</a>
+          </li>
+          <li>
+            <a href="basic-templates/multiple-questions-per-page">Multiple questions per page</a>
+          </li>
+          <li>
+            <a href="basic-templates/check-answers">Check answers</a>
+          </li>
+          <li>
+            <a href="basic-templates/step-by-step-navigation.html">Step by step navigation</a>
+          </li>
+          <li>
+            <a href="basic-templates/start-with-step-by-step">Step by step navigation (right hand nav)</a>
+          </li>
+          <li>
+            <a href="basic-templates/page-not-found">Page not found</a>
+          </li>
+        </ul>
 
 {% endblock %}
