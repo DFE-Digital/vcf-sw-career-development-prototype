@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+<!--
+If relevant:
+ADD HEADER INCLUDE
+ADD PAGE TITLE
+ADD BACK LINK
+-->
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<!-- Container and MAIN wrapper declared in layout.html - DO NOT ADD HERE -->
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <p>govuk-grid-column-one-third</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <p>govuk-grid-column-one-third</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <p>govuk-grid-column-one-third</p>
+    </div>
+</div>
+
+{% endblock %}

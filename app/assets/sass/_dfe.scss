@@ -13,10 +13,22 @@
   color: white;
 }
 
-/* Section cards */
+/* SECTION CARDS
+---------------- */
 
+/* shaded section card */
 .section-card {
   background-color: #F3F2F1;
   padding: 15px;
   box-shadow: 0px 2px #002d18;
 }
+
+/* clear section card */
+/* Remove this if I don't add any formatting */
+.section-card-clear {
+  padding: 0px;
+}
+
+/* LANDING PAGE FORMATS
+----------------------- */
+
