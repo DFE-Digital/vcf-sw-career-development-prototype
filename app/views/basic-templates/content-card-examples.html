@@ -1,0 +1,242 @@
+{% extends "layout.html" %}
+<!--
+If relevant:
+ADD HEADER INCLUDE
+ADD PAGE TITLE
+ADD BACK LINK
+-->
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Navigation card types</h1>
+<!------------- CARD TYPE 1 ------------->
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">shaded background with shadow</a></h2>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row govuk-!-margin-bottom-9'>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card__wborder">
+            <h3 class="govuk-heading-m"><a href="/#">Card 1</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card__wborder">
+            <h3 class="govuk-heading-m"><a href="/#">Card 2</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+</div>
+<!------------- CARD TYPE 2 ------------->
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">shaded background no shadow</a></h2>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row govuk-!-margin-bottom-9'>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="/#">Card 1</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="/#">Card 2</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+</div>
+<!------------- CARD TYPE 3 ------------->
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">header as link with description</a></h2>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row govuk-!-margin-bottom-9'>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card-clear">
+            <h3 class="govuk-heading-m"><a href="/#">Card 1</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card-clear">
+            <h3 class="govuk-heading-m"><a href="/#">Card 2</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+</div>
+<!------------- CARD TYPE 4 ------------->
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">Header, description and link</a></h2>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row govuk-!-margin-bottom-9'>
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card-clear">
+            <h2 class="govuk-heading-m govuk-!-font-weight-bold">Card 1</h2>
+            <p class="govuk-body govuk-!-margin-bottom-6">A description of this section.</p>
+            <p class="govuk-body govuk-!-margin-bottom-0"><a href="#" class="govuk-link govuk-!-font-weight-bold">link to section</a></p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card-clear">
+            <h2 class="govuk-heading-m govuk-!-font-weight-bold">Card 2</h2>
+            <p class="govuk-body govuk-!-margin-bottom-6">A description of this section.</p>
+            <p class="govuk-body govuk-!-margin-bottom-0"><a href="#" class="govuk-link govuk-!-font-weight-bold">link to section</a></p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card-clear">
+            <h2 class="govuk-heading-m govuk-!-font-weight-bold">Card 2</h2>
+            <p class="govuk-body govuk-!-margin-bottom-6">A description of this section.</p>
+            <p class="govuk-body govuk-!-margin-bottom-0"><a href="#" class="govuk-link govuk-!-font-weight-bold">link to section</a></p>
+        </div>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+    <!------------- CARD TYPE 5 ------------->
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">shaded background with button</a></h2>
+        </div>
+    </div>
+</div>
+
+<div class='govuk-grid-row govuk-!-margin-bottom-9'>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card__wbutton">
+            <h3 class="govuk-heading-m">Card 1</h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+                <a class="govuk-button tl-home--forum govuk-!-margin-bottom-0" href="#">
+                    link to section
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half'>
+        <div class="section-card__wbutton">
+            <h3 class="govuk-heading-m">Card 2</h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+                <a class="govuk-button tl-home--forum govuk-!-margin-bottom-0" href="#">
+                    link to section
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+</div>
+    <!------------- CARD TYPE 6 ------------->
+    <div class='govuk-grid-row govuk-!-margin-bottom-2'>
+        <div class='govuk-grid-column-two-thirds'>
+            <div>
+                <h2 class="govuk-heading-l">shaded background with button alt</a></h2>
+            </div>
+        </div>
+    </div>
+    <div class='govuk-grid-row govuk-!-margin-bottom-9'>
+        <div class='govuk-grid-column-one-third'>
+            <div class="section-card__wbutton">
+                <h3 class="govuk-heading-m">Card 1</h3>
+                <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                    <a class="govuk-button tl-home--forum govuk-!-margin-bottom-0" href="#">
+                        link to section
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class='govuk-grid-column-one-third'>
+            <div class="section-card__wbutton">
+                <h3 class="govuk-heading-m">Card 2</h3>
+                <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                    <a class="govuk-button tl-home--forum govuk-!-margin-bottom-0" href="#">
+                        link to section
+                    </a>
+                </p>
+            </div>
+        </div><div class='govuk-grid-column-one-third'>
+        <div class="section-card__wbutton">
+            <h3 class="govuk-heading-m">Card 3</h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+                <a class="govuk-button tl-home--forum govuk-!-margin-bottom-0" href="#">
+                    link to section
+                </a>
+            </p>
+        </div>
+    </div>
+        <div class="govuk-grid-column-full">
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+        </div>
+    </div>
+    <!------------- CARD TYPE 7 ------------->
+    <div class='govuk-grid-row govuk-!-margin-bottom-2'>
+        <div class='govuk-grid-column-two-thirds'>
+            <div>
+                <h2 class="govuk-heading-l">image, description and button</a></h2>
+            </div>
+        </div>
+    </div>
+    <div class='govuk-grid-row govuk-!-margin-bottom-9'>
+        <div class='govuk-grid-column-one-third'>
+            <div class="section-card__wimage">
+                <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
+                <h3 class="govuk-heading-m"><a href="#">Card 1</a></h3>
+                <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+            </div>
+        </div>
+        <div class='govuk-grid-column-one-third'>
+            <div class="section-card__wimage">
+                <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
+                <h3 class="govuk-heading-m"><a href="#">Card 2</a></h3>
+                <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+            </div>
+        </div><div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
+            <h3 class="govuk-heading-m"><a href="#">Card 3</a></h3>
+            <p class="govuk-!-margin-bottom-6">A description of this section.</p>
+        </div>
+    </div>
+        <div class="govuk-grid-column-full">
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+        </div>
+    </div>
+{% endblock %}
+
+
+

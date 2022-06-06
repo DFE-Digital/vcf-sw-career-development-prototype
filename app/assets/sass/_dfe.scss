@@ -1,3 +1,9 @@
+/* Standard colours */
+
+$colour-drop-shadow: #002d18;
+$colour-image-placeholder: govuk-colour("mid-grey");
+
+
 .logo {
   display: block;
   max-height: 32px;
@@ -17,17 +23,40 @@
 ---------------- */
 
 /* shaded section card */
+
 .section-card {
   background-color: #F3F2F1;
   padding: 15px;
-  box-shadow: 0px 2px #002d18;
+
+  &__wborder {
+    background-color: #F3F2F1;
+    padding: 15px;
+    box-shadow: 0px 2px $colour-drop-shadow;
+  }
+  &__wbutton {
+    background-color: #F3F2F1;
+    padding: 30px;
+  }
+  &__wimage {
+
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 }
+
 
 /* clear section card */
 /* Remove this if I don't add any formatting */
 .section-card-clear {
   padding: 0px;
 }
+
+/* IMAGES
+----------------------- */
+
+
 
 /* LANDING PAGE FORMATS
 ----------------------- */
