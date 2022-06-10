@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Career tool Q1 – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="question-2" method="post">
+          {{ govukRadios({
+            idPrefix: "their-experience",
+            name: "their-experience",
+            fieldset: {
+              legend: {
+                text: "Which best describes your experience?",
+                ispageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+            items: [
+              {
+                value: "Newly qualified social worker",
+                text: "Newly qualified social worker",
+                checked: checked("their-experience", "Newly qualified social worker")
+              },
+              {
+                value: "2-5 years in practice",
+                text: "2-5 years in practice",
+                checked: checked("their-experience", "2-5 years in practice")
+              },
+              {
+              value: "Team manager",
+              text: "Team manager",
+              checked: checked("their-experience", "Team manager")
+              },
+              {
+              value: "Leadership",
+              text: "Leadership",
+              checked: checked("their-experience", "Leadership")
+              }
+            ]
+          }) }}
+
+          {{ govukButton({
+            text: "Continue"
+          }) }}
+        </form>
+
+      </div>
+    </div>
+
+{% endblock %}

@@ -2,7 +2,7 @@
 
 $colour-drop-shadow: #002d18;
 $colour-image-placeholder: govuk-colour("mid-grey");
-
+$colour-secondary-text: govuk-colour("dark-grey");
 
 .logo {
   display: block;
@@ -53,6 +53,7 @@ $colour-image-placeholder: govuk-colour("mid-grey");
   padding: 0px;
 }
 
+
 /* IMAGES
 ----------------------- */
 
@@ -61,3 +62,6 @@ $colour-image-placeholder: govuk-colour("mid-grey");
 /* LANDING PAGE FORMATS
 ----------------------- */
 
+.features-cards__desc {
+  color: $colour-secondary-text;
+}

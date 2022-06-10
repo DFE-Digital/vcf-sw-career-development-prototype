@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Career tool Q1 – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="check-answers" method="post">
+          {{ govukRadios({
+            idPrefix: "achievement-goal",
+            name: "achievement-goal",
+            fieldset: {
+              legend: {
+                text: "What are you looking to achieve?",
+                ispageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+            items: [
+              {
+                value: "Consolidate my current experience",
+                text: "Consolidate my current experience",
+                checked: checked("achievement-goal", "Consolidate my current experience")
+              },
+              {
+                value: "Move up a level",
+                text: "Move up a level",
+                checked: checked("achievement-goal", "Move up a level")
+              },
+              {
+              value: "Change my career pathway",
+              text: "Change my career pathway",
+              checked: checked("achievement-goal", "Change my career pathway")
+              }
+            ]
+          }) }}
+
+          {{ govukButton({
+            text: "Continue"
+          }) }}
+        </form>
+
+      </div>
+    </div>
+
+{% endblock %}

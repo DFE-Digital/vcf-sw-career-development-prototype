@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Home – GOV.UK Prototype Kit
+Home – Social worker career development
 {% endblock %}
 
 {% block content %}
@@ -13,10 +13,9 @@ Home – GOV.UK Prototype Kit
         {% from "govuk/components/button/macro.njk" import govukButton %}
         {{ govukButton({
           text: "Start now",
-          href: "#",
+          href: "current/index",
           isStartButton: true
         }) }}
-        <p class="govuk-!-margin-bottom-9">(Coming soon)</p>
       </div>
     </div>
         <h2 class="govuk-heading-m">Sprints</h2>
@@ -25,10 +24,13 @@ Home – GOV.UK Prototype Kit
         <h3 class="govuk-heading-s">Sprint 1</h3>
         <ul class="govuk-list govuk-list--bullet">
           <li>
-            <a href="landing-page-concepts/index">Concept homepage</a>
+            <a href="current/index">Journey 1</a>
           </li>
           <li>
-            <a href="landing-page-concepts/index-2">Concept homepage 2</a>
+            <a href="landing-page-concepts/index">Concept homepage 2</a>
+          </li>
+          <li>
+            <a href="current/career-tool/start">Career quiz tool</a>
           </li>
         </ul>
       </div>
@@ -63,6 +65,9 @@ Home – GOV.UK Prototype Kit
           </li>
           <li>
             <a href="basic-templates/multiple-questions-per-page">Multiple questions per page</a>
+          </li>
+          <li>
+            <a href="basic-templates/mainstream-guide">Mainstream guide</a>
           </li>
           <li>
             <a href="basic-templates/check-answers">Check answers</a>
