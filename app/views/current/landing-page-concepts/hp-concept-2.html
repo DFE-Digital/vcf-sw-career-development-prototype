@@ -1,17 +1,15 @@
 {% extends "layout.html" %}
-<!--
-If relevant:
-ADD HEADER INCLUDE
-ADD PAGE TITLE
-ADD BACK LINK
--->
+
+{% block pageTitle %}
+Home – {{ serviceName }}
+{% endblock %}
 
 {% block content %}
 
-<div class="govuk-grid-row body-header-background govuk-!-margin-bottom-6">
+<div class="govuk-grid-row body-header-background govuk-!-margin-bottom-9">
     <div class="govuk-grid-column-full govuk-!-padding-6">
         <h1 class="govuk-heading-xl body-header-font">Social worker career development</h1>
-        <p class="govuk-body govuk-!-font-size-24 body-header-font">A brief explanation of what this service is all about could go here. Why should they care? How will this help them yada....</p>
+        <p class="govuk-body govuk-!-font-size-24 body-header-font">A brief explanation of what this service is all about could go here. Why should they care? How will this help them yada...</p>
     </div>
 </div>
 <!------------- FEATURE SECTION ------------->
@@ -50,49 +48,54 @@ ADD BACK LINK
     </div>
 </div>
 <!-- FEATURE SECTION ENDS -->
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Career development</h1>
-        <p class="govuk-body">Find out more about the options available to you.</p>
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">Career development</h2>
+        </div>
     </div>
 </div>
 <div class='govuk-grid-row govuk-!-margin-bottom-6'>
-    <div class='govuk-grid-column-one-half'>
-        <div class="section-card">
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
             <h3 class="govuk-heading-m"><a href="career-guidance/section-sub-page">Career guidance</a></h3>
             <p class="govuk-!-margin-bottom-6">Information about career guidance goes under here.</p>
         </div>
     </div>
-    <div class='govuk-grid-column-one-half'>
-        <div class="section-card">
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
             <h3 class="govuk-heading-m"><a href="#">Assessment</a></h3>
             <p class="govuk-!-margin-bottom-6">Information relating to the assessment and a link to take it go here.</p>
         </div>
     </div>
-</div>
-<div class='govuk-grid-row govuk-!-margin-bottom-6'>
-    <div class='govuk-grid-column-one-half'>
-        <div class="section-card">
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
             <h3 class="govuk-heading-m"><a href="#">CPD</a></h3>
             <p class="govuk-!-margin-bottom-6">Information about CPD goes under here along with the CPD finder tool.</p>
         </div>
     </div>
-    <div class='govuk-grid-column-one-half'>
-        <div class="section-card">
-            <h3 class="govuk-heading-m"><a href="#">Leadership</a></h3>
-            <p class="govuk-!-margin-bottom-6">Information relating to the leadership programmes and links out to them go here.</p>
-        </div>
-    </div>
 </div>
 <div class='govuk-grid-row govuk-!-margin-bottom-6'>
-    <div class='govuk-grid-column-one-half'>
-        <div class="section-card">
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
             <h3 class="govuk-heading-m"><a href="#">ASYE</a></h3>
             <p class="govuk-!-margin-bottom-6">Information about ASYE goes under here.</p>
         </div>
     </div>
-    <div class='govuk-grid-column-one-half'>
-        <div class="section-card">
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
+            <h3 class="govuk-heading-m"><a href="#">Leadership</a></h3>
+            <p class="govuk-!-margin-bottom-6">Information relating to the leadership programmes and links out to them go here.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-third'>
+        <div class="section-card__wimage">
+            <img src="/public/images/placeholder-image.png" width="100%" alt="placeholder image">
             <h3 class="govuk-heading-m"><a href="#">Professional standards</a></h3>
             <p class="govuk-!-margin-bottom-6">Information about the standards goes under here.</p>
         </div>
@@ -101,16 +104,12 @@ ADD BACK LINK
         <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
     </div>
 </div>
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">More things</h1>
-    </div>
-</div>
-<!--OTHER CONTENT -->
+
+
 <div class='govuk-grid-row govuk-!-margin-bottom-2'>
-    <div class='govuk-grid-column-one-half'>
+    <div class='govuk-grid-column-full'>
         <div>
-            <h2 class="govuk-heading-m">Future things</h2>
+            <h2 class="govuk-heading-l">Future things</h2>
             <ul class="govuk-list">
                 <li><a href="#" class="govuk-link">Early Careers framework</a>
                     <p class="features-cards__desc">Information about the ECF. And some more text and some more text.
@@ -125,9 +124,14 @@ ADD BACK LINK
             </ul>
         </div>
     </div>
-    <div class='govuk-grid-column-one-half'>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+</div>
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-full'>
         <div>
-            <h2 class="govuk-heading-m">Additional resources</h2>
+            <h2 class="govuk-heading-l">Additional resources</h2>
             <ul class="govuk-list">
                 <li><a href="#" class="govuk-link">Resource 1</a>
                     <p class="features-cards__desc">Some information about resource 1. And some more text and some more text.</p>
@@ -140,9 +144,6 @@ ADD BACK LINK
         </div>
     </div>
 </div>
-
-
-
 
 {% endblock %}
 
