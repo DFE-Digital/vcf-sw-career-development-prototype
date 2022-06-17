@@ -65,3 +65,10 @@ $colour-secondary-text: govuk-colour("dark-grey");
 .features-cards__desc {
   color: $colour-secondary-text;
 }
+
+/* SEARCH RESULTS
+---------------- */
+
+.result-metadata__coursetype {
+  padding-right: 10px;
+}

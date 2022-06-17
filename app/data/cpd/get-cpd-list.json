@@ -1,0 +1,92 @@
+[
+  {
+    "courseName": "CPD course 1",
+    "courseDesc": "This CPD 1 course is lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "1 hour",
+    "courseType": "ASYE",
+    "courseProviderName": "ACME provider 1",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 2",
+    "courseDesc": "This CPD 2 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "5 hours",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 2",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 3",
+    "courseDesc": "This CPD 3 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "7.5 hours",
+    "courseType": "UPON",
+    "courseProviderName": "ACME provider 3",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 4",
+    "courseDesc": "This CPD 4 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "1 hour",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 4",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 5",
+    "courseDesc": "This CPD 5 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "15 hours",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 4",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 6",
+    "courseDesc": "This CPD 6 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "2 hours",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 4",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 7",
+    "courseDesc": "This CPD 7 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "4 hours",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 7",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 8",
+    "courseDesc": "This CPD 8 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "1 month",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 8",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 9",
+    "courseDesc": "This CPD 9 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "7.5 hours",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 9",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  },
+  {
+    "courseName": "CPD course 10",
+    "courseDesc": "This CPD 10 course is  lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget mauris sit amet quam venenatis.",
+    "courseDuration": "1 hour",
+    "courseType": "PLP",
+    "courseProviderName": "ACME provider 10",
+    "courseProviderLink": "https://www.someprovider.com",
+    "courseMoreInfo": "/#"
+  }
+]

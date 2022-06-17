@@ -17,8 +17,10 @@ Example usage:
 
 */
 
-module.exports = {
+const cpdList = require('./cpd/get-cpd-list.json');
 
-  // Insert values here
+module.exports = {
+  LoggedIn: 'Jonathan Porton',
+  cpdList
 
 }

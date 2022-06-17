@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+CPD search – {{ serviceName }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class='govuk-grid-row govuk-!-margin-bottom-2'>
+    <div class='govuk-grid-column-two-thirds'>
+        <div>
+            <h2 class="govuk-heading-l">Find a CPD</h2>
+        </div>
+        <p>Looking for a CPD bla. More yukky placeholder text but need to add some here to see how this flows. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate nisl odio, sit amet pellentesque ipsum molestie eget. Vivamus vehicula commodo luctus. Praesent ullamcorper mi id consequat ultricies. Proin non ultrices ligula.  </p>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <div class="search">
+        <!-- SEARCH -->
+            {{ govukInput({
+                label: {
+                text: "Search",
+                classes: "govuk-label",
+                isPageHeading: true
+            },
+                id: "cpd-search",
+                name: "cpd-search"
+            }) }}
+
+            {% from "govuk/components/button/macro.njk" import govukButton %}
+
+            {{ govukButton({
+                text: "Search"
+            }) }}
+        </div>
+
+        <div class="cpd-dfe-filter">
+        <!-- FILTERS -->
+            {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+            {{ govukCheckboxes({
+                idPrefix: "course-dfe-type",
+                name: "course-dfe-type",
+                classes: "govuk-checkboxes--small",
+                fieldset: {
+                    legend: {
+                    text: "DfE CPD type",
+                    classes: "govuk-fieldset__legend--s"
+                }
+                },
+                items: [
+                    {
+                        value: "course-dfe-type-asye",
+                        text: "ASYE"
+                    },
+                    {
+                        value: "course-dfe-type-plp",
+                        text: "PLP"
+                    },
+                    {
+                        value: "course-dfe-type-upon",
+                        text: "UPON"
+                    }
+                ]
+            }) }}
+        </div>
+        <div class="cpd-type-filter">
+        {{ govukCheckboxes({
+            idPrefix: "course-cpd-type",
+            name: "cpd-type",
+            classes: "govuk-checkboxes--small",
+            fieldset: {
+                legend: {
+                text: "Format",
+                classes: "govuk-fieldset__legend--s"
+            }
+            },
+            items: [
+                {
+                    value: "course-cpd-type-self-directed-learning",
+                    text: "Self-directed learning"
+                },
+                {
+                    value: "course-cpd-type-training-session",
+                    text: "Training session"
+                },
+                {
+                    value: "course-cpd-type-conference-seminar-event",
+                    text: "Conference, seminar or event"
+                },
+                {
+                    value: "course-cpd-type-other",
+                    text: "Other"
+                }
+            ]
+        }) }}
+        </div>
+        <div class="course-duration-filter">
+            {{ govukCheckboxes({
+                idPrefix: "course-duration",
+                name: "course-duration",
+                classes: "govuk-checkboxes--small",
+                fieldset: {
+                    legend: {
+                    text: "Duration",
+                    classes: "govuk-fieldset__legend--s"
+                }
+                },
+                items: [
+                    {
+                    value: "course-duration-sub-1-hour",
+                    text: "< 1 Hour"
+                    },
+                    {
+                        value: "course-duration-1-hour",
+                        text: "1 Hour"
+                    },
+                    {
+                        value: "course-duration-2-5 hours",
+                        text: "2-5 hours"
+                    },
+                    {
+                        value: "course-duration-6-10 hours",
+                        text: "6-10 hours"
+                    },
+                    {
+                        value: "course-duration-11-plus-hours",
+                        text: "Other"
+                    }
+                ]
+            }) }}
+        </div>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <ul class="govuk-list govuk-!-padding-top-9 govuk-!-margin-top-3">
+            {% for item in data.cpdList %}
+            <li class="govuk-!-padding-top-6">
+                <div class="result-heading"><h3 class="govuk-heading-m"><a href="{{ item.courseMoreInfo }}">{{ item.courseName }}</a></h3></div>
+            </li>
+            <li>
+                <p class="govuk-body">{{ item.courseDesc }}</p>
+            </li>
+            <li>
+                <p class="govuk-body"><a href="{{ item.courseProviderLink }}" target="_blank">{{ item.courseProviderName }}</a></p>
+            </li>
+            <li>
+                <div class="result-metadata">
+                    <p class="govuk-body-s"><span class="result-metadata__coursetype">{{ item.courseType }}</span><span class="result=metadata__courseduration">{{ item.courseDuration }}</span></p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+</div>
+
+{% endblock %}

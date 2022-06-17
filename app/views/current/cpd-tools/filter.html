@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+CPD search – {{ serviceName }}
+{% endblock %}
+
+
+{% block content %}
+{% for item in data.cpdList %}
+
+    <ul class="govuk-list">
+        <li>
+            <div class="result-heading"><h3 class="govuk-heading-m"><a href="{{ item.courseMoreInfo }}">{{ item.courseName }}</a></h3></div>
+        </li>
+        <li>
+            <p class="govuk-body">{{ item.courseDesc }}</p>
+        </li>
+        <li>
+            <p class="govuk-body"><a href="{{ item.courseProviderLink }}" target="_blank">{{ item.courseProviderName }}</a></p>
+        </li>
+        <li>
+            <div class="result-metadata">
+                <p class="govuk-body-s"><span class="result-metadata__coursetype">{{ item.courseType }}</span><span class="result=metadata__courseduration">{{ item.courseDuration }}</span></p>
+            </div>
+        </li>
+    </ul>
+{% else %}
+    <ul class="govuk-list">
+        <li>
+            <h3 class="govuk-heading-m">No CPD courses found.</h3>
+        </li>
+    </ul>
+
+
+{% endfor %}
+
+{% endblock %}
