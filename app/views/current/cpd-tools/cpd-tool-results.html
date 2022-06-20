@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Career tool results – {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class='govuk-grid-row govuk-!-margin-bottom-6'>
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">CPD tool results</h1>
+        <p class="govuk-body">
+            Based on your answers, here is some stuff.
+        </p>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="section-card__noborder">
+            <h3 class="govuk-heading-m"><a href="{{ data.cpdList[0].courseMoreInfo }}">{{ data.cpdList[0].courseName }}</a></h3>
+            <p class="govuk-!-margin-bottom-6">{{ data.cpdList[0].courseProviderName }}</p>
+        </div>
+        <div class="section-card__noborder">
+            <h3 class="govuk-heading-m"><a href="{{ data.cpdList[2].courseMoreInfo }}">{{ data.cpdList[2].courseName }}</a></h3>
+            <p class="govuk-!-margin-bottom-6">{{ data.cpdList[2].courseProviderName }}</p>
+        </div>
+        <div class="section-card__noborder">
+            <h3 class="govuk-heading-m"><a href="{{ data.cpdList[4].courseMoreInfo }}">{{ data.cpdList[4].courseName }}</a></h3>
+            <p class="govuk-!-margin-bottom-6">{{ data.cpdList[4].courseProviderName }}</p>
+        </div>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9 govuk-!-margin-top-9">
+          <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                  DfE CPDs
+              </dt>
+              <dd class="govuk-summary-list__value">
+                  {{ data['quiz-dfe-type'] }}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="cpd-question-1">
+                      Change<span class="govuk-visually-hidden"> value</span>
+                  </a>
+              </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+               <dt class="govuk-summary-list__key">
+                  Format
+                </dt>
+                  <dd class="govuk-summary-list__value">
+                    {{ data['quiz-cpd-format'] }}
+                </dd>
+              <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="cpd-question-1">
+                      Change<span class="govuk-visually-hidden"> value</span>
+                  </a>
+              </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+               <dt class="govuk-summary-list__key">
+                  Format
+                </dt>
+                  <dd class="govuk-summary-list__value">
+                    {{ data['quiz-cpd-duration'] }}
+                </dd>
+              <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="cpd-question-1">
+                      Change<span class="govuk-visually-hidden"> value</span>
+                  </a>
+              </dd>
+          </div>
+        </dl>
+    </div>
+</div>
+
+{% endblock %}

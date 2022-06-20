@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+CPD tool Q1 – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form action="cpd-question-2" method="post">
+      {{ govukCheckboxes({
+        idPrefix: "quiz-dfe-type",
+        name: "quiz-dfe-type",
+        fieldset: {
+          legend: {
+            text: "What type of DfE CPD are you interested in?",
+            ispageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "ASYE",
+            text: "ASYE",
+            checked: checked("quiz-dfe-type", "ASYE")
+          },
+          {
+            value: "PLP",
+            text: "PLP",
+            checked: checked("quiz-dfe-type", "PLP")
+          },
+          {
+          value: "UPON",
+          text: "UPON",
+          checked: checked("quiz-dfe-type", "UPON")
+          },
+          {
+          value: "Do not mind / Not sure",
+          text: "Do not mind / Not sure",
+          checked: checked("quiz-dfe-type", "Do not mind / Not sure")
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Continue"
+      }) }}
+    </form>
+  </div>
+</div>
+
+
+{% endblock %}

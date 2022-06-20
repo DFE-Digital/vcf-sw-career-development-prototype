@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+CPD tool Q2 – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form action="cpd-question-3" method="post">
+      {{ govukCheckboxes({
+        idPrefix: "quiz-cpd-format",
+        name: "quiz-cpd-format",
+        fieldset: {
+          legend: {
+            text: "What format of CPD are you interested in?",
+            ispageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "Self-directed learning",
+            text: "Self-directed learning",
+            checked: checked("quiz-cpd-format", "Self-directed learning")
+          },
+          {
+            value: "Training session",
+            text: "Training session",
+            checked: checked("quiz-cpd-format", "Training session")
+          },
+          {
+            value: "Conference, seminar or event",
+            text: "Conference, seminar or event",
+            checked: checked("quiz-cpd-format", "Conference, seminar or event")
+          },
+          {
+            value: "Other",
+            text: "Other",
+            checked: checked("quiz-cpd-format", "Other")
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Continue"
+      }) }}
+    </form>
+    <div class="answer-summary">
+      <h2 class="govuk-heading-m govuk-!-margin-top-9">Previous answers</h2><a href="start" class="govuk-link govuk-body-m start-again">Start again</a>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                  DfE CPDs
+              </dt>
+              <dd class="govuk-summary-list__value">
+                  {{ data['quiz-dfe-type'] }}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="cpd-question-1">
+                      Change<span class="govuk-visually-hidden"> value</span>
+                  </a>
+              </dd>
+          </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

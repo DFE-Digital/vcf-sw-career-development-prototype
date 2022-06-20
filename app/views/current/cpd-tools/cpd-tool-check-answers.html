@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Check your answers before submitting.</h1>
+        <!-- SECTION 1 -->
+        <h2 class="govuk-heading-m">Your answers</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    DfE CPDs
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    {{ data['quiz-dfe-type'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="cpd-question-1">
+                        Change<span class="govuk-visually-hidden"> value</span>
+                    </a>
+                </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Format
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    {{ data['quiz-cpd-format'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="cpd-question-2">
+                        Change<span class="govuk-visually-hidden"> value</span>
+                    </a>
+                </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Duration
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    {{ data['quiz-cpd-duration'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="cpd-question-3">
+                        Change<span class="govuk-visually-hidden"> value</span>
+                    </a>
+                </dd>
+            </div>
+        </dl>
+        <h2 class="govuk-heading-m">Now confirm your answers</h2>
+        <form action="cpd-tool-results" method="post" novalidate>
+            <input type="hidden" name="answers-checked" value="true">
+            <button class="govuk-button" data-module="govuk-button">
+                Accept and confirm
+            </button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

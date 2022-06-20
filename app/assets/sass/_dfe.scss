@@ -3,6 +3,7 @@
 $colour-drop-shadow: #002d18;
 $colour-image-placeholder: govuk-colour("mid-grey");
 $colour-secondary-text: govuk-colour("dark-grey");
+$colour-border-grey: #b1b4b6;
 
 .logo {
   display: block;
@@ -33,16 +34,24 @@ $colour-secondary-text: govuk-colour("dark-grey");
     padding: 15px;
     box-shadow: 0px 2px $colour-drop-shadow;
   }
+
   &__wbutton {
     background-color: #F3F2F1;
     padding: 30px;
   }
+
   &__wimage {
 
     img {
       max-width: 100%;
       margin-bottom: 20px;
     }
+  }
+
+  &__noborder {
+  background-color: #F3F2F1;
+  padding: 15px;
+  margin-bottom: 20px;
   }
 }
 
@@ -57,7 +66,18 @@ $colour-secondary-text: govuk-colour("dark-grey");
 /* IMAGES
 ----------------------- */
 
+/* CHECK ANSWERS FORMATS
+----------------------- */
 
+.answer-summary {
+  position: relative;
+}
+
+.start-again {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
 
 /* LANDING PAGE FORMATS
 ----------------------- */
@@ -66,9 +86,52 @@ $colour-secondary-text: govuk-colour("dark-grey");
   color: $colour-secondary-text;
 }
 
+/* FACETED BLOCK
+---------------- */
+
+.facet-block {
+
+  &__search {
+    padding: 0 0 0px;
+    margin-bottom: 0px;
+  }
+
+  &__search-button {
+
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 5px;
+  }
+
+  &__dfe-filter {
+
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 10px;
+    margin-top: 20px;
+  }
+
+  &__type-filter {
+
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 10px;
+    margin-top: 20px;
+  }
+
+  &__duration-filter {
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 10px;
+    margin-top: 20px;
+  }
+}
+
+
+
 /* SEARCH RESULTS
 ---------------- */
 
 .result-metadata__coursetype {
   padding-right: 10px;
+}
+
+.results-header {
+  border-bottom: 1px solid $colour-border-grey;
 }
