@@ -86,6 +86,31 @@ $colour-border-grey: #b1b4b6;
   color: $colour-secondary-text;
 }
 
+/* CONTENT PAGES
+---------------- */
+
+.aside-list {
+
+  &__block {
+    margin-bottom: 50px;
+  }
+
+  &__indent {
+    padding-left: 10px;
+  }
+
+  &__heading {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__related {
+    border-top: 5px solid $colour-drop-shadow;
+    padding-top: 20px;
+  }
+}
+
+
 /* FACETED BLOCK
 ---------------- */
 
