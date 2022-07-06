@@ -1,6 +1,6 @@
 /* Standard colours */
 
-$colour-drop-shadow: #002d18;
+$colour-drop-shadow: #1d70b8;
 $colour-image-placeholder: govuk-colour("mid-grey");
 $colour-secondary-text: govuk-colour("dark-grey");
 $colour-border-grey: #b1b4b6;
@@ -105,7 +105,7 @@ $colour-border-grey: #b1b4b6;
   }
 
   &__related {
-    border-top: 5px solid $colour-drop-shadow;
+    border-top: 3px solid $colour-drop-shadow;
     padding-top: 20px;
   }
 }

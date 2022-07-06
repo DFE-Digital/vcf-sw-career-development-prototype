@@ -3,7 +3,9 @@ $govuk-global-styles: true;
 $govuk-new-link-styles: true;
 
 // Override Transport font
-$govuk-font-family: "Arial", "Helvetica", "sans-serif";
+// $govuk-font-family: "Arial", "Helvetica", "sans-serif";
+
+
 
 
 // We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
