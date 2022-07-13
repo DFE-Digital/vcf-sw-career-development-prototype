@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Assessed and Supported Year in Employment (ASYE) - development programmes – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+       <!-- <span class="govuk-caption-l">DfE development programmes</span>-->
+        <h1 class="govuk-heading-xl">Assessment
+</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <!-- no content for this
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Who is it aimed at?
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Newly qualified, etc.
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Duration
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum dolor sit amet.
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Key fact
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Vestibulum nec magna ut sapien
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Key fact
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Duis volutpat purus quis dictum lanesra</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Programme website
+            </dt>
+            <dd class="govuk-summary-list__value">
+            <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx" target="_blank">Skills for care (opens in new tab)</a>
+            </dd>
+          </div>
+          </dl>
+          -->
+         <h2 class="govuk-heading-l">Why is there an assessment?</h2>
+        <p class="govuk-body-m">The role of child and family social work is a particularly high skilled job with more legal responsibilities than other parts of the social work profession which requires a distinct set of skills.</p>
+
+        <p class="govuk-body-m">A new assessment service, which replaces the National Assessment and Accreditation System (NAAS), places the assessment within the context of the DfE-funded development programmes. In the first instance, the assessment will be an expectation at end of the Assessed and Supported Year of Employment (ASYE) programme. We believe this will provide social workers with greater clarity on the link between assessment and their career development.</p>
+        <h2 class="govuk-heading-l">Why do I need to the assessment?</h2>
+        <p class="govuk-body-m">It will give child and family social workers an opportunity to have their knowledge and skills recognised against the post-qualifying <a class="govuk-!-font-size-19" href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">standards knowledge and skills statements</a>, a national benchmark of good practice for child and families social workers. For frontline practitioners and practice supervisors, these statements have been determined as the post-qualifying improvement standards as set out under <a class="govuk-!-font-size-19" href="http://www.legislation.gov.uk/ukpga/2017/16/section/42">Section 42 of the Children and Social Work Act 2017</a>, which means a professional standard, the attainment of which demonstrates particular expertise or specialisation.</p>
+
+        <p class="govuk-body-m">By developing a new assessment service or child and family practitioners, practice supervisors and, in the future, practice leaders, we aim to provide opportunities for social workers to gain a better understanding of their practice, and prompt employers to review their support and development offer.</p>
+        <p class="govuk-body-m">For employers, the assessment will provide a way to support staff members to demonstrate their abilities, and to grow their workforce capability.</p>
+        <p class="govuk-body-m">For the Department it will help us to understand and shape a longer-term approach to social worker early career development to ensure all vulnerable children receive the expert, high quality support and protection they deserve.</p>
+
+        <p class="govuk-body-m">You can find out more <a class="govuk-!-font-size-19" href="#" target="_blank">about the assessment here (opens in new tab)</a>
+    </div>
+
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+        <div class="aside-list__related">
+            <h2 class="govuk-heading-m" id="subsection-title">
+              Other programmes
+            </h2>
+            <nav role="navigation" aria-labelledby="subsection-title">
+                <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li class="aside-list__indent">
+                      <a href="pathways-programme">
+                        Pathways programme
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="upon">
+                        Upon: Inspiring Leaders Programme
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
