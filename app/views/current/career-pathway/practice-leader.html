@@ -1,0 +1,279 @@
+{% set pageName = 'pl' %}
+{% extends "layout_whero.html" %}
+
+{% block pageTitle %}
+Practice leader - career pathway – {{ serviceName }}
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">What roles and activities are related to this?</h2>
+      <h3 class="govuk-heading-s">Job titles</h3>
+      <p class="govuk-body-m">Middle Manager, Strategic Leader, Head of Service, Assistant Head of Service, Service Manager, Strategic Lead.</p>
+      <h3 class="govuk-heading-s">Job activities</h3>
+      <p class="govuk-body-m">Principal Social Worker, Principal Independent Reviewing Officer, QA Manager, Practice & Learning Manager, Assistant Director, Director of Children’s Services, Service Director.</p>
+
+
+    <h2 class="govuk-heading-l">There are a number of steps you can take to progress onwards on the pathway.</h2>
+
+    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all steps" data-hide-all-text="Hide all">
+      <p></p><ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step" id="discover-what-this-role-entails" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 1
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Discover what this role entails
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-discover-what-this-role-entails-1">
+            <p class="app-step-nav__paragraph">There are a number of resources to help with this.</p>
+
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.1" class="app-step-nav__link js-link" href="#">Role responsibilities </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.2" class="app-step-nav__link js-link" href="#">Read about a typical day to day </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.3" class="app-step-nav__link js-link" href="#">Something else </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="hear-from-people-who-do-this-role" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 2
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Hear from people who do this role
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-hear-from-people-who-do-this-role-2">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.2" class="app-step-nav__link js-link" href="#">Read case studies </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.3" class="app-step-nav__link js-link" href="#">Watch some videos </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.3" class="app-step-nav__link js-link" href="#">Connect with some people </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="check-if-you-have-the-skills-and-experience" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 3
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Check if you have the skills
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-if-you-have-the-skills-and-experience-3">
+            <p class="app-step-nav__paragraph">Find out more about what it takes</p>
+
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" href="#">See typical skill requirements </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.2" class="app-step-nav__link js-link" href="#">See typical experience requirements </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.2" class="app-step-nav__link js-link" href="./">Complete our assessment </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.2" class="app-step-nav__link js-link" href="./">Take our quiz </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="enrol-in-a-suitable-DfE-training-programme" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 4
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Enrol in a suitable DfE training programme
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-enrol-in-a-suitable-DfE-training-programme-4">
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" href="../core-website/pathways-programme">Read about our pathways programme  </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.2" class="app-step-nav__link js-link" href="#">Enrol in our pathways programme (opens in new tab) </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="find-out-what-else-you-can-do-to-work-towards-role" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 5
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Find out what else you can do to work towards this role
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-find-out-what-else-you-can-do-to-work-towards-role-5">
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" href="#">Look for relevant CPDs </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.2" class="app-step-nav__link js-link" href="#">Learn more about shadowing </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="prepare-to-evidence-your-suitability" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 6
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Prepare to evidence your suitability
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-prepare-to-evidence-your-suitability-7">
+            <p class="app-step-nav__paragraph">You will need to show some things in order to get this role.</p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.2" class="app-step-nav__link js-link" href="#">Evidence your skills and experience </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.3" class="app-step-nav__link js-link" href="#">Log your CPDs on Social Work England (opens in new tab) </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.4" class="app-step-nav__link js-link" href="#">Do something else </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.5" class="app-step-nav__link js-link" href="#">Do something more </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="discover-similar-roles" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 7
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Discover similar roles
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-discover-similar-roles-6">
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.2" class="app-step-nav__link js-link" href="#">Explore roles in Children and family social care </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.3" class="app-step-nav__link js-link" href="#">Explore roles in the Police </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.4" class="app-step-nav__link js-link" href="#">Explore roles in Health </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.5" class="app-step-nav__link js-link" href="#">Explore roles in Housing and welfare </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.5" class="app-step-nav__link js-link" href="#">Etc... </a>
+              </li>
+            </ol>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    </div>
+
+</div>
+{% endblock %}

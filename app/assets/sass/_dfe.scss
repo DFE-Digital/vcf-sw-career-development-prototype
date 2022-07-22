@@ -1,8 +1,8 @@
 /* Standard colours */
 
 $colour-drop-shadow: #1d70b8;
-$colour-image-placeholder: govuk-colour("mid-grey");
-$colour-secondary-text: govuk-colour("dark-grey");
+$colour-image-placeholder: hero-colour("mid-grey");
+$colour-secondary-text: hero-colour("dark-grey");
 $colour-border-grey: #b1b4b6;
 
 .logo {
@@ -78,6 +78,25 @@ $colour-border-grey: #b1b4b6;
   top: 2px;
   right: 0;
 }
+
+.pathway-block {
+    padding: 10px 40px 10px;
+    border-left: 5px solid $colour-drop-shadow;
+    position:relative;
+  }
+
+.pathway-block:after {
+    content:"";
+    border-color: $colour-drop-shadow transparent transparent transparent;
+    border-style:solid;
+    border-width:15px;
+    width:0;
+    height:0;
+  position:absolute;
+    bottom:-30px;
+    left:-17px
+  }
+
 
 /* LANDING PAGE FORMATS
 ----------------------- */
@@ -172,3 +191,140 @@ $colour-border-grey: #b1b4b6;
     background-color: #1d70b8
 }
 
+
+.hero-breadcrumbs {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.hero-breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.hero-breadcrumbs__list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hero-breadcrumbs__list-item {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  padding-left: 15.655px;
+  float: left;
+}
+.hero-breadcrumbs__list-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -3.31px;
+  width: 7px;
+  height: 7px;
+  margin: auto 0;
+  border: solid;
+  border-width: 1px 1px 0 0;
+  border-color: #ffffff;
+  content: ">";
+  width: auto;
+  height: auto;
+  border: 0;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.hero-breadcrumbs__list-item:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+.hero-breadcrumbs__list-item:first-child:before {
+  content: none;
+  display: none;
+}
+
+.hero-breadcrumbs__link {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: 0.1em;
+}
+.hero-breadcrumbs__link:hover {
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip: none;
+  text-decoration-skip: none;
+}
+.hero-breadcrumbs__link:focus {
+  color: #ffffff;
+  background-color: #ffdd00;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  text-decoration: none;
+}
+.hero-breadcrumbs__link:link, .hero-breadcrumbs__link:visited {
+  color: #ffffff;
+}
+.hero-breadcrumbs__link:hover {
+  color: #ffffff;
+}
+.hero-breadcrumbs__link:active, .hero-breadcrumbs__link:focus {
+  color: #ffffff;
+}
+
+.key-facts {
+    font-family: "GDS Transport", arial, sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+
+    &__list {
+      list-style: none;
+      display: flex;
+      float: left;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    &__salary {
+      margin-right: 20px;
+    }
+
+    &__standards {
+      margin-right: 10px;
+    }
+
+    &__dfe {
+      margin-right: 10px;
+    }
+
+    &__basw {
+      margin-right: 20px;
+    }
+
+    &__steps {
+      margin-right: 10px;
+    }
+
+  &__before {
+      margin-right: 10px;
+  }
+}
+
+.hero-link:visited {
+  color: #ffffff;
+}

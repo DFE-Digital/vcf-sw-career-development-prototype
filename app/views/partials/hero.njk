@@ -1,10 +1,146 @@
-<section class="app-section app-section--blue govuk-!-margin-top-6">
-  <div class="govuk-width-container">
-     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full govuk-!-padding-top-6">
-            <h1 class="govuk-heading-xl body-header-font">Social worker career development</h1>
-            <p class="govuk-body govuk-!-font-size-24 body-header-font">A brief explanation of what this service is all about could go here. What it might provide the user and more...</p>
-        </div>
-     </div>
-  </div>
-</section>
+{% if pageName == "nq" %}
+    <section class="app-section app-section--blue govuk-!-margin-top-6">
+      <div class="govuk-width-container">
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-!-padding-top-2">
+                <div class="hero-breadcrumbs">
+                  <ol class="hero-breadcrumbs__list">
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="career-pathway">Career pathway</a>
+                    </li>
+                    <!--
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="newly-qualified-social-worker">Newly Qualified Social Worker</a>
+                    </li>-->
+                  </ol>
+                </div>
+                <h1 class="govuk-heading-xl body-header-font">Newly Qualified Social Worker</h1>
+                <p class="govuk-body govuk-!-font-size-24 body-header-font">A description of what a newly qualified social worker does goes here. Nulla placerat lorem risus, sed lobortis enim aliquam vel. Vivamus consectetur, turpis eu porta euismod, ligula lectus scelerisque velit, eu fringilla ipsum ex vel magna. Cras neque turpis, facilisis vel posuere id, iaculis vel mauris.</p>
+                <div class="key-facts">
+                    <ul class="key-facts__list">
+                        <!--<li class="key-facts__item"><span class="key-facts__salary">Salary band: 30-45k</span></li>-->
+                        <li class="key-facts__item"><span class="key-facts__standards">Related professional standards:</span><span class="key-facts__basw"><a class="hero-link" href="https://www.basw.co.uk/professional-development/professional-capabilities-framework-pcf/the-pcf">BASW</a></span></li>
+                        <li class="key-facts__item"><span class="key-facts__steps">Career pathway:</span><span class="key-facts__after"><a class="hero-link" href="practitioner">After this</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+         </div>
+      </div>
+    </section>
+{% elseif pageName == "pr" %}
+    <section class="app-section app-section--blue govuk-!-margin-top-6">
+      <div class="govuk-width-container">
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-!-padding-top-2">
+                <div class="hero-breadcrumbs">
+                  <ol class="hero-breadcrumbs__list">
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="career-pathway">Career pathway</a>
+                    </li>
+                    <!--
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="practitioner">Practitioner</a>
+                    </li>
+                    -->
+                  </ol>
+                </div>
+                <h1 class="govuk-heading-xl body-header-font">Practitioner</h1>
+                <p class="govuk-body govuk-!-font-size-24 body-header-font">A description of what a practitioner does goes here. Nulla placerat lorem risus, sed lobortis enim aliquam vel. Vivamus consectetur, turpis eu porta euismod, ligula lectus scelerisque velit, eu fringilla ipsum ex vel magna. Cras neque turpis, facilisis vel posuere id, iaculis vel mauris.</p>
+                <div class="key-facts">
+                    <ul class="key-facts__list">
+                        <li class="key-facts__item"><span class="key-facts__salary">Salary band: 24-38k</span></li>
+                        <li class="key-facts__item"><span class="key-facts__standards">Related professional standards:</span><span class="key-facts__dfe"><a class="hero-link" href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">DfE</a></span><span class="key-facts__basw"><a class="hero-link" href="https://www.basw.co.uk/professional-development/professional-capabilities-framework-pcf/the-pcf">BASW</a></span></li>
+                        <li class="key-facts__item"><span class="key-facts__steps">Career pathway:</span><span class="key-facts__before"><a class="hero-link" href="newly-qualified-social-worker">Before this</a></span><span class="key-facts__after"><a class="hero-link" href="practice-supervisor">After this</a></span></li>
+                </div>
+            </div>
+
+         </div>
+      </div>
+    </section>
+{% elseif pageName == "ps" %}
+    <section class="app-section app-section--blue govuk-!-margin-top-6">
+      <div class="govuk-width-container">
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-!-padding-top-2">
+                <div class="hero-breadcrumbs">
+                  <ol class="hero-breadcrumbs__list">
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="career-pathway">Career pathway</a>
+                    </li>
+                    <!--
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="practice-supervisor">Practice Supervisor</a>
+                    </li>
+                    -->
+                  </ol>
+                </div>
+                <h1 class="govuk-heading-xl body-header-font">Practice Supervisor</h1>
+                <p class="govuk-body govuk-!-font-size-24 body-header-font">A description of what a practice supervisor does goes here. Nulla placerat lorem risus, sed lobortis enim aliquam vel. Vivamus consectetur, turpis eu porta euismod, ligula lectus scelerisque velit, eu fringilla ipsum ex vel magna. Cras neque turpis, facilisis vel posuere id, iaculis vel mauris.</p>
+                <div class="key-facts">
+                    <ul class="key-facts__list">
+                        <li class="key-facts__item"><span class="key-facts__salary">Salary band: 31-45k</span></li>
+                        <li class="key-facts__item"><span class="key-facts__standards">Related professional standards:</span><span class="key-facts__dfe"><a class="hero-link" href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">DfE</a></span><span class="key-facts__basw"><a class="hero-link" href="https://www.basw.co.uk/professional-development/professional-capabilities-framework-pcf/the-pcf">BASW</a></span></li>
+                        <li class="key-facts__item"><span class="key-facts__steps">Career pathway:</span><span class="key-facts__before"><a class="hero-link" href="practitioner">Before this</a></span><span class="key-facts__after"><a class="hero-link" href="practice-leader">After this</a></span></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+      </div>
+    </section>
+{% elseif pageName == "pl" %}
+    <section class="app-section app-section--blue govuk-!-margin-top-6">
+      <div class="govuk-width-container">
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-!-padding-top-2">
+                <div class="hero-breadcrumbs">
+                  <ol class="hero-breadcrumbs__list">
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="career-pathway">Career pathway</a>
+                    </li>
+                    <!--
+                    <li class="hero-breadcrumbs__list-item">
+                      <a class="hero-breadcrumbs__link" href="practice-leader">Practice Leader</a>
+                    </li>
+                    -->
+                  </ol>
+                </div>
+                <h1 class="govuk-heading-xl body-header-font">Practice Leader</h1>
+                <p class="govuk-body govuk-!-font-size-24 body-header-font">A description of what a practice leader does goes here. Nulla placerat lorem risus, sed lobortis enim aliquam vel. Vivamus consectetur, turpis eu porta euismod, ligula lectus scelerisque velit, eu fringilla ipsum ex vel magna. Cras neque turpis, facilisis vel posuere id, iaculis vel mauris.</p>
+                <div class="key-facts">
+                    <ul class="key-facts__list">
+                        <li class="key-facts__item"><span class="key-facts__salary">Salary band: 43-86k</span></li>
+                        <li class="key-facts__item"><span class="key-facts__standards">Related professional standards:</span><span class="key-facts__dfe"><a class="hero-link" href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">DfE</a></span><span class="key-facts__basw"><a class="hero-link" href="https://www.basw.co.uk/professional-development/professional-capabilities-framework-pcf/the-pcf">BASW</a></span></li>
+                        <li class="key-facts__item"><span class="key-facts__steps">Career pathway:</span><span class="key-facts__before"><a class="hero-link" href="practice-supervisor">Before this</a></span></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+      </div>
+    </section>
+{% elseif pageName == "hp" %}
+    <section class="app-section app-section--blue govuk-!-margin-top-6">
+      <div class="govuk-width-container">
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-!-padding-top-6">
+                <h1 class="govuk-heading-xl body-header-font">Social worker career development</h1>
+                <p class="govuk-body govuk-!-font-size-24 body-header-font">A brief explanation of what this service is all about could go here. What it might provide the user and more...</p>
+            </div>
+         </div>
+      </div>
+    </section>
+{% else %}
+
+{% endif %}
