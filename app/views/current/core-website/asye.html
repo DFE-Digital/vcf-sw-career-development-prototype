@@ -5,16 +5,20 @@ Assessed and Supported Year in Employment (ASYE) - development programmes – {{
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBackLink({
-href: "javascript:window.history.back()",
-text: "Back"
-}) }}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/current/core-website">Home</a>
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-       <!-- <span class="govuk-caption-l">DfE development programmes</span>-->
+       <span class="govuk-caption-l">DfE development programmes</span>
         <h1 class="govuk-heading-xl">Assessed and Supported Year in Employment
 for child and family services
 </h1>
@@ -101,50 +105,67 @@ for child and family services
         <p class="govuk-body-m">Find out more at the <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx" target="_blank">Skills for care website (opens in new tab)</a>
     </div>
 
-    <!--RIGHT HAND NAV -->
+<!--RIGHT HAND NAV -->
     <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+            <div class="aside-list__related">
+            <h2 class="govuk-heading-m" id="subsection-title">
+              Related step on the social worker career pathway
+            </h2>
+            <div class="aside_list__block">
+                <ul class="govuk-list govuk-!-font-size-19">
+                <li class="aside-list__indent">
+                  <a href="../career-pathway/newly-qualified-social-worker">
+                    Newly qualified social worker
+                  </a>
+                </li>
+                </ul>
+            </div>
+        </div>
         <div class="aside-list__related">
             <h2 class="govuk-heading-m" id="subsection-title">
-              Other programmes
+              Other DfE development programmes
             </h2>
-            <nav role="navigation" aria-labelledby="subsection-title">
-                <div class="aside_list__block">
-                    <ul class="govuk-list govuk-!-font-size-19">
-                    <li class="aside-list__indent">
-                      <a href="pathways-programme">
-                        Pathways programme
-                      </a>
-                    </li>
-                    <li class="aside-list__indent">
-                      <a href="upon">
-                        Upon: Inspiring Leaders Programme
-                      </a>
-                    </li>
-                    </ul>
-                  </div>
-                <div class="aside_list__block">
-                    <div class="aside-list__related">
-                        <p>Here is a brief paragraph about assessment and accreditation so they know what this is all about</p>
-                        <a class="govuk-!-font-size-19" href="#" target="_blank">Link to assessment</a>
-                    </div>
-                </div>
-
-                <div class="govuk-!-margin-top-9">
-                    <div class="section-card__wbutton ">
-                        <h3 class="govuk-heading-m">* Testing only *</h3>
-                        <p class="govuk-!-margin-bottom-6">There is an alternate version of this page.</p>
-                        <p class="govuk-body govuk-!-margin-bottom-0">
-                            <a class="govuk-button govuk-!-margin-bottom-0" href="asye-alternative">
-                                Change version
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-            </nav>
+            <div class="aside_list__block">
+                <ul class="govuk-list govuk-!-font-size-19">
+                <li class="aside-list__indent">
+                  <a href="pathways-programme">
+                    Pathways programme
+                  </a>
+                </li>
+                <li class="aside-list__indent">
+                  <a href="upon">
+                    Upon: Inspiring Leaders Programme
+                  </a>
+                </li>
+                </ul>
+            </div>
         </div>
+
+        <div class="aside_list__block">
+            <div class="aside-list__related">
+                <p>Here is a brief paragraph about assessment</p>
+                <ul class="govuk-list govuk-!-font-size-19">
+                <li class="aside-list__indent">
+                  <a href="#">
+                    Link to assessment
+                  </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <!-- remove for R3 testing <div class="govuk-!-margin-top-9">
+            <div class="section-card__wbutton ">
+                <h3 class="govuk-heading-m">* Testing only *</h3>
+                <p class="govuk-!-margin-bottom-6">There is an alternate version of this page.</p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                    <a class="govuk-button govuk-!-margin-bottom-0" href="asye-alternative">
+                        Change version
+                    </a>
+                </p>
+            </div> -->
     </div>
 </div>
+
 
 
 {% endblock %}

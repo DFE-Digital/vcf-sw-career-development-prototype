@@ -127,6 +127,11 @@ $colour-border-grey: #b1b4b6;
     border-top: 3px solid $colour-drop-shadow;
     padding-top: 20px;
   }
+
+  &__related:last-child {
+    border-bottom: 3px solid $colour-drop-shadow;
+    padding-top: 20px;
+  }
 }
 
 
