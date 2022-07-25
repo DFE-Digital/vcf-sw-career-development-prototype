@@ -256,7 +256,7 @@ $colour-border-grey: #b1b4b6;
   display: none;
 }
 
-.hero-breadcrumbs__link {
+.hero-breadcrumbs__link, .key-facts__link {
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -264,26 +264,26 @@ $colour-border-grey: #b1b4b6;
   text-decoration-thickness: max(1px, .0625rem);
   text-underline-offset: 0.1em;
 }
-.hero-breadcrumbs__link:hover {
+.hero-breadcrumbs__link:hover, .key-facts__link:hover {
   text-decoration-thickness: max(3px, .1875rem, .12em);
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   -webkit-text-decoration-skip: none;
   text-decoration-skip: none;
 }
-.hero-breadcrumbs__link:focus {
+.hero-breadcrumbs__link:focus, .key-facts__link:focus {
   color: #ffffff;
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
 }
-.hero-breadcrumbs__link:link, .hero-breadcrumbs__link:visited {
+.hero-breadcrumbs__link:link, .hero-breadcrumbs__link:visited, .key-facts__link:link, .key-facts__link:visited {
   color: #ffffff;
 }
-.hero-breadcrumbs__link:hover {
+.hero-breadcrumbs__link:hover, .key-facts__link:hover {
   color: #ffffff;
 }
-.hero-breadcrumbs__link:active, .hero-breadcrumbs__link:focus {
+.hero-breadcrumbs__link:active, .hero-breadcrumbs__link:focus, .key-facts__link:active, .key-facts__link:focus {
   color: #ffffff;
 }
 
@@ -325,10 +325,3 @@ $colour-border-grey: #b1b4b6;
   }
 }
 
-
-.hero-link {
-  color: #ffffff;
-}
-.hero-link:visited {
-  color: #ffffff;
-}
