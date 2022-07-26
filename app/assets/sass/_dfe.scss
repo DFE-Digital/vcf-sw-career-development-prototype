@@ -80,7 +80,7 @@ $colour-border-grey: #b1b4b6;
 }
 
 .pathway-block {
-    padding: 10px 40px 10px;
+    padding: 10px 40px 0px;
     border-left: 5px solid $colour-drop-shadow;
     position:relative;
   }
@@ -93,7 +93,7 @@ $colour-border-grey: #b1b4b6;
     width:0;
     height:0;
   position:absolute;
-    bottom:-30px;
+    bottom:-20px;
     left:-17px
   }
 
