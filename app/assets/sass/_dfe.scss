@@ -4,6 +4,8 @@ $colour-drop-shadow: #1d70b8;
 $colour-image-placeholder: hero-colour("mid-grey");
 $colour-secondary-text: hero-colour("dark-grey");
 $colour-border-grey: #b1b4b6;
+$dfe-blue: #003a69;
+$accent: #4073ac;
 
 .logo {
   display: block;
@@ -193,7 +195,7 @@ $colour-border-grey: #b1b4b6;
 }
 
 .app-section--blue {
-    background-color: #1d70b8
+    background-color: #003a69
 }
 
 
@@ -330,3 +332,49 @@ $colour-border-grey: #b1b4b6;
   }
 }
 
+
+/* USE IF ON .EDUCATION BANNER
+---------------- */
+
+
+
+/*
+.govuk-header {
+    background-color: $dfe-blue;
+}
+
+.govuk-header__container {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 10px solid $accent;
+}
+
+.govuk-header__product-name, .govuk-header__logotype-text {
+    line-height: 2.5rem !important;
+    font-size: 1.2rem;
+}
+
+.govuk-header__logotype-crown-fallback-image{height: 45px; width: 45px;}
+
+body {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        'Helvetica Neue',
+        sans-serif !important;
+}
+
+.govuk-header__link--service-name {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+ */
