@@ -6,6 +6,7 @@ $colour-secondary-text: hero-colour("dark-grey");
 $colour-border-grey: #b1b4b6;
 $dfe-blue: #003a69;
 $accent: #4073ac;
+$gov-blue: #1d70b8;
 
 .logo {
   display: block;
@@ -195,7 +196,7 @@ $accent: #4073ac;
 }
 
 .app-section--blue {
-    background-color: #003a69
+    background-color: $gov-blue;
 }
 
 
