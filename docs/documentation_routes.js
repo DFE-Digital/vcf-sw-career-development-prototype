@@ -44,19 +44,13 @@ router.get('/download', function (req, res) {
     const version = require('../package.json').version
 
     res.redirect(
-      `https://github.com/alphagov/govuk-prototype-kit/archive/v${version}.zip`
+      `https://github.com/alphagov/govuk-prototype-kit/releases/v${version}/download/govuk-prototype-kit-${version}.zip`
     )
   } else {
     res.redirect(
       'https://github.com/alphagov/govuk-prototype-kit/releases/latest'
     )
   }
-})
-
-router.get('/update.sh', function (req, res) {
-  res.redirect(
-    'https://raw.githubusercontent.com/alphagov/govuk-prototype-kit/main/update.sh'
-  )
 })
 
 // Examples - examples post here
