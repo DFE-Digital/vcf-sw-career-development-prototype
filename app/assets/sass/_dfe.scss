@@ -8,6 +8,19 @@ $dfe-blue: #003a69;
 $accent: #4073ac;
 $gov-blue: #1d70b8;
 
+body {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        'Helvetica Neue',
+        sans-serif !important;
+}
+
+
 .logo {
   display: block;
   max-height: 32px;
@@ -16,7 +29,7 @@ $gov-blue: #1d70b8;
 
 /* Landing page top header */
 .body-header-background {
-  background-color: #1d70b8;
+  background-color: $gov-blue;
 }
 
 .body-header-font {
@@ -199,6 +212,10 @@ $gov-blue: #1d70b8;
     background-color: $gov-blue;
 }
 
+.app-section-beta--blue {
+    background-color: $dfe-blue;
+}
+
 
 .hero-breadcrumbs {
   font-family: "GDS Transport", arial, sans-serif;
@@ -337,9 +354,6 @@ $gov-blue: #1d70b8;
 /* USE IF ON .EDUCATION BANNER
 ---------------- */
 
-
-
-/*
 .govuk-header {
     background-color: $dfe-blue;
 }
@@ -357,25 +371,36 @@ $gov-blue: #1d70b8;
     font-size: 1.2rem;
 }
 
+.app-header .govuk-header__logo {
+    width: 65%
+}
+
+.app-header .govuk-header__content {
+    width: 30%
+}
+
 .govuk-header__logotype-crown-fallback-image{height: 45px; width: 45px;}
 
-body {
-    font-family: -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        Oxygen-Sans,
-        Ubuntu,
-        Cantarell,
-        'Helvetica Neue',
-        sans-serif !important;
+.govuk-header__product-name::before {
+    content: "Department for Education ";
+    font-weight: 600;
+    background-image: url(../images/crest.png) !important;
+    padding: 8px 10px 10px 55px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -5px;
 }
 
-.govuk-header__link--service-name {
-    position: relative;
-    margin-bottom: -10px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+.govuk-header__navigation-item--active a:link,
+.govuk-header__navigation-item--active a:hover,
+.govuk-header__navigation-item--active a:visited {
+    color: #f3f2f1;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.1em;
 }
 
- */
+
+
+
