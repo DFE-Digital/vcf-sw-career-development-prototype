@@ -52,18 +52,34 @@
     {{ govukFooter({
       meta: {
         items: [
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
-          },
-          {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
-          }
+            {
+              href: "#",
+              text: "Privacy"
+            },
+            {
+              href: "#",
+              text: "Accessibility"
+            },
+            {
+              href: "#",
+              text: "Cookies"
+            },
+            {
+              href: "#",
+              text: "Terms and conditions"
+            },
+            {
+              href: "https://govuk-prototype-kit.herokuapp.com/",
+              text: "GOV.UK Prototype Kit " + releaseVersion
+            },
+            {
+              href: "/prototype-admin/clear-data",
+              text: "Clear data"
+            }
         ],
         visuallyHiddenTitle: "Footer links"
       }
-    }) }}
+     }) }}
   {% endblock %}
 {% endif %}
 
