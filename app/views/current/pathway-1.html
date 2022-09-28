@@ -1,0 +1,122 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Pathway 1: programme supervisors - development programmes – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">DfE development programmes</span>
+        <h1 class="govuk-heading-xl">Pathway 1: practice supervisors</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              For
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Practice supervisors, team managers, lead practitioners
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Duration
+            </dt>
+            <dd class="govuk-summary-list__value">
+              3 months
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Time commitment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              About 4 days (including a residential component)
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Cost
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Free (except for travel for the residential component)</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Website
+            </dt>
+            <dd class="govuk-summary-list__value">
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" target="_blank">Frontline (opens in new tab)</a>
+            </dd>
+          </div>
+        </dl>
+        <h2 class="govuk-heading-l">Who it’s for</h2>
+        <p class="govuk-body-m">This programme is for experienced social workers who supervise the day-to-day work of child and family practitioners.</p>
+        <h2 class="govuk-heading-l">What you’ll learn</h2>
+        <p class="govuk-body-m">Pathway 1 will help you:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>develop your leadership skills</li>
+          <li>prioritise the mental health and wellbeing of the practitioners you supervise</li>
+          <li>develop a team culture of open and honest feedback and reflection</li>
+          <li>implement high-quality reflective supervision</li>
+          <li>develop your prioritisation skills to manage competing demands</li>
+        </ul>
+        <h2 class="govuk-heading-l">What you’ll get</h2>
+        <p class="govuk-body-m">On completion of Pathway 1 you’ll get:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>a certificate which can contribute towards your continuous professional development (CPD) hours</li>
+          <li>ongoing access to the practice supervisor network to support your development</li>
+        </ul>
+        <p class="govuk-body-m">Completing this programme prepares you for accessing Pathway 2 for middle managers.</p>
+        <h2 class="govuk-heading-l">How it’s delivered</h2>
+        <p class="govuk-body-m">This 3-month programme has a time commitment of about 4 days.</p>
+        <p class="govuk-body-m">It combines online and in-person learning, including 2 days and nights on-site for a residential component.</p>
+        <p class="govuk-body-m">You'll take part in:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>one-to-one coaching sessions</li>
+          <li>online workshops</li>
+          <li>self-directed study sessions</li>
+        </ul>
+        <h2 class="govuk-heading-l">Funding</h2>
+        <p class="govuk-body-m">Pathway 1 is fully funded by the Department for Education.</p>
+        <p class="govuk-body-m">However, travel costs for the residential component will need to be covered by your employer.</p>
+        <h2 class="govuk-heading-l">Next steps</h2>
+        <p class="govuk-body-m"><a href="https://thefrontline.tfaforms.net/4767943">Find out more about Pathway 1</a> on the Frontline website (opens in a new window)</p>
+    </div>
+
+    <!--RIGHT HAND NAV -->
+        <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+            <div class="aside-list__related">
+                <h2 class="govuk-heading-m" id="subsection-title">
+                  New aside nav goes here
+                </h2>
+                <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li class="aside-list__indent">
+                      <a href="../#">
+                        New aside nav goes here
+                      </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+{% endblock %}
