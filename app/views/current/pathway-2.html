@@ -3,7 +3,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Pathway 1: programme supervisors - development programmes – {{ serviceName }}
+Pathway 2: middle managers - development programmes – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -16,6 +16,10 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="practice-supervisors">Practice supervisors</a>
         </li>
+    {% elseif data['sending-page'] == "mm" %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="middle-managers-and-heads-of-service">Middle managers and heads of service</a>
+        </li>
     {% else %}
     <!-- not sure anything required here as yet -->
     {% endif %}
@@ -23,12 +27,11 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
 </div>
 {% endblock %}
 
-
 {% block content %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <span class="govuk-caption-l">Practice supervisor</span>
-        <h1 class="govuk-heading-xl">Pathway 1</h1>
+        <span class="govuk-caption-l">Middle manager</span>
+        <h1 class="govuk-heading-xl">Pathway 2</h1>
     </div>
 </div>
 
@@ -40,7 +43,7 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
               For
             </dt>
             <dd class="govuk-summary-list__value">
-              Practice supervisors
+              Middle managers
             </dd>
           </div>
           <div class="govuk-summary-list__row">
@@ -48,7 +51,7 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
               Duration
             </dt>
             <dd class="govuk-summary-list__value">
-              3 months
+              xxx
             </dd>
           </div>
           <div class="govuk-summary-list__row">
@@ -56,7 +59,7 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
               Time commitment
             </dt>
             <dd class="govuk-summary-list__value">
-              About 4 days (including a residential component)
+              xxx
             </dd>
           </div>
           <div class="govuk-summary-list__row">
@@ -72,41 +75,38 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
             Website
             </dt>
             <dd class="govuk-summary-list__value">
-            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" target="_blank" class="govuk-link">Frontline (opens in new tab)</a>
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" target="_blank">Frontline (opens in new tab)</a>
             </dd>
           </div>
         </dl>
         <h2 class="govuk-heading-l">Who it’s for</h2>
-        <p class="govuk-body-m">Pathway 1 is for experienced social workers who supervise the day-to-day work of child and family practitioners.</p>
+        <p class="govuk-body-m">xxx</p>
         <h2 class="govuk-heading-l">What you’ll learn</h2>
-        <p class="govuk-body-m">You'll develop your leadership skills, with a focus on:</p>
+        <p class="govuk-body-m">xxx</p>
         <ul class="govuk-list govuk-list--bullet">
-          <li>prioritising the mental health and wellbeing of practitioners</li>
-          <li>promoting a team culture of open and honest feedback</li>
-          <li>putting in place high-quality reflective supervision</li>
-          <li>managing competing demands</li>
+          <li>xxx</li>
+          <li>xxx</li>
+          <li>xxx</li>
+          <li>xxx</li>
         </ul>
         <h2 class="govuk-heading-l">What you’ll get</h2>
-        <p class="govuk-body-m">When you finish Pathway 1 you’ll get:</p>
+        <p class="govuk-body-m">When you finish Pathway 2 you’ll get:</p>
         <ul class="govuk-list govuk-list--bullet">
-          <li>a certificate which can contribute towards your continuous professional development (CPD) hours</li>
-          <li>ongoing access to the practice supervisor network to support your development</li>
+          <li>xxx</li>
         </ul>
-        <p class="govuk-body-m">Completing this programme prepares you for accessing Pathway 2 for middle managers.</p>
+        <p class="govuk-body-m">Completing this programme prepares you for accessing Pathway 3 for heads of service.</p>
         <h2 class="govuk-heading-l">How it’s delivered</h2>
-        <p class="govuk-body-m">This 3-month programme has a time commitment of about 4 days.</p>
-        <p class="govuk-body-m">It combines online and in-person learning, including 2 days and nights on-site at a conference centre.</p>
+        <p class="govuk-body-m">xxx.</p>
+        <p class="govuk-body-m">xxx.</p>
         <p class="govuk-body-m">You'll take part in:</p>
         <ul class="govuk-list govuk-list--bullet">
-          <li>one-to-one coaching sessions</li>
-          <li>online workshops</li>
-          <li>self-directed study sessions</li>
+          <li>xxx</li>
         </ul>
         <h2 class="govuk-heading-l">Funding</h2>
-        <p class="govuk-body-m">Pathway 1 is fully funded by the Department for Education.</p>
+        <p class="govuk-body-m">Pathway 2 is fully funded by the Department for Education.</p>
         <p class="govuk-body-m">However, your employer must cover travel costs for the residential component.</p>
         <h2 class="govuk-heading-l">Next steps</h2>
-        <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/">Find out more about Pathway 1</a> on the Frontline website (opens in a new window).</p>
+        <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/">Find out more about Pathway 2</a> on the Frontline website (opens in a new window).</p>
     </div>
 
     <!--RIGHT HAND NAV -->

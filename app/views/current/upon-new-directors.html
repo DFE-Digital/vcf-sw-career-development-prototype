@@ -1,0 +1,126 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Upon: new directors - development programmes – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home">Home</a>
+    </li>
+    {% if data['sending-page'] == "sm" %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-and-leaders">Senior managers and leaders</a>
+        </li>
+    {% else %}
+    <!-- not sure anything required here as yet -->
+    {% endif %}
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Upon</span>
+        <h1 class="govuk-heading-xl">new directors</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              For
+            </dt>
+            <dd class="govuk-summary-list__value">
+              new directors
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Duration
+            </dt>
+            <dd class="govuk-summary-list__value">
+              xxx
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Time commitment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              xxx
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Cost
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Free (except for travel for the residential component)</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Website
+            </dt>
+            <dd class="govuk-summary-list__value">
+            <a class="govuk-!-font-size-19" href="https://uponleaders-apply.co.uk/how-to-apply" class="govuk-link">How to apply for the ADP</a>
+            </dd>
+          </div>
+        </dl>
+        <p class="govuk-body-m">The Aspirant Directors programme (ADP) for children’s services is aimed at senior managers who wish to be become directors within the next 3 years.</p>
+        <p class="govuk-body-m">It is aimed at managers who wish to develop their leadership and management skills, technical knowledge, and confidence.</p>
+        <h2 class="govuk-heading-l">Registration and requirements</h2>
+        <p class="govuk-body-m">There are 40 places available on a single course which runs from autumn to spring.</p>
+        <p class="govuk-body-m">We will give priority to those who have the potential to become a director in the next 3 years, but if you are interested, apply anyway because we are building up a talent pool for the future.</p>
+        <p class="govuk-body-m">As part of the application process, you will be assessed on:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Your knowledge of children's services</li>
+          <li>How you deliver continuous improvement, and sustainable impact</li>
+          <li>Your experience of functional and corporate leadership reflecting the needs of diverse communities</li>
+        </ul>
+        <p class="govuk-body-m">You will also be asked to provide a personal statement explaining why you want to become a director.</p>
+        <p class="govuk-body-m"><a class="govuk-!-font-size-19" href="https://uponleaders-apply.co.uk/how-to-apply">How to apply for the ADP</a>
+        <h2 class="govuk-heading-l">Programme description</h2>
+        <p class="govuk-body-m">The programme consists of a blend of virtual and face-to-face learning. There will also be the kind of informal interactions that you would get from a residential programme.</p>
+        <p class="govuk-body-m">You can expect:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>8 taught days</li>
+          <li>Learning visits</li>
+          <li>Action learning</li>
+          <li>Leadership challenge activities</li>
+          <li>Access to leaders in the field</li>
+        </ul>
+        <p class="govuk-body-m">You will be assigned a mentor and an employer sponsor. You will also be offered coaching, career advice and support once the course has finished.</p>
+        <h2 class="govuk-heading-l">Evaluation and assessment</h2>
+        <p class="govuk-body-m">You’ll have formative assessments, including 360 feedback. You can also choose to have your work academically accredited.</p>
+    </div>
+
+    <!--RIGHT HAND NAV -->
+        <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+            <div class="aside-list__related">
+                <h2 class="govuk-heading-m" id="subsection-title">
+                  New aside nav goes here
+                </h2>
+                <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li class="aside-list__indent">
+                      <a href="../#">
+                        New aside nav goes here
+                      </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+{% endblock %}

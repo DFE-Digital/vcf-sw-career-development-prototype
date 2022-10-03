@@ -1,0 +1,54 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+For middle managers and heads of service – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">For middle managers and heads of service</h1>
+        <p class="govuk-body">Our career progression programmes for middle managers and heads of service are yada yada.</p>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-2?sending-page=mm" class="govuk-link">In-role middle managers</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the social work leadership pathways programme: pathway 2 goes under here..</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-3?sending-page=mm" class="govuk-link">In-role heads of service</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the social work leadership pathways programme: pathway 3 goes under here..</p>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-4?sending-page=mm" class="govuk-link">Aspiring practice leaders</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the social work leadership pathways programme: pathway 4 goes under here..</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
