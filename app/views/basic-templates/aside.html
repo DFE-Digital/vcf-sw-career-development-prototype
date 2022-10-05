@@ -1,0 +1,97 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2>Right hand navigation options for content pages. These based on this breadcrumb:</h2>
+            <div class="govuk-breadcrumbs">
+              <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="#">Middle managers and heads of service</a>
+                </li>
+              </ol>
+            </div>
+    </div>
+</div>
+
+
+<div class="govuk-grid-row govuk-!-margin-top-6">
+    <!--Option A-->
+    <div class="govuk-grid-column-one-third">
+        <h4 class="govuk-!-margin-bottom-9">Option A</h4>
+        <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related programmes
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                In-role heads of service - Pathway 3
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Aspiring practice leaders - Pathway 4
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <!--Option B-->
+    <div class="govuk-grid-column-one-third">
+        <h4 class="govuk-!-margin-bottom-9">Option B</h4>
+        <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">Related programmes</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                In-role heads of service - Pathway 3
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Aspiring practice leaders - Pathway 4
+              </a>
+            </li>
+          </ul>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+          <h3 class="govuk-heading-s govuk-!-font-weight-regular" id="subsection-title">Other programmes</h3>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a href="#">
+                  ASYE
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Upon: Aspiring directors
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Upon: New directors
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </aside>
+    </div>
+    <!--Option C-->
+    <div class="govuk-grid-column-one-third">
+        <h4 class="govuk-!-margin-bottom-9">Option C</h4>
+        <p>govuk-grid-column-one-third</p>
+    </div>
+</div>
+
+{% endblock %}
+

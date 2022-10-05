@@ -20,3 +20,4 @@ node_modules/
 /cypress/support
 /cypress/temp
 tmp/
+/app/views/playground/
