@@ -19,16 +19,7 @@ Home – Social worker career development
         }) }}
       </div>
     </div>
-    <h2 class="govuk-heading-m">Design history</h2>
-    <div class="govuk-grid-row govuk-!-margin-bottom-4">
-      <div class="govuk-grid-column-full">
-        <ul class="govuk-list govuk-list--bullet">
-          <li>
-            Read the <a href="https://vcf-sw-career-dev-des-history.herokuapp.com/">design history</a> for this project.
-          </li>
-        </ul>
-      </div>
-    </div>
+
 
 <!-- put beta section into HTML var -->
 {% set betadetailsHTML %}
@@ -177,6 +168,7 @@ Home – Social worker career development
         </ul>
       </div>
     </div>
+
 {% endset %}
 
 {% from "govuk/components/details/macro.njk" import govukDetails %}
@@ -185,5 +177,16 @@ Home – Social worker career development
   html: alphadetailsHTML,
   open: false
 }) }}
+
+    <h2 class="govuk-heading-m">Design history</h2>
+    <div class="govuk-grid-row govuk-!-margin-bottom-4">
+      <div class="govuk-grid-column-full">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            Read the <a href="https://vcf-sw-career-dev-des-history.herokuapp.com/">design history</a> for this project.
+          </li>
+        </ul>
+      </div>
+    </div>
 
 {% endblock %}
