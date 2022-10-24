@@ -1,0 +1,54 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+For senior managers and leaders – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">For senior managers and leaders</h1>
+        <p class="govuk-body">Our career progression programmes for senior managers and leaders are etc.</p>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="upon-aspiring-directors?sending-page=sm" class="govuk-link">Aspirant directors</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the Upon: aspirant directors programme goes under here..</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="upon-new-directors?sending-page=sm" class="govuk-link">New directors</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the Upon: new directors programme goes under here.</p>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-4?sending-page=sm" class="govuk-link">Practice leaders</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the pathways 4 programme goes under here.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+

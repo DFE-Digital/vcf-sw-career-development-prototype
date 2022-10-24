@@ -1,0 +1,43 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Practice supervisors – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Programmes for practice supervisors</h1>
+        <p class="govuk-body">The Social Work Leadership Pathways programme for child and family social workers helps practice supervisors develop their leadership skills.</p>
+        <p class="govuk-body">The programme includes 4 separate pathways, each aimed at a different level of social work leadership.</p>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-1?sending-page=ps" class="govuk-link">Pathway 1: practice supervisors</a></h3>
+            <p class="govuk-!-margin-bottom-1">For practice supervisors or those in an equivalent role to develop excellent social work practice and leadership in others.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-2?sending-page=ps" class="govuk-link">Pathway 2: middle managers</a></h3>
+            <p class="govuk-!-margin-bottom-6">For experienced practice supervisors who want to develop into team managers.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
