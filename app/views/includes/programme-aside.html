@@ -1,0 +1,27 @@
+
+<!-- SHOW IF GROUPING IS NEWLY QUALIFIED SOCIAL WORKERS ('NQ') -->
+{% if data['sending-page'] == "nq" %}
+<!-- no other programmes in this group -->
+{% endif %}
+
+<!-- SHOW IF GROUPING IS PRACTITIONERS ('P') -->
+{% if data['sending-page'] == "p" %}
+<!-- no other programmes in this group -->
+{% endif %}
+
+<!-- SHOW IF GROUPING IS PRACTICE SUPERVISORS ('PS') -->
+{% if data['sending-page'] == "ps" %}
+<p class="govuk-body">Practice supervisors</p>
+{% endif %}
+
+<!-- SHOW IF GROUPING IS MIDDLE MANAGERS AND HEADS OF SERVICE ('MM') -->
+
+{% if data['sending-page'] == "mm" %}
+<p class="govuk-body">Middle managers and heads of service</p>
+{% endif %}
+
+<!-- SHOW IF GROUPING IS SENIOR MANAGERS AND PRACTICE LEADERS ('SM') -->
+
+{% if data['sending-page'] == "sm" %}
+<p class="govuk-body">Senior managers and practice leaders</p>
+{% endif %}
