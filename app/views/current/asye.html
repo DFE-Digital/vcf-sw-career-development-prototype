@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-
+{% set ProgrammePage = "ay" %}
 {% block pageTitle %}
 Assessed and Supported Year in Employment (ASYE) - development programmes – {{ serviceName }}
 {% endblock %}
@@ -104,7 +104,9 @@ Assessed and Supported Year in Employment (ASYE) - development programmes – {{
     </div>
 
 <!--RIGHT HAND NAV -->
-
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+      {% include "../includes/programme-aside.html" %}
+    </div>
 </div>
 
 

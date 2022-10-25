@@ -11,17 +11,100 @@
 
 <!-- SHOW IF GROUPING IS PRACTICE SUPERVISORS ('PS') -->
 {% if data['sending-page'] == "ps" %}
-<p class="govuk-body">Practice supervisors</p>
+    <aside class="app-related-items" role="complementary">
+    <h2 class="govuk-heading-m">
+      Related programmes
+    </h2>
+    <nav role="navigation" aria-labelledby="related-nav__section">
+      <ul class="govuk-list govuk-!-font-size-16">
+        {% for item in data.dfeProgrammeGroups %}
+            {% if item.group == data['sending-page'] and item.programmeID != ProgrammePage %}
+            <li>
+              <a href="{{ item.programmeURL }}">
+                {{ item.programmeName }}
+              </a>
+            </li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+       <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-bottom-4">
+        <h2 class="govuk-heading-s">
+          Related social work post-qualifying standards
+        </h2>
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">
+                Knowledge and skills statement for practice supervisors
+              </a>
+            </li>
+      </ul>
+    </nav>
+    </aside>
 {% endif %}
-
 <!-- SHOW IF GROUPING IS MIDDLE MANAGERS AND HEADS OF SERVICE ('MM') -->
 
 {% if data['sending-page'] == "mm" %}
-<p class="govuk-body">Middle managers and heads of service</p>
+<aside class="app-related-items" role="complementary">
+<h2 class="govuk-heading-m">
+  Related programmes
+</h2>
+<nav role="navigation" aria-labelledby="related-nav__section">
+  <ul class="govuk-list govuk-!-font-size-16">
+    {% for item in data.dfeProgrammeGroups %}
+        {% if item.group == data['sending-page'] and item.programmeID != ProgrammePage %}
+        <li>
+          <a href="{{ item.programmeURL }}">
+            {{ item.programmeName }}
+          </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+   <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-s">
+      Related social work post-qualifying standards
+    </h2>
+      <ul class="govuk-list govuk-!-font-size-16">
+        <li>
+          <a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">
+            Knowledge and skills statement for practice leaders
+          </a>
+        </li>
+  </ul>
+</nav>
+</aside>
 {% endif %}
 
 <!-- SHOW IF GROUPING IS SENIOR MANAGERS AND PRACTICE LEADERS ('SM') -->
 
 {% if data['sending-page'] == "sm" %}
-<p class="govuk-body">Senior managers and practice leaders</p>
+<aside class="app-related-items" role="complementary">
+<h2 class="govuk-heading-m">
+  Related programmes
+</h2>
+<nav role="navigation" aria-labelledby="related-nav__section">
+  <ul class="govuk-list govuk-!-font-size-16">
+    {% for item in data.dfeProgrammeGroups %}
+        {% if item.group == data['sending-page'] and item.programmeID != ProgrammePage %}
+        <li>
+          <a href="{{ item.programmeURL }}">
+            {{ item.programmeName }}
+          </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+   <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-s">
+      Related social work post-qualifying standards
+    </h2>
+      <ul class="govuk-list govuk-!-font-size-16">
+        <li>
+          <a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">
+            Knowledge and skills statement for practice leaders
+          </a>
+        </li>
+  </ul>
+</nav>
+</aside>
 {% endif %}
