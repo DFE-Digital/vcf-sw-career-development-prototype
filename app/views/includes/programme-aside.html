@@ -6,13 +6,26 @@
 
 <!-- SHOW IF GROUPING IS PRACTITIONERS ('P') -->
 {% if data['sending-page'] == "p" %}
-<!-- no other programmes in this group -->
+    <aside class="app-related-items" role="complementary">
+    <h2 class="govuk-heading-s">
+      Related social work post-qualifying standards
+    </h2>
+        <nav role="navigation" aria-labelledby="related-nav__section">
+            <ul class="govuk-list govuk-!-font-size-16">
+                <li>
+                  <a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">
+                    Knowledge and skills statement for practice supervisors
+                  </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 {% endif %}
 
 <!-- SHOW IF GROUPING IS PRACTICE SUPERVISORS ('PS') -->
 {% if data['sending-page'] == "ps" %}
     <aside class="app-related-items" role="complementary">
-    <h2 class="govuk-heading-m">
+    <h2 class="govuk-heading-s govuk-!-margin-top-1">
       Related programmes
     </h2>
     <nav role="navigation" aria-labelledby="related-nav__section">
@@ -45,7 +58,7 @@
 
 {% if data['sending-page'] == "mm" %}
 <aside class="app-related-items" role="complementary">
-<h2 class="govuk-heading-m">
+<h2 class="govuk-heading-s govuk-!-margin-top-1">
   Related programmes
 </h2>
 <nav role="navigation" aria-labelledby="related-nav__section">
@@ -79,7 +92,7 @@
 
 {% if data['sending-page'] == "sm" %}
 <aside class="app-related-items" role="complementary">
-<h2 class="govuk-heading-m">
+<h2 class="govuk-heading-s govuk-!-margin-top-1">
   Related programmes
 </h2>
 <nav role="navigation" aria-labelledby="related-nav__section">
