@@ -1,5 +1,6 @@
 {% set pageName = "hp_beta" %}
 {% set brandType = "edu" %}
+{% set ProgrammePage = "p3" %}
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -73,7 +74,7 @@ Pathway 3: heads of service - development programmes – {{ serviceName }}
             Website
             </dt>
             <dd class="govuk-summary-list__value">
-            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" target="_blank">Frontline (opens in new tab)</a>
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/">Frontline</a>
             </dd>
           </div>
         </dl>
@@ -108,7 +109,9 @@ Pathway 3: heads of service - development programmes – {{ serviceName }}
     </div>
 
     <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
       {% include "../includes/programme-aside.html" %}
+    </div>
 </div>
 
 

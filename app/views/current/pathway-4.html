@@ -1,5 +1,6 @@
 {% set pageName = "hp_beta" %}
 {% set brandType = "edu" %}
+{% set ProgrammePage = "p4" %}
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -77,7 +78,7 @@ Pathway 4: practice leaders - development programmes – {{ serviceName }}
             Website
             </dt>
             <dd class="govuk-summary-list__value">
-            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" target="_blank">Frontline (opens in new tab)</a>
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/">Frontline</a>
             </dd>
           </div>
         </dl>
@@ -108,11 +109,13 @@ Pathway 4: practice leaders - development programmes – {{ serviceName }}
         <p class="govuk-body-m">Pathway 4 is fully funded by the Department for Education.</p>
         <p class="govuk-body-m">However, your employer must cover travel costs for the residential component.</p>
         <h2 class="govuk-heading-l">Next steps</h2>
-        <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/">Find out more about Pathway 4</a> on the Frontline website (opens in a new window).</p>
+        <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/">Find out more about Pathway 4</a> on the Frontline website.</p>
     </div>
 
     <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
       {% include "../includes/programme-aside.html" %}
+    </div>
 </div>
 
 

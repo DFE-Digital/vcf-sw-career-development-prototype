@@ -1,5 +1,6 @@
 {% set pageName = "hp_beta" %}
 {% set brandType = "edu" %}
+{% set ProgrammePage = "p1" %}
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -17,9 +18,10 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
           <a class="govuk-breadcrumbs__link" href="practice-supervisors">Practice supervisors</a>
         </li>
     {% else %}
+      <!-- Added to support the alternative homepage. Makes the current prototype break when coming from Practitioners group
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="pathways-programme-sub-level">Social Work Leadership Pathways Programme</a>
-        </li>
+        </li>-->
     {% endif %}
   </ol>
 </div>
@@ -74,7 +76,7 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
             Website
             </dt>
             <dd class="govuk-summary-list__value">
-            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" target="_blank" class="govuk-link">Frontline (opens in new tab)</a>
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/" class="govuk-link">Frontline</a>
             </dd>
           </div>
         </dl>
@@ -113,7 +115,9 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
     </div>
 
     <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
       {% include "../includes/programme-aside.html" %}
+    </div>
 
 </div>
 

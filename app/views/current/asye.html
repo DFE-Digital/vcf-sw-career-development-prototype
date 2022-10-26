@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-
+{% set ProgrammePage = "ay" %}
 {% block pageTitle %}
 Assessed and Supported Year in Employment (ASYE) - development programmes – {{ serviceName }}
 {% endblock %}
@@ -64,7 +64,7 @@ Assessed and Supported Year in Employment (ASYE) - development programmes – {{
             Programme website
             </dt>
             <dd class="govuk-summary-list__value">
-            <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx" target="_blank">Skills for care (opens in new tab)</a>
+            <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx">Skills for care</a>
             </dd>
           </div>
           </dl>
@@ -100,11 +100,13 @@ Assessed and Supported Year in Employment (ASYE) - development programmes – {{
         </ul>
         <p>You will also be asked to complete critical reflections logs after 3, 6 and 12 months. Your employer can also request an optional 9-month review of your progress.</p>
         <p>At the end of the year your assessor will write a final assessment which your employer will use to decide whether you have passed or failed.</p>
-        <p class="govuk-body-m">Find out more at the <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx" target="_blank">Skills for care website (opens in new tab)</a>
+        <p class="govuk-body-m">Find out more at the <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx">Skills for care website</a>
     </div>
 
 <!--RIGHT HAND NAV -->
-
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+      {% include "../includes/programme-aside.html" %}
+    </div>
 </div>
 
 

@@ -1,7 +1,7 @@
 [
   {
     "group": "nq",
-    "programmeID": "asye",
+    "programmeID": "ay",
     "programmeName": "Assessed and supported year in employment (ASYE)",
     "programmeURL": "asye"
   },
@@ -25,12 +25,6 @@
   },
   {
     "group": "mm",
-    "programmeID": "p1",
-    "programmeName": "Pathway 1: practice supervisors",
-    "programmeURL": "pathway-1"
-  },
-  {
-    "group": "mm",
     "programmeID": "p2",
     "programmeName": "Pathway 2: middle managers",
     "programmeURL": "pathway-2"
@@ -38,8 +32,14 @@
   {
     "group": "mm",
     "programmeID": "p3",
-    "programmeName": "Pathway 3: practice leaders",
+    "programmeName": "Pathway 3: heads of service",
     "programmeURL": "pathway-3"
+  },
+  {
+    "group": "mm",
+    "programmeID": "p4",
+    "programmeName": "Pathway 4: practice leaders",
+    "programmeURL": "pathway-4"
   },
   {
     "group": "sm",
@@ -49,13 +49,13 @@
   },
   {
     "group": "sm",
-    "programmeID": "upona",
+    "programmeID": "ua",
     "programmeName": "Upon: aspirant directors",
     "programmeURL": "upon-aspiring-directors"
   },
   {
     "group": "sm",
-    "programmeID": "uponn",
+    "programmeID": "un",
     "programmeName": "Upon: new directors",
     "programmeURL": "upon-new-directors"
   }
