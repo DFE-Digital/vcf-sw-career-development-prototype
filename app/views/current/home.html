@@ -49,6 +49,14 @@ Develop your career in child and family social work - Department for Education
             <p class="govuk-!-margin-bottom-6">For current or aspiring directors or assistant directors of children’s social care.</p>
         </div>
     </div>
+    {% if data['hidden-content'] == "yes" %}
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="development-programmes" class="govuk-link">Explore DfE development programmes</a></h3>
+            <p class="govuk-!-margin-bottom-6">DfE fund a number of development programmes. See them all at a glance.</p>
+        </div>
+    </div>
+    {% endif %}
 </div>
 
 {% endblock %}
