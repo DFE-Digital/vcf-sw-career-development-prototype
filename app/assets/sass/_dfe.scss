@@ -65,9 +65,14 @@ body {
   }
 
   &__noborder {
-  background-color: #F3F2F1;
-  padding: 15px;
-  margin-bottom: 20px;
+    background-color: #F3F2F1;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__clearwborder {
+    padding: 15px;
+    border: 1px solid $colour-border-grey;
   }
 }
 
