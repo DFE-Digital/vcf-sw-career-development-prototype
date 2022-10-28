@@ -1,4 +1,4 @@
-<header class="govuk-header app-header" role="banner" data-module="govuk-header">
+<!--<header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="/" class="govuk-header__link govuk-header__link--homepage">
@@ -8,7 +8,7 @@
       </a>
     </div>
     <div class="govuk-header__content">
-      <!--<nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
         <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" aria-expanded="false">Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
@@ -18,31 +18,42 @@
               <a class="govuk-header__link" href="https://forms.gle/WfLUr8K6SDVERwzbA">Feedback</a>
             </li>
         </ul>
-      </nav>-->
+      </nav>
     </div>
+  </div>
+</header>-->
+
+
+<header class="govuk-header app-header" role="banner" data-module="govuk-header">
+   <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+      <span class="govuk-header__logotype">
+         <img src="/public/images/crest.png" alt="Department for Education homepage" class="govuk-header__logotype-crown-fallback-image">
+          <span class="govuk-header__logotype-text">
+            Department for Education
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          {{ serviceName }}
+        </span>
+      </a>
+    </div>
+   <!-- Display menu if needed (nb: styling will need some work)
+    <div class="govuk-header__content">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" aria-expanded="false">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#">Development programmes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#">Career guidance</a>
+            </li>
+        </ul>
+      </nav>
+    </div>-->
   </div>
 </header>
 
-
-
-<!-- Based on Design in DfE instructions
-     <header class="govuk-header" role="banner" data-module="govuk-header">
-        <div class="govuk-header__container govuk-width-container">
-            <div class="govuk-header__logo">
-                <a href="https://www.gov.uk/government/organisations/department-for-education/" title="Go to the Department for Education homepage" class="govuk-header__link govuk-header__link--homepage">
-                    <img class="logo" src="/public/images/dfe-logo.png" alt="Department for Education logo">
-                </a>
-            </div>
-
-            <div class="govuk-header__content">
-                <a href="/" class="govuk-header__link govuk-header__link--service-name">
-                    {{ serviceName }}
-                </a>
-                <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-                <nav>
-                </nav>
-            </div>
-        </div>
-    </header>
--->
 

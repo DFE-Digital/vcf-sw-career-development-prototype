@@ -394,6 +394,7 @@ body {
 
 .govuk-header__logotype-crown-fallback-image{height: 45px; width: 45px;}
 
+/*
 .govuk-header__product-name::before {
     content: "Department for Education ";
     font-weight: 600;
@@ -403,7 +404,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: 0px;
     background-position-y: -5px;
-}
+}*/
 
 .govuk-header__navigation-item--active a:link,
 .govuk-header__navigation-item--active a:hover,
@@ -414,6 +415,11 @@ body {
     text-underline-offset: 0.1em;
 }
 
-
-
+@media (max-width: 40.0625em) {
+    .govuk-header__product-name {
+      max-width: 80%;
+      line-height: 1.2rem !important;
+      font-size: 1rem;
+  }
+}
 
