@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 module.exports = function (env) {
   /**
    * Instantiate object used to store the methods registered as a
@@ -41,5 +43,29 @@ module.exports = function (env) {
   /* ------------------------------------------------------------------
     keep the following line to return your filters to the app
   ------------------------------------------------------------------ */
+
+
+
+  // Remove items with a specified attribute and value
+filters.removeWhere = (arr, key, compare) => {
+  compare = [].concat(compare) // force to arr
+  let filtered = arr.filter(item => {
+    return !compare.includes(_.get(item, key))
+  })
+  return filtered
+}
+
+// Filter results for only those containing attribute and value
+filters.where = (arr, key, compare) => {
+  arr = arr || []
+  compare = [].concat(compare) // force to arr
+  let filtered = arr.filter(item => {
+    return compare.includes(_.get(item, key))
+  })
+  return filtered
+}
+
+
+
   return filters
 }

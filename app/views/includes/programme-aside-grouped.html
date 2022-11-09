@@ -1,0 +1,100 @@
+
+{% set sendingPage = data["sending-page"] %}
+{% set ProgrammePage = ProgrammePage %}
+
+{{ sendingPage | log }}
+{{ ProgrammePage | log }}
+
+{% block content %}
+
+<!-- CHECK PROGRAMME PAGE TO SHOW AN DYNAMIC ASIDE OR COMPLETE LIST OF PROGRAMMES OR DON'T SHOW AN ASIDE AT ALL -->
+{%  if sendingPage == 'dp' %}
+    {% set devProgs = data.dfeProgrammes %}
+    <aside class="app-related-items" role="complementary">
+    <h2 class="govuk-heading-s">
+          Other programmes
+        </h2>
+        <nav role="navigation" aria-labelledby="related-nav__section">
+        <!-- ** REMOVE THE CURRENT PROGRAMME -->
+        {% set finalGroup = devProgs | removeWhere("ProgrammeStrandID", ProgrammePage) %}
+            {{ finalGroup | log }}
+        <!-- ** GROUP BY PROGRAMME NAME ** -->
+        {% set groups = finalGroup | groupby("programmeParent") %}
+        {% for programmeParent, strands in groups %}
+            <h4>{{ programmeParent }}</h4>
+              <ul class="govuk-list govuk-!-font-size-16">
+                {% for name in strands %}
+                        <li>
+                          <a href="{{ name.programmeStrandUrl }}">
+                            {{ name.programmeStrandName }}
+                          </a>
+                        </li>
+                {% endfor %}
+              </ul>
+        {% endfor %}
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-bottom-4">
+                    <h2 class="govuk-heading-s">
+                      Social work post-qualifying standards
+                    </h2>
+                      <ul class="govuk-list govuk-!-font-size-16">
+                        <li>
+                          <a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">
+                            Knowledge and skills statements
+                          </a>
+                        </li>
+                      </ul>
+        </nav>
+    </aside>
+{%  endif %}
+
+{% if sendingPage == 'ps' or sendingPage =='mm' or sendingPage =='sm' %}
+    {% set ProgrammePage = ProgrammePage %}
+    <!-- ** CREATE THE LONG LIST ** -->
+    {% set devProgs = data.dfeProgrammeGroups %}
+        <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-s">
+              Related programmes
+            </h2>
+            <nav role="navigation" aria-labelledby="related-nav__section">
+            <!-- ** RETURN THE ONE USER GROUPING ** -->
+            {% set getTheGroup = devProgs | where("userGroup", sendingPage) %}
+                {{ getTheGroup | log }}
+            <!-- ** REMOVE THE CURRENT PROGRAMME -->
+            {% set finalGroup = getTheGroup | removeWhere("ProgrammeStrandID", ProgrammePage) %}
+                {{ finalGroup | log }}
+            <!-- ** GROUP BY PROGRAMME NAME ** -->
+            {% set groups = finalGroup | groupby("programmeParent") %}
+            {% for programmeParent, strands in groups %}
+                <h4>{{ programmeParent }}</h4>
+                  <ul class="govuk-list govuk-!-font-size-16">
+                    {% for name in strands %}
+                        {% if name.userGroup == sendingPage and name.ProgrammeStrandID != ProgrammePage %}
+                            <li>
+                              <a href="{{ name.programmeStrandUrl }}">
+                                {{ name.programmeStrandName }}
+                              </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                  </ul>
+            {% endfor %}
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-bottom-4">
+                    <h2 class="govuk-heading-s">
+                      Social work post-qualifying standards
+                    </h2>
+                      <ul class="govuk-list govuk-!-font-size-16">
+                        <li>
+                          <a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">
+                            Knowledge and skills statements
+                          </a>
+                        </li>
+                      </ul>
+            </nav>
+        </aside>
+{% endif %}
+<!-- SHOW IF GROUPING IS NEWLY QUALIFIED SOCIAL WORKERS ('NQ') -->
+{%  if sendingPage == 'nq' %}
+<!-- no other programmes in this group -->
+{% endif %}
+
+{% endblock %}

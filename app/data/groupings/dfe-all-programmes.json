@@ -1,0 +1,54 @@
+[
+  {
+    "programmeParent": "Assessed and supported year in employment (ASYE)",
+    "programmeParentID": "asye",
+    "ProgrammeStrandID": "ay",
+    "programmeStrandName": "Assessed and supported year in employment (ASYE)",
+    "programmeStrandUrl": "asye"
+  },
+  {
+    "programmeParent": "Social Work Leadership Pathways programme",
+    "programmeParentID": "swlpp",
+    "ProgrammeStrandID": "p1",
+    "programmeStrandName": "Pathway 1: practice supervisors",
+    "programmeStrandUrl": "pathway-1"
+  },
+  {
+    "programmeParent": "Social Work Leadership Pathways programme",
+    "programmeParentID": "swlpp",
+    "ProgrammeStrandID": "p2",
+    "programmeStrandName": "Pathway 2: middle managers",
+    "programmeStrandUrl": "pathway-2"
+  },
+  {
+    "programmeParent": "Social Work Leadership Pathways programme",
+    "programmeParentID": "swlpp",
+    "ProgrammeStrandID": "p3",
+    "programmeStrandName": "Pathway 3: heads of service",
+    "programmeStrandUrl": "pathway-3"
+  },
+  {
+    "programmeParent": "Social Work Leadership Pathways programme",
+    "programmeParentID": "swlpp",
+    "ProgrammeStrandID": "p4",
+    "programmeStrandName": "Pathway 4: practice leaders",
+    "programmeStrandUrl": "pathway-4"
+  },
+  {
+    "programmeParent": "Upon: Inspiring leaders programme",
+    "programmeParentID": "upon",
+    "ProgrammeStrandID": "ua",
+    "programmeStrandName": "Aspirant directors",
+    "programmeStrandUrl": "upon-aspiring-directors"
+  },
+  {
+    "programmeParent": "Upon: Inspiring leaders programme",
+    "programmeParentID": "upon",
+    "ProgrammeStrandID": "un",
+    "programmeStrandName": "New directors",
+    "programmeStrandUrl": "upon-new-directors"
+  }
+]
+
+
+
