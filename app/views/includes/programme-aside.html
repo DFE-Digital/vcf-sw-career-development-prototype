@@ -31,10 +31,10 @@
     <nav role="navigation" aria-labelledby="related-nav__section">
       <ul class="govuk-list govuk-!-font-size-16">
         {% for item in data.dfeProgrammeGroups %}
-            {% if item.group == data['sending-page'] and item.programmeID != ProgrammePage %}
+            {% if item.userGroup == data['sending-page'] and item.programmeID != ProgrammePage %}
             <li>
-              <a href="{{ item.programmeURL }}">
-                {{ item.programmeName }}
+              <a href="{{ item.programmeStrandUrl }}">
+                {{ item.programmeStrandName }}
               </a>
             </li>
             {% endif %}
@@ -64,10 +64,10 @@
 <nav role="navigation" aria-labelledby="related-nav__section">
   <ul class="govuk-list govuk-!-font-size-16">
     {% for item in data.dfeProgrammeGroups %}
-        {% if item.group == data['sending-page'] and item.programmeID != ProgrammePage %}
+        {% if item.userGroup == data['sending-page'] and item.programmeID != ProgrammePage %}
         <li>
-          <a href="{{ item.programmeURL }}">
-            {{ item.programmeName }}
+          <a href="{{ item.programmeStrandUrl }}">
+            {{ item.programmeStrandName }}
           </a>
         </li>
         {% endif %}
@@ -98,10 +98,10 @@
 <nav role="navigation" aria-labelledby="related-nav__section">
   <ul class="govuk-list govuk-!-font-size-16">
     {% for item in data.dfeProgrammeGroups %}
-        {% if item.group == data['sending-page'] and item.programmeID != ProgrammePage %}
+        {% if item.userGroup == data['sending-page'] and item.programmeID != ProgrammePage %}
         <li>
-          <a href="{{ item.programmeURL }}">
-            {{ item.programmeName }}
+          <a href="{{ item.programmeStrandUrl }}">
+            {{ item.programmeStrandName }}
           </a>
         </li>
         {% endif %}
@@ -120,4 +120,9 @@
   </ul>
 </nav>
 </aside>
+{% endif %}
+
+<!-- SHOW IF USER IS COMING FROM THE DEVELOPMENT PROGRAMME PAGE ('DP') -->
+{% if data['sending-page'] == "dp" %}
+programme list here
 {% endif %}

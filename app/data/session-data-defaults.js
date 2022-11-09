@@ -18,10 +18,12 @@ Example usage:
 */
 
 const cpdList = require('./cpd/get-cpd-list.json');
-const dfeProgrammeGroups = require('./groupings/dfe-programmes.json');
+const dfeProgrammeGroups = require('./groupings/dfe-programme-groups.json');
+const dfeProgrammes = require('./groupings/dfe-all-programmes.json');
 
 module.exports = {
   LoggedIn: 'Jonathan Porton',
   cpdList,
-  dfeProgrammeGroups
+  dfeProgrammeGroups,
+  dfeProgrammes
 }
