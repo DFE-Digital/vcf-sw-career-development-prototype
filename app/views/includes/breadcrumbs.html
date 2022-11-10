@@ -1,0 +1,20 @@
+
+<!-- dynamically create the breadcrumbs -->
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home">Home</a>
+    </li>
+    {% if data['sending-page'] == "ps" %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="practice-supervisors">Practice supervisors</a>
+        </li>
+    {% else %}
+      <!-- Added to support the alternative homepage. Makes the current prototype break when coming from Practitioners group
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="pathways-programme-sub-level">Social Work Leadership Pathways Programme</a>
+        </li>-->
+    {% endif %}
+  </ol>
+</div>
