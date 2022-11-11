@@ -1,9 +1,9 @@
 
 {% set sendingPage = data["sending-page"] %}
-{% set ProgrammePage = ProgrammePage %}
+{% set programmePage = programmePage %}
 
 {{ sendingPage | log }}
-{{ ProgrammePage | log }}
+{{ programmePage | log }}
 
 {% block content %}
 
@@ -12,11 +12,11 @@
     {% set devProgs = data.dfeProgrammes %}
     <aside class="app-related-items" role="complementary">
     <h2 class="govuk-heading-s">
-          Other programmes
+          Other development programmes
         </h2>
         <nav role="navigation" aria-labelledby="related-nav__section">
         <!-- ** REMOVE THE CURRENT PROGRAMME -->
-        {% set finalGroup = devProgs | removeWhere("ProgrammeStrandID", ProgrammePage) %}
+        {% set finalGroup = devProgs | removeWhere("ProgrammeStrandID", programmePage) %}
             {{ finalGroup | log }}
         <!-- ** GROUP BY PROGRAMME NAME ** -->
         {% set groups = finalGroup | groupby("programmeParent") %}
@@ -48,7 +48,7 @@
 {%  endif %}
 
 {% if sendingPage == 'ps' or sendingPage =='mm' or sendingPage =='sm' %}
-    {% set ProgrammePage = ProgrammePage %}
+    {% set programmePage = programmePage %}
     <!-- ** CREATE THE LONG LIST ** -->
     {% set devProgs = data.dfeProgrammeGroups %}
         <aside class="app-related-items" role="complementary">
@@ -60,7 +60,7 @@
             {% set getTheGroup = devProgs | where("userGroup", sendingPage) %}
                 {{ getTheGroup | log }}
             <!-- ** REMOVE THE CURRENT PROGRAMME -->
-            {% set finalGroup = getTheGroup | removeWhere("ProgrammeStrandID", ProgrammePage) %}
+            {% set finalGroup = getTheGroup | removeWhere("ProgrammeStrandID", programmePage) %}
                 {{ finalGroup | log }}
             <!-- ** GROUP BY PROGRAMME NAME ** -->
             {% set groups = finalGroup | groupby("programmeParent") %}
@@ -68,7 +68,7 @@
                 <h4>{{ programmeParent }}</h4>
                   <ul class="govuk-list govuk-!-font-size-16">
                     {% for name in strands %}
-                        {% if name.userGroup == sendingPage and name.ProgrammeStrandID != ProgrammePage %}
+                        {% if name.userGroup == sendingPage and name.ProgrammeStrandID != programmePage %}
                             <li>
                               <a href="{{ name.programmeStrandUrl }}">
                                 {{ name.programmeStrandName }}
