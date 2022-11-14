@@ -1,6 +1,6 @@
 {% set pageName = "hp_beta" %}
 {% set brandType = "edu" %}
-{% set ProgrammePage = "p4" %}
+{% set programmePage = "p4" %}
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -8,26 +8,7 @@ Pathway 4: practice leaders - development programmes – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="home">Home</a>
-    </li>
-    {% if data['sending-page'] == "mm" %}
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="middle-managers-and-heads-of-service">Middle managers and heads of service</a>
-        </li>
-    {% elseif data['sending-page'] == "sm" %}
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="senior-managers-and-leaders">Senior managers and leaders</a>
-        </li>
-    {% else %}
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="pathways-programme-sub-level">Social Work Leadership Pathways Programme</a>
-        </li>
-    {% endif %}
-  </ol>
-</div>
+      {% include "../includes/breadcrumbs.html" %}
 {% endblock %}
 
 {% block content %}
