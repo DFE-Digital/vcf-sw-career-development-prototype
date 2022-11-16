@@ -8,6 +8,7 @@ $colour-drop-shadow: #1d70b8;
 $colour-image-placeholder: hero-colour("mid-grey");
 $colour-secondary-text: hero-colour("dark-grey");
 $colour-border-grey: #b1b4b6;
+$colour-card-background: #F3F2F1;
 $dfe-blue: #003a69;
 $accent: #347ca9;
 $gov-blue: #1d70b8;
@@ -46,17 +47,17 @@ body {
 /* shaded section card */
 
 .section-card {
-  background-color: #F3F2F1;
+  background-color: $colour-card-background;
   padding: 15px;
 
   &__wborder {
-    background-color: #F3F2F1;
+    background-color: $colour-card-background;
     padding: 15px;
     box-shadow: 0px 2px $colour-drop-shadow;
   }
 
   &__wbutton {
-    background-color: #F3F2F1;
+    background-color: $colour-card-background;
     padding: 30px;
   }
 
@@ -69,7 +70,7 @@ body {
   }
 
   &__noborder {
-    background-color: #F3F2F1;
+    background-color: $colour-card-background;
     padding: 15px;
     margin-bottom: 20px;
   }

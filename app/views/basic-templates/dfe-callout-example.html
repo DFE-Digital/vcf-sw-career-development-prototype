@@ -1,0 +1,32 @@
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+
+{% block beforeContent %}
+    {{ govukBackLink({
+        href: "javascript:window.history.back()",
+        text: "Back"
+    }) }}
+{% endblock %}
+
+{% block content %}
+        <div class='govuk-grid-row'>
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l">DfE callout example</h1>
+                <p class="govuk-body govuk-!-margin-bottom-9">
+                    As used in the <a href="https://design.education.gov.uk/" target="_blank" class="govuk-link">Design in DfE manual (opens in new window)</a>
+                </p>
+                <p class="govuk-body">
+                    Some text might go here before the callout component.
+                </p>
+                <div class="dfeuk-example-callout">
+                <h4 class="dfeuk-tag dfeuk-example-callout__heading">
+                    <span class="dfeuk-u-visually-hidden">Important: </span>Callout title here</h4>
+                    <p>Here you can <strong>callout something of interest</strong>, that you might otherwise not include in the standard page content.</p>
+                </div>
+                <p class="govuk-body">
+                    Then you might have some more text here after the callout component.
+                </p>
+            </div>
+        </div>
+{% endblock %}
