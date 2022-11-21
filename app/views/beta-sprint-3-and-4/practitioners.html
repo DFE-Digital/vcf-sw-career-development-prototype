@@ -1,0 +1,36 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+For practitioners – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+      {% include "../includes/breadcrumbs.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">For practitioners</h1>
+        <p class="govuk-body">Our career progression programmes for practitioners are yada yada.</p>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-1?sending-page=pr" class="govuk-link">Aspirant practice supervisors</a></h3>
+            <p class="govuk-!-margin-bottom-6">Some information about the social work leadership pathways programme: pathway 1 goes under here..</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+

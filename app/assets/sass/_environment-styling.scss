@@ -1,0 +1,122 @@
+// Directly lifted from the Design in DfE resource
+// Not used for prototype BUT is used in the prototype environment
+/*
+
+/* some colours */
+$govuk-success-colour: #00703c;
+
+/* ==========================================================================
+   #TAG
+   ========================================================================== */
+.dfeuk-tag {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1;
+  background-color: #00345f;
+  border: 1px solid #00345f;
+  color: #ffffff;
+  display: inline-block;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  padding: 4px 8px;
+  text-decoration: none; }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-tag {
+    font-size: 1rem;
+    line-height: 1; } }
+
+@media print {
+  .dfeuk-tag {
+    font-size: 14pt;
+    line-height: 1; } }
+
+/* ==========================================================================
+   #EXAMPLE-CALLOUT
+   ========================================================================== */
+.dfeuk-example-callout {
+  margin: 30px 0px;
+  padding: 40px 24px 24px;
+  border: 1px solid #aeb7bd;
+  position: relative; }
+
+.dfeuk-example-callout > *:first-child {
+  margin-top: 0; }
+
+.dfeuk-example-callout > *:last-child {
+  margin-bottom: 0; }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout {
+    margin-bottom: 40px; } }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout {
+    margin-top: 40px; } }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout {
+    padding-bottom: 32px; } }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout {
+    padding-left: 32px; } }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout {
+    padding-right: 32px; } }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout {
+    padding-top: 38px; } }
+
+.dfeuk-example-callout__heading {
+  background: #00345f;
+  border: 0;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  padding: 8px 16px; }
+
+.dfeuk-example-callout--white {
+  background: #ffffff; }
+
+.dfeuk-example-callout--image + h3 {
+  padding-top: 16px; }
+
+@media (min-width: 40.0625em) {
+  .dfeuk-example-callout--image + h3 {
+    padding-top: 24px; } }
+
+.dfeuk-u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+
+
+/* Aside page adjustments */
+
+.swcd-tag {
+  padding: 90px 15px 150px 15px;
+  margin-top: 10px;
+  border: 2px solid #aeb7bd;
+}
+
+/* Style code examples on component example pages */
+
+.code-example {
+  font-size: 19px;
+  background-color: #eee;
+
+  display: block;
+  padding: 10px;
+}
