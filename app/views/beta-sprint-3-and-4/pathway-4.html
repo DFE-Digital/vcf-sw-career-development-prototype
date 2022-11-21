@@ -1,0 +1,125 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% set programmePage = "p4" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Pathway 4: practice leaders - development programmes – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+      {% include "../includes/breadcrumbs.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Senior managers and practice leaders</span>
+        <h1 class="govuk-heading-xl">Pathway 4: practice leaders</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              For
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Current and aspiring practice leaders, directors, assistant directors
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Duration
+            </dt>
+            <dd class="govuk-summary-list__value">
+              12 months
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Time commitment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              About 11 days (including 2 residential components)
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Cost
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Free (except for travel for the residential components)</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Website
+            </dt>
+            <dd class="govuk-summary-list__value">
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/">Frontline</a>
+            </dd>
+          </div>
+        </dl>
+        <h2 class="govuk-heading-l">Who it’s for</h2>
+        <p class="govuk-body-m">Pathway 4 is for:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>in-role practice leaders</li>
+          <li>experienced heads of service or equivalent who want to become a practice leader</li>
+        </ul>
+        <h2 class="govuk-heading-l">What you’ll learn</h2>
+        <p class="govuk-body-m">Pathway 4 will help you develop as a leader and champion of services across your local system. It covers themes including:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>leading innovation across service areas and advocating for system change</li>
+          <li>using the latest research and best practice to improve services</li>
+          <li>implementing anti-racist and anti-oppressive practices</li>
+          <li>using data to measure success and manage risk</li>
+          <li>allocating budget and resource across multiple services</li>
+        </ul>
+        <h2 class="govuk-heading-l">What you’ll get</h2>
+        <p class="govuk-body-m">When you finish Pathway 4 you’ll get:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>a certificate which can contribute towards your continuous professional development (CPD) hours</li>
+          <li>access to leadership networks, including becoming part of the Frontline Fellowship community of leaders</li>
+        </ul>
+        <p class="govuk-body-m">It'll help prepare:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>current practice leaders to access the UPON programme for directors of children’s services</li>
+          <li>aspiring practice leaders for promotion to practice leader roles</li>
+        </ul>
+        <h2 class="govuk-heading-l">How it’s delivered</h2>
+        <p class="govuk-body-m">Pathway 4 has a time commitment of about 11 days spread over 12 months and includes in-person and online learning.</p>
+        <h2 class="govuk-heading-m">In-person learning</h2>
+        <p class="govuk-body-m">Includes:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>2 residential components at the University of Warwick (2 full days each)</li>
+          <li>shadowing days</li>
+        </ul>
+        <h2 class="govuk-heading-m">Online learning</h2>
+        <p class="govuk-body-m">Includes:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>workshops</li>
+          <li>one-to-one coaching</li>
+          <li>peer-led practice groups</li>
+          <li>self-directed study sessions</li>
+        </ul>
+        <p class="govuk-body-m">Online modules last 1.5 to 3 hours each and happen several times a month.</p>
+        <h2 class="govuk-heading-l">Funding</h2>
+        <p class="govuk-body-m">Pathway 4 is funded by the Department for Education.</p>
+        <p class="govuk-body-m">However, travel costs for the residential component are the responsibility of your employer.</p>
+        <h2 class="govuk-heading-l">How to apply</h2>
+        <p class="govuk-body-m">Speak to your line manager to get support for you doing Pathway 4.</p>
+        <p class="govuk-body-m">If you’re an aspiring practice leader, you’ll also need to answer questions about your work experience as part of your application.</p>
+        <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/">Apply for Pathway 4 for practice leaders</a> on the Frontline website.</p>
+    </div>
+
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+      {% include "../includes/programme-aside-grouped.html" %}
+    </div>
+</div>
+
+
+{% endblock %}
