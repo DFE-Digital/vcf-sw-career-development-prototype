@@ -4,6 +4,7 @@
 
 /* some colours */
 $govuk-success-colour: #00703c;
+$highlight-colour: rgba(213, 56, 128, .25);
 
 /* ==========================================================================
    #TAG
@@ -119,4 +120,14 @@ $govuk-success-colour: #00703c;
 
   display: block;
   padding: 10px;
+}
+
+/* Prototype landing page styling */
+
+.landing-page {
+
+  &__highlighting {
+    background-color: $highlight-colour;
+  }
+
 }
