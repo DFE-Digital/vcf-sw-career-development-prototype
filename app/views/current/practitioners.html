@@ -1,36 +1,56 @@
 {% set pageName = "hp_beta" %}
 {% set brandType = "edu" %}
+{% set programmePage = "p1" %}
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-For practitioners – {{ serviceName }}
+Practitioners – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-<div class="govuk-breadcrumbs">
       {% include "../includes/breadcrumbs.html" %}
 {% endblock %}
 
 
 {% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Practitioners</span>
+        <h1 class="govuk-heading-xl">Practitioners</h1>
+    </div>
+</div>
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">For practitioners</h1>
-        <p class="govuk-body">Our career progression programmes for practitioners are yada yada.</p>
+      <div class="govuk-inset-text">We do not currently fund development programmes for the practitioner career stage.</div>
+        <p class="govuk-body-m">As a child and family social work practitioner you should continue to do continuing professional development (CPD). This will help you improve your practice so you can provide the best possible support to children and families.</p>
+        <p class="govuk-body-m">Speak to your manager or workforce development team about the CPD opportunities available to you in your local authority.</p>
+        <h2 class="govuk-heading-l">CPD requirement for renewing registration</h2>
+        <p class="govuk-body-m">You need to record your CPD to renew your registration with Social Work England.</p>
+        <p class="govuk-body-m">You must record at least 2 pieces of CPD, including at least one with a peer reflection. This means that you’ve discussed your CPD activity with a peer, your manager or another social work professional.</p>
+        <p class="govuk-body-m">Record your CPD in your Social Work England online account.</p>
+        <p class="govuk-body-m">You must do this by midnight on 30 November every year.</p>
+        <p class="govuk-body-m"><a href="https://www.socialworkengland.org.uk/cpd/">Find out more about CPD requirements on the Social Work England website</a></p>
+        <h2 class="govuk-heading-l">Types of CPD you should be doing</h2>
+        <p class="govuk-body-m">CPD can be any activity you feel would benefit you and improve your current or future practice.</p>
+        <p class="govuk-body-m">It can be things you’re already doing in your role, or things you do outside of work, including:</p>
+        <ul class="govuk-list govuk-list--bullet">
+        <li>training courses</li>
+        <li>learning achieved as part of a formal qualification or certification</li>
+        <li>activity from your day-to-day role</li>
+        <li>reflecting on work practices through supervision</li>
+        <li>researching new techniques</li>
+        <li>attending a relevant conference, seminar or event</li>
+        <li>reading or contributing to a sector-related article</li>
+        </ul>
+        <p class="govuk-body-m"><a href="https://www.socialworkengland.org.uk/cpd/what-counts-as-cpd/">Find out more about the types of CPD you should be doing on the Social Work England website</a>
     </div>
-</div>
-<div class='govuk-grid-row'>
-    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
-        <div class="section-card">
-            <h3 class="govuk-heading-m"><a href="pathway-1?sending-page=pr" class="govuk-link">Aspirant practice supervisors</a></h3>
-            <p class="govuk-!-margin-bottom-6">Some information about the social work leadership pathways programme: pathway 1 goes under here..</p>
-        </div>
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+      {% include "../includes/programme-aside-grouped.html" %}
     </div>
+
 </div>
 
 
 {% endblock %}
-
-
-
