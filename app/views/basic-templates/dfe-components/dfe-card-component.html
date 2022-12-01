@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+    <a href="/index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+        <div class='govuk-grid-row'>
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l">DfE component examples</h1>
+            </div>
+        </div>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third-from-desktop govuk-!-margin-top-4">
+            {% include "../../includes/templates-side-nav.html" %}
+            </div>
+            <div class="govuk-grid-column-two-thirds-from-desktop">
+                <h2>DfE card component</h2>
+                <p class="govuk-body govuk-!-margin-bottom-6">
+                    As used in the <a href="https://professional-development-for-teachers-leaders.education.gov.uk/" target="_blank" class="govuk-link">Professional development for teachers and leaders service</a>.
+                </p>
+
+                    <div class="section-card">
+                    {{ appNavigationCard({
+                        title: 'Card title',
+                        description: 'Card description',
+                        programmeUrl: 'practice-supervisors',
+                        marginBottom: '6'
+                        })
+                     }}
+                    </div>
+
+                <h3>Usage</h3>
+                <p class="govuk-body govuk-!-margin-bottom-6">
+                    Pass these values:
+                </p>
+                <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Name
+                    </dt>
+                    <dd class="govuk-summary-list__key">
+                      Type
+                    </dd>
+                    <dd class="govuk-summary-list__key">
+                      Description
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      title
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      string
+                    </dd>
+                    <dd class="govuk-summary-list__value">
+                        <strong>Required.</strong> The card title text.
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      description
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      string
+                    </dd>
+                    <dd class="govuk-summary-list__value">
+                        <strong>Required.</strong> The card description text.
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      programmeUrl
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      string
+                    </dd>
+                    <dd class="govuk-summary-list__value">
+                        <strong>Required.</strong> The target URL of the card.
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      marginBottom
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      value
+                    </dd>
+                    <dd class="govuk-summary-list__value">
+                      Optional margin for the bottom of the card. Use when neighbouring card has more text to make them look even.
+                    </dd>
+                  </div>
+                </dl>
+                    <code class="code-example govuk-!-margin-top-6">
+                    &#123;&#123; appNavigationCard&#40;&#123;<br>
+                        &nbsp;&nbsp;title: 'Card title',<br>
+                        &nbsp;&nbsp;description: 'Card description',<br>
+                        &nbsp;&nbsp;programmeUrl: 'my-url-goes-here',<br>
+                        &nbsp;&nbsp;marginBottom: '9'<br>
+                        &#125;&#41;&nbsp;&#125;&#125;
+                    </code>
+            </div>
+        </div>
+{% endblock %}

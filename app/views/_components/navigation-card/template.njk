@@ -1,0 +1,9 @@
+<div class="section-card">
+  <h3 class="govuk-heading-m"><a href="{{ params.programmeUrl | safe }}" class="govuk-link">{{ params.title | safe  }}</a></h3>
+  {% if params.marginBottom != null %}
+  <p class="govuk-!-margin-bottom-{{ params.marginBottom }}">
+  {% else %}
+  <p class="govuk-!-margin-bottom-6">
+  {% endif %}
+  {{ params.description | safe  }}</p>
+</div>
