@@ -1,5 +1,5 @@
 {% set brandType = "edu" %}
-{% extends "layout_whero.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Develop your career in child and family social work - Department for Education
@@ -16,16 +16,20 @@ Develop your career in child and family social work - Department for Education
           href: "current/home",
           isStartButton: true
         }) }}
-
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="current/alternative-structure/home">Alternate structure (in design)</a>
+          </li>
+        </ul>
 
 <!-- put beta section into HTML var -->
 {% set betadetailsHTML %}
     <h2 class="govuk-heading-m">Sprints</h2>
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Sprint 5 (CURRENT)</h3>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Sprint 5 (Research round 4 testing version) </h3>
         <p class="govuk-body-s">21 November - 02 December 2022</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>
-            <a href="/current/home">Core website v6</a>
+            <a href="beta-sprint-5/home">Core website v6</a>
           </li>
         </ul>
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Sprint 3 and 4</h3>
@@ -50,7 +54,8 @@ Develop your career in child and family social work - Department for Education
 {{ govukDetails({
   summaryText: "Beta",
   html: betadetailsHTML,
-  open: true
+  open: true,
+  classes: "govuk-!-margin-top-7"
 }) }}
 
 <!-- put alpha section into HTML var -->
