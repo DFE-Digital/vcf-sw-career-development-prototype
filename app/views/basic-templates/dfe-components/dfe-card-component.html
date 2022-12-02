@@ -29,68 +29,38 @@
                         })
                      }}
                     </div>
-
-                <h3>Usage</h3>
-                <p class="govuk-body govuk-!-margin-bottom-6">
-                    Pass these values:
-                </p>
-                <dl class="govuk-summary-list">
-                    <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Name
-                    </dt>
-                    <dd class="govuk-summary-list__key">
-                      Type
-                    </dd>
-                    <dd class="govuk-summary-list__key">
-                      Description
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      title
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      string
-                    </dd>
-                    <dd class="govuk-summary-list__value">
-                        <strong>Required.</strong> The card title text.
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      description
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      string
-                    </dd>
-                    <dd class="govuk-summary-list__value">
-                        <strong>Required.</strong> The card description text.
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      programmeUrl
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      string
-                    </dd>
-                    <dd class="govuk-summary-list__value">
-                        <strong>Required.</strong> The target URL of the card.
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      marginBottom
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      value
-                    </dd>
-                    <dd class="govuk-summary-list__value">
-                      Optional margin for the bottom of the card. Use when neighbouring card has more text to make them look even.
-                    </dd>
-                  </div>
-                </dl>
+                <table class="govuk-table govuk-!-margin-top-6">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Pass these values</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header govuk-!-width-one-third">Name</th>
+                      <th scope="col" class="govuk-table__header govuk-!-width-one-third">Type</th>
+                      <th scope="col" class="govuk-table__header govuk-!-width-one-third">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">title</th>
+                      <td class="govuk-table__cell govuk-table__cell">string</td>
+                      <td class="govuk-table__cell govuk-table__cell"><strong>Required.</strong> The card title text.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">description</th>
+                      <td class="govuk-table__cell govuk-table__cell">string</td>
+                      <td class="govuk-table__cell govuk-table__cell"><strong>Required.</strong> The card description text.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">programmeUrl</th>
+                      <td class="govuk-table__cell govuk-table__cell">string</td>
+                      <td class="govuk-table__cell govuk-table__cell"><strong>Required.</strong> The target URL of the card.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">marginBottom</th>
+                      <td class="govuk-table__cell govuk-table__cell">value</td>
+                      <td class="govuk-table__cell govuk-table__cell">Optional margin for the bottom of the card. Use when neighbouring card has more text to make them look even.</td>
+                    </tr>
+                  </tbody>
+                </table>
                     <code class="code-example govuk-!-margin-top-6">
                     &#123;&#123; appNavigationCard&#40;&#123;<br>
                         &nbsp;&nbsp;title: 'Card title',<br>
