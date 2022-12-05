@@ -17,10 +17,13 @@ Develop your career in child and family social work - Department for Education
 <!-- CARD ROW 1 -->
 <div class='govuk-grid-row'>
     <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
-        <div class="section-card">
-            <h3 class="govuk-heading-m"><a href="#" class="govuk-link">Practitioners</a></h3>
-            <p class="govuk-!-margin-bottom-6">Includes social workers in their first 2 years of employment.</p>
-        </div>
+    {{ appNavigationCard({
+        title: 'Practitioners',
+        description: 'Includes social workers in their first 2 years of employment.',
+        programmeUrl: 'practice-supervisors',
+        marginBottom: '6'
+        })
+     }}
     </div>
     <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
         <div class="section-card">

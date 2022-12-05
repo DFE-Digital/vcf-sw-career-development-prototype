@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Leaders – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+      {% include "../../includes/breadcrumbs.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Programmes for leaders</h1>
+        <p class="govuk-body-m">The leadership development programmes for senior managers and practice leaders we fund include:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>UPON: Inspiring Leaders, delivered by The Staff College, The Institute of Public Care, Skills for Care and GatenbySanderson</li>
+          <li>the Social Work Leadership Pathways programme, delivered by Frontline</li>
+        </ul>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="upon-aspiring-directors?sending-page=alt_lead" class="govuk-link">UPON for aspiring directors</a></h3>
+            <p class="govuk-!-margin-bottom-6">For senior managers who aspire to become directors of children's services within the next 3 years.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="upon-new-directors?sending-page=alt_lead" class="govuk-link">UPON for new directors</a></h3>
+            <p class="govuk-!-margin-bottom-6">For new directors of children's services to develop their leadership, management and technical skills.</p>
+        </div>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-4?sending-page=alt_lead" class="govuk-link">Pathway 4: practice leaders</a></h3>
+            <p class="govuk-!-margin-bottom-1">For current and aspiring practice leaders to lead, champion and improve services across their local system.</p>
+        </div>
+    </div>
+</div>
+<p><a href="development-programmes">View all programmes</a></p>
+
+{% endblock %}

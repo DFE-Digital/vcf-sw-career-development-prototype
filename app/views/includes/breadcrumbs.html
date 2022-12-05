@@ -6,8 +6,6 @@
 {{ sendingPage | log }}
 {{ programmePage | log }}
 
-
-
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
@@ -19,6 +17,10 @@
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
         </li>
+        {% elseif sendingPage == 'alt_prac' and programmePage == 'ay' %}
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
+            </li>
     {% endif %}
 
 <!-- PATHWAY 1 -->
@@ -29,6 +31,10 @@
         {% elseif sendingPage == 'dp' and programmePage == 'p1' %}
             <li class="govuk-breadcrumbs__list-item">
               <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+            </li>
+        {% elseif sendingPage == 'alt_expp' and programmePage == 'p1' %}
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="experienced-practitioners-sub-nav">Experienced practitioners</a>
             </li>
     {% endif %}
 <!-- PATHWAY 2 -->
@@ -44,6 +50,14 @@
        <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
        </li>
+    {% elseif sendingPage == 'alt_expp' and programmePage == 'p2' %}
+       <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="experienced-practitioners-sub-nav">Experienced practitioners</a>
+       </li>
+    {% elseif sendingPage == 'alt_mgrs' and programmePage == 'p2' %}
+       <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="managers-sub-nav">Managers</a>
+       </li>
     {% endif %}
 <!-- PATHWAY 3 -->
     {% if sendingPage == 'mm' and programmePage == 'p3' %}
@@ -53,6 +67,14 @@
     {% elseif sendingPage == 'dp' and programmePage == 'p3' %}
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_mgrs' and programmePage == 'p3' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="managers-sub-nav">Managers</a>
+        </li>
+    {% elseif sendingPage == 'alt_smgr' and programmePage == 'p3' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-sub-nav">Senior managers</a>
         </li>
     {% endif %}
 <!-- PATHWAY 4 -->
@@ -67,6 +89,15 @@
     {% elseif sendingPage == 'dp' and programmePage == 'p4' %}
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_smgr' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-sub-nav">Senior managers</a>
+        </li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+        </li>
     {% endif %}
 <!--ASPIRANT DIRECTORS -->
     {% if sendingPage == 'sm' and programmePage == 'ua' %}
@@ -77,6 +108,10 @@
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
         </li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'ua' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+        </li>
     {% endif %}
 <!--NEW DIRECTORS -->
     {% if sendingPage == 'sm' and programmePage == 'un' %}
@@ -86,6 +121,16 @@
     {% elseif sendingPage == 'dp' and programmePage == 'un' %}
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'un' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+        </li>
+    {% endif %}
+<!--PRACTITIONERS CONTENT PAGE -->
+    {% if sendingPage == 'alt_prac' and programmePage == 'pr' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
         </li>
     {% endif %}
   </ol>
