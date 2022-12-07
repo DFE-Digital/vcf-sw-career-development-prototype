@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+    <a href="/index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+        <div class='govuk-grid-row'>
+            <div class="govuk-grid-column-full">
+                <h1 class="govuk-heading-l">Supporting pages</h1>
+                <p>All of the pages and content shown here is intended for use on the <strong class="govuk-tag govuk-tag--green">LIVE</strong> service</p>
+            </div>
+        </div>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-m">Basic website</h2>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>
+                    <a href="header-footer">Header and footer</a>
+                  </li>
+                  <li>
+                    <a href="#">Cookie banner</a>
+                  </li>
+                </ul>
+                <h2 class="govuk-heading-m">Footer pages</h2>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="cookies">Cookies</a>
+                  </li>
+                  <li>
+                    <a href="#">Cookies messages</a>
+                  </li>
+                  <li>
+                    <a href="#">Accessibility</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms and conditions</a>
+                  </li>
+                </ul>
+                <div class="govuk-warning-text">
+                  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                  <strong class="govuk-warning-text__text">
+                    <span class="govuk-warning-text__assistive">Warning</span>
+                    Footer pages not yet confirmed.
+                  </strong>
+                </div>
+                <h2 class="govuk-heading-m">System pages</h2>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>
+                    <a href="#">Page not found (404)</a>
+                  </li>
+                  <li>
+                    <a href="#">There is a problem with the service</a>
+                  </li>
+                  <li>
+                    <a href="#">Service unavailable</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+
+{% endblock %}
