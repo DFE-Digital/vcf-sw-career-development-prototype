@@ -79,14 +79,13 @@ body {
     padding: 15px;
     border: 1px solid $colour-border-grey;
   }
+
+  &__clear {
+    padding: 15px;
+  }
+
 }
 
-
-/* clear section card */
-/* Remove this if I don't add any formatting */
-.section-card-clear {
-  padding: 0px;
-}
 
 
 /* IMAGES

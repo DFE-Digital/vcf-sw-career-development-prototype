@@ -1,9 +1,10 @@
 {% extends "layout.html" %}
-
+{% block pageTitle %}
+Supporting pages – {{ serviceName }}
+{% endblock %}
 {% block beforeContent %}
     <a href="/index" class="govuk-back-link">Back</a>
 {% endblock %}
-
 {% block content %}
         <div class='govuk-grid-row'>
             <div class="govuk-grid-column-full">
@@ -19,7 +20,7 @@
                     <a href="header-footer">Header and footer</a>
                   </li>
                   <li>
-                    <a href="#">Cookie banner</a>
+                    <a href="header-footer-cookie-banner">Service wide cookie banner simulation</a>
                   </li>
                 </ul>
                 <h2 class="govuk-heading-m">Footer pages</h2>

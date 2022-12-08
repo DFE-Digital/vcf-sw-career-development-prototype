@@ -1,10 +1,17 @@
 {% extends "layout.html" %}
+{% set cookiesState = data["cookies=accept"] %}
 {% block header %}
+  {% include "../partials/cookiebanner.njk" %}
   {% include "../partials/dfeheader.njk" %}
   {% include "../partials/betaphasebanner.njk" %}
 {% endblock %}
+{% block pageTitle %}
+cookies – {{ serviceName }}
+{% endblock %}
 {% block beforeContent %}
     <a href="list-of-pages" class="govuk-back-link">Back</a>
+    <p></p>
+    <a href="/prototype-admin/clear-data">Clear data</a>
 {% endblock %}
 {% block footer %}
   {% include "../partials/_servicefooter.njk" %}
