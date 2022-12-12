@@ -3,7 +3,7 @@
 cookies – {{ serviceName }}
 {% endblock %}
 {% block beforeContent %}
-    <a href="list-of-pages" class="govuk-back-link">Back</a>
+      {% include "../includes/breadcrumbs-support-pages.html" %}
 {% endblock %}
 
 {% set cookiesState = data["cookies-on"] %}

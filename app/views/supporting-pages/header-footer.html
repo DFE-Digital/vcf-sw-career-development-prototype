@@ -4,7 +4,7 @@
   {% include "../partials/betaphasebanner.njk" %}
 {% endblock %}
 {% block beforeContent %}
-    <a href="list-of-pages" class="govuk-back-link">Back</a>
+      {% include "../includes/breadcrumbs-support-pages.html" %}
 {% endblock %}
 {% block footer %}
   {% include "../partials/_servicefooter.njk" %}
