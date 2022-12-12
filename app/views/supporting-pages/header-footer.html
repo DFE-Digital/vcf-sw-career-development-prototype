@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block header %}
+  {% include "../partials/dfeheader.njk" %}
+  {% include "../partials/betaphasebanner.njk" %}
+{% endblock %}
+{% block beforeContent %}
+    <a href="list-of-pages" class="govuk-back-link">Back</a>
+{% endblock %}
+{% block footer %}
+  {% include "../partials/_servicefooter.njk" %}
+{% endblock %}

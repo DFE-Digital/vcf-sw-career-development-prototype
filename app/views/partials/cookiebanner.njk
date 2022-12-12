@@ -1,0 +1,81 @@
+{% set cookiesState = data["cookies"] %}
+{% if cookiesState == null %}
+{% set html %}
+  <p class="govuk-body">We use some essential cookies to make this service work.</p>
+  <p class="govuk-body">We’d also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+{% endset %}
+<form method="POST" action="/cookies-banner-set">
+  {{ govukCookieBanner({
+    ariaLabel: "Cookies on " + serviceName,
+    messages: [
+      {
+        headingText: "Cookies on " + serviceName,
+        html: html,
+        actions: [
+          {
+            text: "Accept analytics cookies",
+            type: "submit",
+            name: "cookies-banner",
+            value: "accept"
+          },
+          {
+            text: "Reject analytics cookies",
+            type: "submit",
+            name: "cookies-banner",
+            value: "reject"
+          },
+          {
+            text: "View cookies",
+            href: "cookies"
+          }
+        ]
+      }
+    ]
+  }) }}
+</form>
+{% elseif cookiesState == 'accept' %}
+    {% set acceptHtml %}
+    <p class="govuk-body">You’ve accepted essential and analytics cookies. You can <a class="govuk-link" href="/supporting-pages/cookies">change your cookie settings</a> at any time.</p>
+    {% endset %}
+    <form method="POST" action="/header-footer-cookie-banner">
+      {{ govukCookieBanner({
+        ariaLabel: "Cookies on [name of service]",
+        messages: [
+          {
+            html: acceptHtml,
+            actions: [
+            {
+              text: "Hide cookie message",
+              href: "/supporting-pages/header-footer-cookie-banner?cookies=confirmed",
+              type: "button"
+            }
+            ]
+          }
+        ]
+      }) }}
+    </form>
+{% elseif cookiesState == 'reject' %}
+    {% set acceptHtml %}
+    <p class="govuk-body">You’ve rejected essential and analytics cookies. You can <a class="govuk-link" href="/supporting-pages/cookies">change your cookie settings</a> at any time.</p>
+    {% endset %}
+    <form method="POST" action="/header-footer-cookie-banner">
+      {{ govukCookieBanner({
+        ariaLabel: "Cookies on [name of service]",
+        messages: [
+          {
+            html: acceptHtml,
+            actions: [
+            {
+              text: "Hide cookie message",
+              href: "/supporting-pages/header-footer-cookie-banner?cookies=confirmed",
+              type: "button"
+            }
+            ]
+          }
+        ]
+      }) }}
+    </form>
+{% elseif cookiesState == 'confirmed' %}
+
+{% endif %}
+

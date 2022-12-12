@@ -19,17 +19,22 @@ Develop your career in child and family social work - Department for Education
         <ul class="govuk-list govuk-list--bullet">
           <li>
             <a href="current/alternative-structure/home">Alternate structure (in design)</a>
+            <p class="govuk-body-s">Alternate career stage groups</p>
+          </li>
+          <li>
+            <a href="supporting-pages/list-of-pages">Supporting pages</a>
+            <p class="govuk-body-s">Privacy, cookies, 404 pages...</p>
           </li>
         </ul>
 
 <!-- put beta section into HTML var -->
 {% set betadetailsHTML %}
     <h2 class="govuk-heading-m">Sprints</h2>
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Sprint 5 (Research round 4 testing version) </h3>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Sprint 5</h3>
         <p class="govuk-body-s">21 November - 02 December 2022</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>
-            <a href="beta-sprint-5/home">Core website v6</a>
+            <a href="beta-sprint-5/home">Core website v6</a><p class="govuk-body-s">(<span class="landing-page__highlighting">Tested in UR round 4</span>)</p>
           </li>
         </ul>
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Sprint 3 and 4</h3>
@@ -185,7 +190,7 @@ Develop your career in child and family social work - Department for Education
 {% endset %}
 {% from "govuk/components/details/macro.njk" import govukDetails %}
 {{ govukDetails({
-summaryText: "Template examples",
+summaryText: "Example templates and components",
 html: templatedetailsHTML,
 open: false
 }) }}
