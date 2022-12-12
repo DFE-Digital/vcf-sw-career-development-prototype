@@ -5,6 +5,9 @@
 Practitioners – {{ serviceName }}
 {% endblock %}
 
+{% block beforeContent %}
+      {% include "../../includes/breadcrumbs.html" %}
+{% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
@@ -40,7 +43,9 @@ Practitioners – {{ serviceName }}
         <p class="govuk-body-m"><a href="https://www.socialworkengland.org.uk/cpd/">Find out more about CPD requirements</a> on the Social Work England website.</p>
     </div>
     <!--RIGHT HAND NAV -->
-
+    <div class="govuk-grid-column-one-third">
+      {% include "../../includes/dfe-pqs-aside.html" %}
+    </div>
 </div>
 
 
