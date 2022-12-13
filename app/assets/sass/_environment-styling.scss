@@ -5,6 +5,7 @@
 /* some colours */
 $govuk-success-colour: #00703c;
 $highlight-colour: rgba(213, 56, 128, .25);
+$content-status-colour: #f47738;
 
 /* ==========================================================================
    #TAG
@@ -131,3 +132,20 @@ $highlight-colour: rgba(213, 56, 128, .25);
   }
 
 }
+
+/* Content pages */
+.govuk-inset-text {
+
+    &__ptk {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 1.25;
+      padding: 15px;
+      clear: both;
+      border-left: 10px solid $content-status-colour;
+  }
+}
+
+
