@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Service unavailable – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+      {% include "../includes/breadcrumbs-support-pages.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sorry, the service is unavailable</h1>
+        <p class="govuk-body">
+          You will be able to use the service later.
+        </p>
+        <p class="govuk-body">
+          <a class="govuk-link" href="#">Contact the {{ serviceName }} Helpline</a> if you need to speak to someone.
+        </p>
+      </div>
+    </div>
+{% endblock %}

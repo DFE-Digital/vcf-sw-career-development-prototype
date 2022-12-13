@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block pageTitle %}
-cookies – {{ serviceName }}
+Cookies – {{ serviceName }}
 {% endblock %}
 {% block beforeContent %}
       {% include "../includes/breadcrumbs-support-pages.html" %}
@@ -26,23 +26,24 @@ cookies – {{ serviceName }}
         }) }}
       {% endif %}
       <h1 class="govuk-heading-xl">Cookies</h1>
-      <p>Cookies are small files saved on your phone, tablet or computer when you visit a website.</p>
-      <p>We use cookies to make this site work and collect information about how you use our service.</p>
+      <div class="govuk-inset-text__ptk govuk-!-margin-bottom-6">The contents on this page is in draft.</div>
+      <p class="govuk-body">Cookies are small files saved on your phone, tablet or computer when you visit a website.</p>
+      <p class="govuk-body">We use cookies to make this site work and collect information about how you use our service.</p>
       <h2 class="govuk-heading-l">Essential cookies</h2>
-      <p>Essential cookies keep your information secure while you use Help for early years providers. We do not need to ask permission to use them.</p>
+      <p class="govuk-body">Essential cookies keep your information secure while you use Help for early years providers. We do not need to ask permission to use them.</p>
       {{ govukTable({
         classes: "app-table--fixed",
         caption: "Cookies relating to storing users' answers within prototypes",
         captionClasses: "govuk-visually-hidden",
         head: [
           { text: "Name",
-            classes: "govuk-!-width-one-quarter"
+            classes: ""
           },
           { text: "Purpose",
-            classes: "govuk-!-width-one-half"
+            classes: ""
           },
           { text: "Expires",
-            classes: "govuk-!-width-one-quarter"
+            classes: ""
           }
         ],
         rows: [
@@ -54,9 +55,9 @@ cookies – {{ serviceName }}
         ]
       }) }}
       <h2 class="govuk-heading-l">Analytics cookies (optional)</h2>
-      <p>With your permission, we use Google Analytics to collect data about how you use the service. This information helps us to improve our service.</p>
-      <p>Google is not allowed to use or share our analytics data with anyone.</p>
-      <p>Google Analytics stores anonymised information about:</p>
+      <p class="govuk-body">With your permission, we use Google Analytics to collect data about how you use the service. This information helps us to improve our service.</p>
+      <p class="govuk-body">Google is not allowed to use or share our analytics data with anyone.</p>
+      <p class="govuk-body">Google Analytics stores anonymised information about:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>how you got to the service</li>
         <li>the pages you visit on the service and how long you spend on them</li>
@@ -68,13 +69,13 @@ cookies – {{ serviceName }}
         captionClasses: "govuk-visually-hidden",
         head: [
           { text: "Name",
-            classes: "govuk-!-width-one-quarter"
+            classes: ""
           },
           { text: "Purpose",
-            classes: "govuk-!-width-one-half"
+            classes: ""
           },
           { text: "Expires",
-            classes: "govuk-!-width-one-quarter"
+            classes: ""
           }
         ],
         rows: [
@@ -120,6 +121,7 @@ cookies – {{ serviceName }}
                 text: "Save cookie settings"
               }) }}
           </form>
+        <p class="govuk-body govuk-!-margin-top-6">Last updated 12 December 2022</p>
     </div>
   </div>
 {% endblock %}
