@@ -5,7 +5,8 @@
 /* some colours */
 $govuk-success-colour: #00703c;
 $highlight-colour: rgba(213, 56, 128, .25);
-$content-status-colour: #f47738;
+$content-status-ready: #347ca9;
+$content-status-draft: #d4351c;
 
 /* ==========================================================================
    #TAG
@@ -144,8 +145,29 @@ $content-status-colour: #f47738;
       line-height: 1.25;
       padding: 15px;
       clear: both;
-      border-left: 10px solid $content-status-colour;
+      border-left: 10px solid $content-status-draft;
   }
 }
 
+.content-page-status {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.25;
+
+  &__draft {
+    padding: 15px;
+    margin-bottom: 60px;
+    border: 5px solid $content-status-draft;
+    background-color: #ffffff;
+    color: #0b0c0c;
+  }
+
+  &__ready {
+    padding: 15px;
+    margin-bottom: 60px;
+    border: 5px solid $content-status-ready;
+    background-color: #ffffff;
+    color: #0b0c0c;
+  }
+}
 
