@@ -1,0 +1,126 @@
+{% set programmePage = "p4" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Pathway 4: practice leaders - development programmes – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+      {% include "../../includes/breadcrumbs.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Senior managers and leaders</span>
+        <h1 class="govuk-heading-xl">Pathway 4: practice leaders</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              For
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Current and aspiring practice leaders, directors, assistant directors, principal social workers
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Duration
+            </dt>
+            <dd class="govuk-summary-list__value">
+              12 months
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Time commitment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              90 hours (the equivalent of 11 days)
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Cost
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Free except for travel for in-person modules</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Delivered by
+            </dt>
+            <dd class="govuk-summary-list__value">
+            <a class="govuk-!-font-size-19" href="https://thefrontline.org.uk/pathways-programme/">Frontline</a>
+            </dd>
+          </div>
+        </dl>
+        <h2 class="govuk-heading-l">Who it’s for</h2>
+        <p class="govuk-body-m">Pathway 4 is for:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>in-role practice leaders</li>
+          <li>experienced heads of service or equivalent who want to become practice leaders</li>
+        </ul>
+        <h2 class="govuk-heading-l">What you’ll learn</h2>
+        <p class="govuk-body-m">Pathway 4 will help you develop as a leader and champion of services across your local system. It covers themes including:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>leading innovation across service areas and advocating for system change</li>
+          <li>using the latest research and best practice to improve services</li>
+          <li>implementing anti-racist and anti-oppressive practices</li>
+          <li>using data to measure success and manage risk</li>
+          <li>allocating budget and resource across multiple services</li>
+        </ul>
+        <h2 class="govuk-heading-l">What you’ll get</h2>
+        <p class="govuk-body-m">When you finish Pathway 4 you’ll get:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>a certificate which can contribute towards your continuous professional development (CPD) hours</li>
+          <li>access to leadership networks, including becoming part of the Frontline Fellowship community of leaders</li>
+        </ul>
+        <p class="govuk-body-m">It'll help prepare:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>current practice leaders to access the UPON programme for directors of children’s services</li>
+          <li>aspiring practice leaders for promotion to practice leader roles</li>
+        </ul>
+        <h2 class="govuk-heading-l">How it’s delivered</h2>
+        <p class="govuk-body-m">Pathway 4 is a 12-month programme that:
+          <ul class="govuk-list govuk-list--bullet">
+            <li>runs once a year starting in November</li>
+            <li>takes about 90 hours to complete</li>
+            <li>combines online and in-person learning</li>
+          </ul>
+        <h2 class="govuk-heading-m">In-person learning</h2>
+        <p class="govuk-body-m">Includes:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>4 days on-site at the University of Warwick run as separate 2-day modules</li>
+          <li>2 days shadowing your coach</li>
+          <li>1 day shadowing an Ofsted inspector</li>
+        </ul>
+        <h2 class="govuk-heading-m">Online learning</h2>
+        <p class="govuk-body-m">It'll take about 35 hours to complete the online modules, which include:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>workshops</li>
+          <li>one-to-one coaching</li>
+          <li>peer-led practice groups</li>
+          <li>self-directed study sessions</li>
+        </ul>
+        <p class="govuk-body-m">Online modules last 1.5 to 3 hours.</p>
+        <h2 class="govuk-heading-l">Funding</h2>
+        <p class="govuk-body-m">Pathway 4 is funded by the Department for Education.</p>
+        <p class="govuk-body-m">However, travel costs for the on-site days are the responsibility of your employer.</p>
+        <h2 class="govuk-heading-l">Next steps</h2>
+        <p class="govuk-body-m">Speak to your line manager to get support for you doing Pathway 4.</p>
+        <p class="govuk-body-m">If you’re an aspiring practice leader, you’ll also need to answer questions about your work experience as part of your application.</p>
+        <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/pathways-programme-apply/">Find out more about Pathway 4 including how to apply</a> on the Frontline website.</p>
+    </div>
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third">
+      {% include "../../includes/dfe-pqs-aside.html" %}
+    </div>
+</div>
+{% endblock %}

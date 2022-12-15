@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Managers – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+      {% include "../../includes/breadcrumbs.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Programmes for managers</h1>
+        <p class="govuk-body">We fund the Social Work Leadership Pathways programme for child and family social workers.</p>
+        <p class="govuk-body">It's delivered by the Frontline charity and includes 4 separate pathways, each aimed at a different level of social work leadership.</p>
+        <p class="govuk-body">Social work managers can do Pathways 2 and 3.</p>
+    </div>
+</div>
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-2?sending-page=alt_mgrs" class="govuk-link">Pathway 2: middle manager</a></h3>
+            <p class="govuk-!-margin-bottom-6">For team managers to support the delivery of excellent social work practice within and beyond their team.</p>
+        </div>
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+        <div class="section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-3?sending-page=alt_mgrs" class="govuk-link">Pathway 3: heads of service</a></h3>
+            <p class="govuk-!-margin-bottom-8">For experienced team managers who want to become heads of service.</p>
+        </div>
+    </div>
+</div>
+<p><a href="development-programmes">View all programmes</a></p>
+{% endblock %}
