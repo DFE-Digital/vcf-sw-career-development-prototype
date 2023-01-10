@@ -1,0 +1,254 @@
+// This styling from alpha and/or or unused content
+// Separated to help identify styling for LIVE beta
+// CSS for DfE specific components
+// Various overrides of gov styling as required
+// DO NOT use this code in a production environment
+
+/* STANDARD COLOURS */
+
+$colour-drop-shadow: #1d70b8;
+$colour-image-placeholder: #b1b4b6;
+$colour-secondary-text: #505a5f;
+$colour-border-grey: #b1b4b6;
+$colour-card-background: #F3F2F1;
+$govuk-black: #0b0c0c;
+$dfe-blue: #003a69;
+$dfe-yellow-link: #ffdd00;
+$dfe-accent: #347ca9;
+$gov-blue: #1d70b8;
+$color-dfe-white: #ffffff;
+
+
+/* CHECK ANSWERS FORMATS
+----------------------- */
+
+.answer-summary {
+  position: relative;
+}
+
+.start-again {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+.pathway-block {
+    padding: 10px 40px 0px;
+    border-left: 5px solid $colour-drop-shadow;
+    position:relative;
+  }
+
+.pathway-block:after {
+    content:"";
+    border-color: $colour-drop-shadow transparent transparent transparent;
+    border-style:solid;
+    border-width:15px;
+    width:0;
+    height:0;
+  position:absolute;
+    bottom:-20px;
+    left:-17px
+  }
+
+
+/* FACETED SEARCH BLOCK
+---------------- */
+
+.facet-block {
+
+  &__search {
+    padding: 0 0 0px;
+    margin-bottom: 0px;
+  }
+
+  &__search-button {
+
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 5px;
+  }
+
+  &__dfe-filter {
+
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 10px;
+    margin-top: 20px;
+  }
+
+  &__type-filter {
+
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 10px;
+    margin-top: 20px;
+  }
+
+  &__duration-filter {
+    border-bottom: 1px solid $colour-border-grey;
+    padding: 0 0 10px;
+    margin-top: 20px;
+  }
+}
+
+/* SEARCH RESULTS
+---------------- */
+
+.result-metadata__coursetype {
+  padding-right: 10px;
+}
+
+.results-header {
+  border-bottom: 1px solid $colour-border-grey;
+}
+
+/* SUB PAGE HERO BANNER
+----------------------- */
+
+.hero-breadcrumbs {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: $govuk-black;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.hero-breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.hero-breadcrumbs__list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hero-breadcrumbs__list-item {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  padding-left: 15.655px;
+  float: left;
+}
+.hero-breadcrumbs__list-item:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -3.31px;
+  margin: auto 0;
+  border: solid;
+  border-color: $color-dfe-white;
+  content: ">";
+  width: auto;
+  height: auto;
+  border: 0;
+  color: $color-dfe-white;
+  font-family: Arial, sans-serif;
+}
+.hero-breadcrumbs__list-item:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+.hero-breadcrumbs__list-item:first-child:before {
+  content: none;
+  display: none;
+}
+
+.hero-breadcrumbs__link, .key-facts__link {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: 0.1em;
+}
+.hero-breadcrumbs__link:hover, .key-facts__link:hover {
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip: none;
+  text-decoration-skip: none;
+}
+.hero-breadcrumbs__link:focus, .key-facts__link:focus {
+  color: $color-dfe-white;
+  background-color: $dfe-yellow-link;
+  box-shadow: 0 -2px $dfe-yellow-link, 0 4px $govuk-black;
+  text-decoration: none;
+}
+.hero-breadcrumbs__link:link, .hero-breadcrumbs__link:visited, .key-facts__link:link, .key-facts__link:visited {
+  color: $color-dfe-white;
+}
+.hero-breadcrumbs__link:hover, .key-facts__link:hover {
+  color:$color-dfe-white;
+}
+.hero-breadcrumbs__link:active, .hero-breadcrumbs__link:focus, .key-facts__link:active, .key-facts__link:focus {
+  color: $color-dfe-white;
+}
+
+/* METADATA SECTION IN HERO BANNER */
+
+.key-facts {
+    font-family: "GDS Transport", arial, sans-serif;
+    font-size: 19px;
+    color: $color-dfe-white;
+
+    &__list {
+      list-style: none;
+      display: flex;
+      float: left;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    &__salary {
+      margin-right: 20px;
+    }
+
+    &__standards {
+      margin-right: 10px;
+    }
+
+    &__dfe {
+      margin-right: 10px;
+    }
+
+    &__basw {
+      margin-right: 20px;
+    }
+
+    &__steps {
+      margin-right: 10px;
+    }
+
+  &__before {
+      margin-right: 10px;
+  }
+}
+
+/* LANDING PAGE FORMATS
+----------------------- */
+
+.features-cards__desc {
+  color: $colour-secondary-text;
+}
+
+/* HOME PAGE HERO HEADER */
+.body-header-background {
+  background-color: $gov-blue;
+}
+
+.app-section--blue {
+    background-color: $gov-blue;
+}
+
+.app-section {
+    padding: 30px 0
+}
