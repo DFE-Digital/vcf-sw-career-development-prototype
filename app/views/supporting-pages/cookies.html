@@ -12,7 +12,6 @@ Cookies – {{ serviceName }}
 {{ cookiesState | log }}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <div class="content-page-status content-page-status__draft">The contents on this page is in draft.</div>
       <!-- Show if user updates cookie settings from radio below -->
       {% if cookiesState != null %}
         {% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
@@ -30,7 +29,7 @@ Cookies – {{ serviceName }}
       <p class="govuk-body">Cookies are small files saved on your phone, tablet or computer when you visit a website.</p>
       <p class="govuk-body">We use cookies to make this site work and collect information about how you use our service.</p>
       <h2 class="govuk-heading-l">Essential cookies</h2>
-      <p class="govuk-body">Essential cookies keep your information secure while you use Help for early years providers. We do not need to ask permission to use them.</p>
+      <p class="govuk-body">Essential cookies keep your information secure while you use the service. We do not need to ask permission to use them.</p>
       {{ govukTable({
         classes: "app-table--fixed",
         caption: "Cookies relating to storing users' answers within prototypes",
