@@ -325,3 +325,33 @@ body {
 
 .dfeuk-action-link__link .dfeuk-icon__arrow-right-circle--up {
   transform: rotate(-90deg); }
+
+/* DFE CARD COMPONENT - NEW
+--------------------------- */
+
+.dfe-section-card {
+  padding: 16px;
+  margin-bottom: 20px;
+
+  &__container {
+    display: flex;
+    width: 100;
+  }
+
+  &__col {
+    flex: 1;
+    background-color: $colour-card-background;
+  }
+
+  @media (max-width: 40.0525em) {
+
+    &__container {
+      display: grid;
+      width: 100;
+    }
+
+    &__col {
+      background-color: $colour-card-background;
+    }
+  }
+}
