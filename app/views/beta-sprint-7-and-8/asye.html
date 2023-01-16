@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% set programmePage = "ay" %}
+
+{% block pageTitle %}
+Assessed and Supported Year in Employment (ASYE) - development programmes – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+      {% include "../includes/breadcrumbs.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+       <span class="govuk-caption-l">Newly qualified social workers</span>
+        <h1 class="govuk-heading-xl">Assessed and supported year in employment (ASYE)</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              For
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Newly qualified social workers
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Duration
+            </dt>
+            <dd class="govuk-summary-list__value">
+              12 months
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Time commitment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Full-time or part-time
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Cost
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Free</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Delivered by
+            </dt>
+            <dd class="govuk-summary-list__value">
+            <a class="govuk-!-font-size-19" href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx">Skills for Care</a>
+            </dd>
+          </div>
+          </dl>
+        <h2 class="govuk-heading-l">Overview</h2>
+        <p class="govuk-body-m">The assessed and supported year in employment (ASYE) programme helps newly qualified social workers develop their skills, knowledge and professional confidence.</p>
+        <p class="govuk-body-m">ASYE is open to all newly qualified social workers employed in the public, private and voluntary sectors.</p>
+        <h2 class="govuk-heading-l">How you're assessed</h2>
+        <p class="govuk-body-m">A qualified social worker will support, assess and record your progress throughout the programme. They’ll do this on their own or with others such as your line manager or ASYE coordinator.</p>
+        <p class="govuk-body-m">You’ll be assessed against the:</p>
+        <ul class="govuk-list govuk-list--bullet">
+        <li><a href="https://www.gov.uk/government/publications/knowledge-and-skills-statements-for-child-and-family-social-work">post-qualifying standards</a> for child and family practitioners</li>
+        <li><a href="https://www.basw.co.uk/professional-development/professional-capabilities-framework-pcf/the-pcf/asye">professional capabilities framework</a> for newly qualified social workers</li>
+        </ul>
+        <p class="govuk-body-m">Evidence of your professional development will be collected through:</p>
+        <ul class="govuk-list govuk-list--bullet">
+        <li>direct observations</li>
+        <li>feedback from children and young people who need care and support</li>
+        <li>feedback from other professionals</li>
+        <li>assessment of written reports</li>
+        </ul>
+        <p class="govuk-body-m">You’ll also need to complete critical reflection logs after 3, 6 and 12 months. Your employer can also request an optional 9-month review of your progress.</p>
+        <p class="govuk-body-m">At the end of the year your assessor will write a final assessment which your employer will use to decide whether you’ve met the relevant standards.</p>
+        <h2 class="govuk-heading-l">How you're supported</h2>
+        <p class="govuk-body-m">During your ASYE you'll have:</p>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>regular supervision</li>
+          <li>a reduced caseload</li>
+          <li>protected time for critical reflection</li>
+        </ul>
+        <p class="govuk-body-m">Depending on your employer:</p>
+        <ul class="govuk-list govuk-list--bullet">
+        <li>you'll have half a day per week of protected development time</li>
+        <li>your workload will be 10% less than an experienced social worker’s</li>
+        </ul>
+        <p class="govuk-body-m">You may also have the opportunity to shadow experienced social workers and go on placements.</p>
+
+        <h2 class="govuk-heading-l">Find out more</h2>
+        <p class="govuk-body-m"><a href="https://www.skillsforcare.org.uk/Regulated-professions/Social-work/ASYE/ASYE.aspx">Find out more about ASYE</a> on the Skills for Care website.</p>
+    </div>
+
+<!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third">
+      {% include "../includes/dfe-pqs-aside.html" %}
+    </div>
+</div>
+
+
+
+{% endblock %}

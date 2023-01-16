@@ -4,7 +4,8 @@
 
 /* some colours */
 $govuk-success-colour: #00703c;
-$highlight-colour: rgba(213, 56, 128, .25);
+$highlight-colour-done: rgba(133, 153, 75, .25);
+$highlight-colour-inprogress: rgba(244, 119, 56, .25);
 $content-status-ready: #347ca9;
 $content-status-draft: #d4351c;
 
@@ -128,8 +129,12 @@ $content-status-draft: #d4351c;
 
 .landing-page {
 
-  &__highlighting {
-    background-color: $highlight-colour;
+  &__done-highlighting {
+    background-color: $highlight-colour-done;
+  }
+
+  &__inprogress-highlighting {
+    background-color: $highlight-colour-inprogress;
   }
 
 }
