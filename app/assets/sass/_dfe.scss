@@ -34,98 +34,6 @@ body {
   max-width: 100%;
 }
 
-/* SECTION CARDS
----------------- */
-
-/* shaded section card - used in current version */
-
-.section-card {
-  background-color: $colour-card-background;
-  padding: 15px;
-
-  &__wborder {
-    background-color: $colour-card-background;
-    padding: 15px;
-    box-shadow: 0px 2px $colour-drop-shadow;
-  }
-
-    &__wfullborder {
-    padding: 15px;
-    /*box-shadow: inset 0 0 0 2px $colour-drop-shadow;*/
-    border: 2px solid $colour-drop-shadow;
-  }
-
-  &__wbutton {
-    background-color: $colour-card-background;
-    padding: 30px;
-  }
-
-  &__wimage {
-
-    img {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-
-  &__noborder {
-    background-color: $colour-card-background;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  &__clearwborder {
-    padding: 15px;
-    border: 1px solid $colour-border-grey;
-  }
-
-  &__clear {
-    padding: 15px;
-  }
-
-}
-
-/* CONTENT PAGES
----------------- */
-
-.aside-list {
-
-  &__block {
-    margin-bottom: 50px;
-  }
-
-  &__indent {
-    padding-left: 10px;
-  }
-
-  &__heading {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  &__related {
-    border-top: 3px solid $colour-drop-shadow;
-    padding-top: 20px;
-  }
-
-  &__related:last-child {
-    border-bottom: 3px solid $colour-drop-shadow;
-    padding-top: 20px;
-  }
-}
-
-.app-related-items {
-  border-top: 2px solid $dfe-accent;
-  padding-top: govuk-spacing(2);
-}
-
-.app-related-items .govuk-list > li {
-  margin-bottom: govuk-spacing(2);
-}
-
-.govuk-inset-text {
-  border-left: 10px solid $dfe-accent;
-}
 
 /* HOMEPAGE HERO BANNER
 ----------------------- */
@@ -214,118 +122,6 @@ body {
   }
 }
 
-
-/* Lifted from DfE service standards service */
-
-/* ==========================================================================
-   COMPONENTS/ #ACTION-LINK
-   ========================================================================== */
-/**
- * 1. Display is inline-block so the top and bottom margins/paddings are
- *    respected.
- * 2. 'Random number' is used to properly have sufficient space between icon
- *    and text.
- * 3. Position is relative so the arrow icon can display absolute.
- * 4. Text decoration none used to override default <a> styling.
- * 5. Box shadow 8px used instead of the default 4px.
- * 6. Text decoration underline used to override default <a> styling.
- */
-.dfeuk-action-link {
-  margin-bottom: 32px;
-  clear: both;
-  display: block; }
-
-@media (min-width: 40.0625em) {
-  .dfeuk-action-link {
-    margin-bottom: 20px; } }
-
-.dfeuk-action-link.dfeuk-action-link--back-to-top {
-  margin-bottom: 16px; }
-
-@media (min-width: 40.0625em) {
-  .dfeuk-action-link.dfeuk-action-link--back-to-top {
-    margin-bottom: 24px; } }
-
-.dfeuk-action-link + .dfeuk-action-link {
-  margin-bottom: 20px; }
-
-.dfeuk-action-link__link {
-  font-size: 18px;
-  line-height: 1.55556;
-  display: inline-block;
-  /* [1] */
-  font-weight: 600;
-  padding-left: 38px;
-  /* [2] */
-  position: relative;
-  /* [3] */
-  text-decoration: none;
-  /* [4] */ }
-
-@media (min-width: 40.0625em) {
-  .dfeuk-action-link__link {
-    font-size: 22px;
-    line-height: 1.45455; } }
-
-@media print {
-  .dfeuk-action-link__link {
-    font-size: 18pt;
-    line-height: 1.15; } }
-
-.dfeuk-action-link__link:hover .dfeuk-action-link__text {
-  text-decoration: underline;
-  /* [6] */ }
-
-.dfeuk-action-link__link:focus {
-  background-color: $dfe-yellow-link;
-  box-shadow: 0 -2px $dfe-yellow-link, 0 4px $govuk-black;
-  color: $govuk-black;
-  outline: 4px solid transparent;
-  text-decoration: none; }
-
-.dfeuk-action-link__link:focus:hover .dfeuk-action-link__text {
-  color: $govuk-black;
-  text-decoration: none; }
-
-@media (max-width: 40.0525em) {
-  .dfeuk-action-link__link {
-    padding-left: 26px;
-    /* [2] */ } }
-
-@media print {
-  .dfeuk-action-link__link {
-    color:$govuk-black; }
-  .dfeuk-action-link__link:visited {
-    color: $govuk-black; } }
-
-.dfeuk-action-link__link .dfeuk-icon__arrow-right-circle {
-  fill: #003a69;
-  height: 36px;
-  left: -3px;
-  position: absolute;
-  top: -2px;
-  width: 36px; }
-
-@media print {
-  .dfeuk-action-link__link .dfeuk-icon__arrow-right-circle {
-    color: $govuk-black;
-    fill: $govuk-black; }
-  .dfeuk-action-link__link .dfeuk-icon__arrow-right-circle:active,
-  .dfeuk-action-link__link .dfeuk-icon__arrow-right-circle:focus,
-  .dfeuk-action-link__link .dfeuk-icon__arrow-right-circle:visited {
-    color: $govuk-black; } }
-
-@media (max-width: 40.0525em) {
-  .dfeuk-action-link__link .dfeuk-icon__arrow-right-circle {
-    height: 24px;
-    left: -2px;
-    margin-bottom: 0;
-    top: 2px;
-    width: 24px; } }
-
-.dfeuk-action-link__link .dfeuk-icon__arrow-right-circle--up {
-  transform: rotate(-90deg); }
-
 /* DFE CARD COMPONENT - NEW
 --------------------------- */
 
@@ -347,4 +143,23 @@ body {
       width: 100;
     }
   }
+}
+
+/* ASIDE COMPONENT - NEW
+--------------------------- */
+
+.app-related-items {
+  border-top: 2px solid $dfe-accent;
+  padding-top: 10px;
+}
+
+.app-related-items .govuk-list > li {
+  margin-bottom: 10px;
+}
+
+/* OVERRIDE GOV INSET TEXT STYLING - NEW
+--------------------------------------- */
+
+.govuk-inset-text {
+  border-left: 10px solid $dfe-accent;
 }
