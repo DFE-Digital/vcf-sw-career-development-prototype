@@ -16,7 +16,7 @@ router.post('/cookies-set', function (req, res) {
   }
 })
 
-// Handle cookies being accepted/rejected on cookies page
+// Handle cookies being accepted/rejected on cookies header
 router.post('/cookies-banner-set', function (req, res) {
   // Make a variable and give it the value from 'analytics-cookies'
   var cookiesAccepted = req.session.data['cookies-banner']
