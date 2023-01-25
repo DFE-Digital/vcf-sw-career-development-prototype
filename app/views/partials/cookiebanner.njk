@@ -35,7 +35,7 @@
 </form>
 {% elseif cookiesState == 'accept' %}
     {% set acceptHtml %}
-    <p class="govuk-body">You’ve accepted essential and analytics cookies. You can <a class="govuk-link" href="/supporting-pages/cookies">change your cookie settings</a> at any time.</p>
+    <p class="govuk-body">You’ve accepted essential and analytics cookies. You can <a class="govuk-link" href="/supporting-pages/cookies?cookies=yes">change your cookie settings</a> at any time.</p>
     {% endset %}
     <form method="POST" action="/header-footer-cookie-banner">
       {{ govukCookieBanner({
@@ -56,7 +56,7 @@
     </form>
 {% elseif cookiesState == 'reject' %}
     {% set acceptHtml %}
-    <p class="govuk-body">You’ve rejected essential and analytics cookies. You can <a class="govuk-link" href="/supporting-pages/cookies">change your cookie settings</a> at any time.</p>
+    <p class="govuk-body">You’ve rejected essential and analytics cookies. You can <a class="govuk-link" href="/supporting-pages/cookies?cookies=no">change your cookie settings</a> at any time.</p>
     {% endset %}
     <form method="POST" action="/header-footer-cookie-banner">
       {{ govukCookieBanner({

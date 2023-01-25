@@ -6,7 +6,9 @@ Cookies – {{ serviceName }}
       {% include "../includes/breadcrumbs-support-pages.html" %}
 {% endblock %}
 
-{% set cookiesState = data["cookies-on"] %}
+
+{# {% set cookiesState = data["cookies-on"] %} #}
+{% set cookiesState = data["cookies"] %}
 
 {% block content %}
 {{ cookiesState | log }}

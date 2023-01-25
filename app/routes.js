@@ -9,10 +9,10 @@ router.post('/cookies-set', function (req, res) {
   // Check whether the variable matches a condition
   if (cookiesChanged == "yes"){
     // Send user back to page with cookies on
-    res.redirect('/supporting-pages/cookies?cookies-on=yes')
+    res.redirect('/supporting-pages/cookies?cookies=yes')
   } else {
     // Send user back to page with cookies on
-    res.redirect('/supporting-pages/cookies?cookies-on=no')
+    res.redirect('/supporting-pages/cookies?cookies=no')
   }
 })
 
