@@ -146,6 +146,31 @@ body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr
   }
 }
 
+/* DFE CTA CARD COMPONENT - NEW
+--------------------------- */
+
+.dfe-section-cta-card {
+  padding: 16px;
+  margin-bottom: 20px;
+  flex: 1;
+  background-color: #F3F2F1;
+  border-width: 4px;
+  border-color: #F3F2F1;
+
+  &__container {
+    display: flex;
+    width: 100;
+  }
+
+  @media (max-width: 40.0525em) {
+
+    &__container {
+      display: grid;
+      width: 100;
+    }
+  }
+}
+
 /* ASIDE COMPONENT - NEW
 --------------------------- */
 
