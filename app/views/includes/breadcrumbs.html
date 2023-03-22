@@ -135,9 +135,25 @@
     {% endif %}
 
 <!--EXPLORE ROLES CONTENT PAGE -->
-{% if sendingPage == 'alt_prac' and programmePage == 'er' %}
-<li class="govuk-breadcrumbs__list-item">
-  <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
+    {% if sendingPage == 'alt_prac' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
+</li>
+    {% elseif sendingPage == 'alt_expp' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="experienced-practitioners-sub-nav">Experienced practitioners</a>
+</li>
+    {% elseif sendingPage == 'alt_mgrs' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="managers-sub-nav">Managers</a>
+</li>
+    {% elseif sendingPage == 'alt_smgr' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="senior-managers-sub-nav">Senior managers</a>
+</li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
 </li>
 {% endif %}
   </ol>
