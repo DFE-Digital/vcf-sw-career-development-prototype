@@ -1,7 +1,13 @@
-const express = require('express')
-const router = express.Router()
+//
+// For guidance on how to create routes see:
+// https://prototype-kit.service.gov.uk/docs/create-routes
+//
 
-// Add your routes here - above the module.exports line
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
+
+// Add your routes here
+
 // Handle cookies being accepted/rejected on cookies page
 router.post('/cookies-set', function (req, res) {
   // Make a variable and give it the value from 'analytics-cookies'
@@ -30,4 +36,3 @@ router.post('/cookies-banner-set', function (req, res) {
   }
 })
 
-module.exports = router
