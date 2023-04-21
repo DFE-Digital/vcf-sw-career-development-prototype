@@ -341,6 +341,31 @@ Explore roles – {{ serviceName }}
     </div>
 </div>          
             
+{% from "govuk/components/pagination/macro.njk" import govukPagination %}
+
+{{ govukPagination({
+  previous: {
+    href: "#"
+  },
+  next: {
+    href: "#"
+  },
+  items: [
+    {
+      number: 1,
+      href: "#"
+    },
+    {
+      number: 2,
+      current: true,
+      href: "#"
+    },
+    {
+      number: 3,
+      href: "#"
+    }
+  ]
+}) }}
             
         {% endblock %}
 
