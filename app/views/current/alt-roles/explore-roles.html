@@ -1,5 +1,6 @@
+{% set programmePage = "er" %}
 {% extends "layout.html" %}
-{% set programmePage = "alt_er" %}
+
 
 {% block pageTitle %}
 Explore roles – {{ serviceName }}
@@ -281,15 +282,12 @@ Explore roles – {{ serviceName }}
         </ul>
     </div> -->
 </div>
-     
-            
 {% from "govuk/components/pagination/macro.njk" import govukPagination %}
 
 {{ govukPagination({
- 
-  next: {
-    href: "explore-roles-2"
-  },
+    next: {
+        href: "explore-roles-2"
+      },
   items: [
     {
       number: 1,
@@ -306,6 +304,6 @@ Explore roles – {{ serviceName }}
     }
   ]
 }) }}
-            
-        {% endblock %}
 
+
+        {% endblock %}
