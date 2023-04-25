@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Social workker {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Social worker</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Other titles
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Team manager, manager title 2, another title
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Pay scale
+            </dt>
+            <dd class="govuk-summary-list__value">
+              24-40k
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Typical hours
+            </dt>
+            <dd class="govuk-summary-list__value">
+              40 hours a week
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Working patterns
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">All the live long day</p>
+            </dd>
+          </div>
+        </dl>
+        <div class="govuk__container govuk-container">
+          <div class="govuk-grid govuk-js-toc-container">
+            <div class="govuk-grid__col govuk-grid__col--sticky@m govuk-col-4@m">
+              <aside class="govuk-toc-container" role="complementary">
+                <nav class="govuk-toc" aria-label="Sections in this page">
+                  <h2 class="govuk-toc__title govuk-u-fs-r--b govuk-u-mb-s">Contents</h2>
+                  <ol class="govuk-list govuk-u-mb-m govuk-list--dashed">
+                    <li class="govuk-list__item">
+                      
+                      <a href="#section1" class="govuk-list__link">Role responsibilities</a>
+                    </li>
+                    <li class="govuk-list__item">
+                      <a href="#section2" class="govuk-list__link">Role requirements</a>
+                    </li>
+                    <li class="govuk-list__item">
+                      <a href="#section3" class="govuk-list__link">How to become a social worker</a>
+                    </li>
+                    <li class="govuk-list__item">
+                      <a href="#section4" class="govuk-list__link">Training and programmes</a>
+                    </li>
+                    <li class="govuk-list__item">
+                      <a href="#section5" class="govuk-list__link">Job opportunities</a>
+                    </li>
+                  </ol>
+                </nav>
+              </aside>
+            </div>
+            <div class="govuk-grid__col govuk-col-7@m govuk-push-1@m">
+              <section id="section1">
+                <h2>Role responsibilities</h2>
+                <p>Vestibulum eu volutpat leo, vel lobortis nibh. Nulla eleifend ipsum in rutrum vestibulum. In pretium fermentum libero quis scelerisque. Donec venenatis pellentesque semper. .</p>
+                <p>Cras vulputate pellentesque sem ut tincidunt. Sed auctor volutpat enim, vel elementum dui pretium non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porta ex facilisis, vehicula nunc sed, sollicitudin diam. Curabitur pulvinar urna arcu, ac gravida purus iaculis iaculis. Phasellus lectus nibh, venenatis in iaculis at, tempor at mauris. Maecenas volutpat fringilla nulla vel blandit. Phasellus eu augue risus. Nam non hendrerit nunc, a molestie turpis.</p>
+              </section>
+              <section id="section2">
+                <h2>Role requirements</h2>
+                <p>Cras vulputate pellentesque sem ut tincidunt. Sed auctor volutpat enim, vel elementum dui pretium non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porta ex facilisis, vehicula nunc sed, sollicitudin diam. Curabitur pulvinar urna arcu, ac gravida purus iaculis iaculis. Phasellus lectus nibh, venenatis in iaculis at, tempor at mauris. Maecenas volutpat fringilla nulla vel blandit. Phasellus eu augue risus. Nam non hendrerit nunc, a molestie turpis.</p>
+              </section>
+              <section id="section3">
+                <h2>How to become a social worker</h2>
+                <p>Vestibulum eu volutpat leo, vel lobortis nibh. Nulla eleifend ipsum in rutrum vestibulum. In pretium fermentum libero quis scelerisque. Donec venenatis pellentesque semper.</p>
+                <p>Cras vulputate pellentesque sem ut tincidunt. Sed auctor volutpat enim, vel elementum dui pretium non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porta ex facilisis, vehicula nunc sed, sollicitudin diam. Curabitur pulvinar urna arcu, ac gravida purus iaculis iaculis. Phasellus lectus nibh, venenatis in iaculis at, tempor at mauris. Maecenas volutpat fringilla nulla vel blandit. Phasellus eu augue risus. Nam non hendrerit nunc, a molestie turpis.</p>
+              </section>
+              <section id="section4">
+                <h2>Training and programmes</h2>
+                <p>Cras vulputate pellentesque sem ut tincidunt. Sed auctor volutpat enim, vel elementum dui pretium non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porta ex facilisis, vehicula nunc sed, sollicitudin diam. Curabitur pulvinar urna arcu, ac gravida purus iaculis iaculis. Phasellus lectus nibh, venenatis in iaculis at, tempor at mauris. Maecenas volutpat fringilla nulla vel blandit. Phasellus eu augue risus. Nam non hendrerit nunc, a molestie turpis.</p>
+
+              </section>
+              <section id="section5">
+                <h2>Job opportunities</h2>
+                <p>Vestibulum eu volutpat leo, vel lobortis nibh. Nulla eleifend ipsum in rutrum vestibulum. In pretium fermentum libero quis scelerisque. Donec venenatis pellentesque semper.</p>
+                <p>Cras vulputate pellentesque sem ut tincidunt. Sed auctor volutpat enim, vel elementum dui pretium non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porta ex facilisis, vehicula nunc sed, sollicitudin diam. Curabitur pulvinar urna arcu, ac gravida purus iaculis iaculis. Phasellus lectus nibh, venenatis in iaculis at, tempor at mauris. Maecenas volutpat fringilla nulla vel blandit. Phasellus eu augue risus. Nam non hendrerit nunc, a molestie turpis.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third govuk-!-padding-left-7">
+        <div class="aside-list__related">
+            <h2 class="govuk-heading-m" id="subsection-title">
+              Career pathway
+            </h2>
+            <nav role="navigation" aria-labelledby="subsection-title">
+                <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li>
+                        <!--
+                      <p class="aside-list__heading">Frontline</p>
+                      -->
+                        <h3 class="govuk-heading-m">Frontline</h3>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        NQSW
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        ASYE
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        etc.
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                  <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li>
+                        <h3 class="govuk-heading-m">Management</h3>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        Deputy social work manager
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                    <!--
+                      <a href="#">
+                        Social work manager
+                      </a>
+                    -->
+                        <p class="govuk-!-font-size-19">Social work manager
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        etc.
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                  <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li>
+                        <h3 class="govuk-heading-m">Strategic management</h3>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        Principal social worker
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        Strategic social worker
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        etc.
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                  <div class="aside_list__block">
+                    <ul class="govuk-list govuk-!-font-size-19">
+                    <li>
+                        <h3 class="govuk-heading-m">Leadership</h3>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        Assistant director
+                      </a>
+                    </li>
+                    <li class="aside-list__indent">
+                      <a href="#">
+                        Director of...
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                <div class="aside_list__block">
+                    <div class="aside-list__related">
+                        <p>Here is a brief paragraph about assessment and accreditation so they know what this is all about</p>
+                        <a class="govuk-!-font-size-19" href="#" target="_blank">Link to assessment</a>
+                    </div>
+
+                    
+                </div>
+
+                
+                <!--
+                <div class="aside_list__block">
+                    <div class="section-card__wbutton aside-list__related">
+                        <h3 class="govuk-heading-m">Are you?</h3>
+                        <p class="govuk-!-margin-bottom-6">Here is a brief paragraph about assessment and accreditation so they know what this is all about.</p>
+                        <p class="govuk-body govuk-!-margin-bottom-0">
+                            <a class="govuk-button tl-home--forum govuk-!-margin-bottom-0" href="#">
+                                Explore the assessment
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                -->
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
