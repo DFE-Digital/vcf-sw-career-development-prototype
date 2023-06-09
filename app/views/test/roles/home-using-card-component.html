@@ -1,0 +1,72 @@
+{% set pageName = "hp_beta" %}
+{% set brandType = "edu" %}
+{% extends "layout_whero.html" %}
+
+{% block pageTitle %}
+Develop your career in child and family social work - Department for Education
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Find a programme by career stage</h1>
+        <p class="govuk-body">The programmes we fund develop the skills and knowledge of social workers to help improve outcomes for children and families.</p>
+    </div>
+</div>
+<!-- CARD ROW 1 -->
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+    {{ appNavigationCard({
+        title: 'Practitioners',
+        description: 'Includes social workers in their first 2 years of employment.',
+        programmeUrl: 'practitioners-sub-nav',
+        marginBottom: '6'
+        })
+     }}
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+    {{ appNavigationCard({
+        title: 'Experienced practitioners',
+        description: 'Includes social workers with more than 2 years&#39; experience and no managerial responsibilities.',
+        programmeUrl: 'experienced-practitioners-sub-nav',
+        marginBottom: '6'
+        })
+     }}
+    </div>
+</div>
+<!-- CARD ROW 2 -->
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+    {{ appNavigationCard({
+        title: 'Managers',
+        description: 'Includes team managers, independent reviewing officers.',
+        programmeUrl: 'managers-sub-nav',
+        marginBottom: '6'
+        })
+     }}
+    </div>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+    {{ appNavigationCard({
+        title: 'Senior managers',
+        description: 'Includes heads of service and service managers.',
+        programmeUrl: 'senior-managers-sub-nav',
+        marginBottom: '6'
+        })
+     }}
+    </div>
+</div>
+<!-- CARD ROW 3 -->
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-one-half govuk-!-margin-bottom-4'>
+    {{ appNavigationCard({
+        title: 'Leaders',
+        description: 'Includes assistant directors, directors and principal social workers.',
+        programmeUrl: 'leaders-sub-nav',
+        marginBottom: '6'
+        })
+     }}
+    </div>
+</div>
+  <p><a href="development-programmes">View all programmes</a></p>
+{% endblock %}
