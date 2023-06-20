@@ -1,5 +1,5 @@
 {% set programmePage = "p1" %}
-{% extends "layout_primarynav.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Pathway 1: programme supervisors - development programmes – {{ serviceName }}
@@ -80,15 +80,16 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
         </ul>
         <p class="govuk-body-m">It also prepares you for accessing Pathway 2 for middle managers.</p>
         <h2 class="govuk-heading-l">How it’s delivered</h2>
+        <h3 class="govuk-heading-m">Time scale</h3>
         <p class="govuk-body-m">Pathway 1 is a 3-month programme that:
           <ul class="govuk-list govuk-list--bullet">
             <li>runs 3 times a year starting in November, February and May</li>
             <li>takes about 30 hours to complete</li>
             <li>combines online and in-person learning</li>
           </ul>
-        <h2 class="govuk-heading-m">In-person learning</h2>
+        <h3 class="govuk-heading-m">In-person learning</h3>
         <p class="govuk-body-m">There are 2 days on site at the University of Warwick.</p>
-        <h2 class="govuk-heading-m">Online learning</h2>
+        <h3 class="govuk-heading-m">Online learning</h3>
         <p class="govuk-body-m">It'll take about 14 hours to complete the online modules, which include:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>workshops</li>
@@ -102,14 +103,14 @@ Pathway 1: programme supervisors - development programmes – {{ serviceName }}
         <h2 class="govuk-heading-l">Next steps</h2>
         <p class="govuk-body-m">Speak to your line manager to get support for you doing Pathway 1.</p>
         <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/pathways-programme-apply/">Find out more about Pathway 1 including how to apply</a> on the Frontline website.</p>
-        <br>
+    </div>
 
 
-    <!--Related links -->
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third">
       {% include "../../includes/dfe-pqs-aside.html" %}
     </div>
-  </div>
-  </div>
+
 </div>
 
 

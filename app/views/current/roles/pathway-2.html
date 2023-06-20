@@ -1,12 +1,16 @@
 {% set programmePage = "p2" %}
-{% extends "layout.html" %}
+{% extends "layout_primarynav.html" %}
+{% set nav4Active = true %}
 
 {% block pageTitle %}
 Pathway 2: middle managers - development programmes – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-      {% include "../../includes/breadcrumbs.html" %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
 {% endblock %}
 
 {% block content %}
@@ -87,16 +91,15 @@ Pathway 2: middle managers - development programmes – {{ serviceName }}
           <li>aspiring middle managers for promotion to middle manager roles</li>
         </ul>
         <h2 class="govuk-heading-l">How it’s delivered</h2>
-        <h3 class="govuk-heading-m">Time scale</h3>
         <p class="govuk-body-m">Pathway 2 is a 10-month programme that:
           <ul class="govuk-list govuk-list--bullet">
             <li>runs twice a year starting in January and October</li>
             <li>takes about 56 hours to complete</li>
             <li>combines online and in-person learning</li>
           </ul>
-        <h3 class="govuk-heading-m">In-person learning</h3>
+        <h2 class="govuk-heading-m">In-person learning</h2>
         <p class="govuk-body-m">There are 4 days on site at the University of Warwick run as separate 2-day modules.</p>
-        <h3 class="govuk-heading-m">Online learning</h3>
+        <h2 class="govuk-heading-m">Online learning</h2>
         <p class="govuk-body-m">It'll take about 24 hours to complete the online modules, which include:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>workshops</li>
@@ -111,12 +114,13 @@ Pathway 2: middle managers - development programmes – {{ serviceName }}
         <p class="govuk-body-m">Speak to your line manager to get support for you doing Pathway 2.</p>
         <p class="govuk-body-m">If you’re an aspiring middle manager, you’ll also need to answer questions about your work experience as part of your application.</p>
         <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/pathways-programme-apply/">Find out more about Pathway 2 including how to apply</a> on the Frontline website.</p>
-    </div>
+    <br>
 
     <!--RIGHT HAND NAV -->
-    <div class="govuk-grid-column-one-third">
+   
       {% include "../../includes/dfe-pqs-aside.html" %}
     </div>
+  </div>
 </div>
 
 

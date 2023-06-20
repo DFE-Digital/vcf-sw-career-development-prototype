@@ -1,4 +1,4 @@
-{% extends "layout_primarynav.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Leaders – {{ serviceName }}
@@ -13,7 +13,8 @@ Leaders – {{ serviceName }}
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Programmes for leaders</h1>
+        <h1 class="govuk-heading-xl">Leaders</h1>
+        <h2 class="govuk-heading-l">Development programmes</h2>
         <p class="govuk-body-m">The programmes we fund for social work leaders include:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>Upon: Inspiring Leaders, delivered by The Staff College, The Institute of Public Care, Skills for Care and GatenbySanderson</li>
@@ -33,13 +34,13 @@ Leaders – {{ serviceName }}
 <div class="govuk-grid-row dfe-section-card__container">
     <div class="govuk-grid-column-one-half dfe-section-card__container">
         <div class="dfe-section-card">
-            <h2 class="govuk-heading-m"><a href="upon-aspiring-directors?sending-page=alt_lead" class="govuk-link">Upon: aspirant directors programme</a></h2>
+            <h3 class="govuk-heading-m"><a href="upon-aspiring-directors?sending-page=alt_lead" class="govuk-link">Upon: aspirant directors programme</a></h3>
             <p class="govuk-body">For social work leaders who want to become directors of children's services in the next 3 years.</p>
         </div>
     </div>
     <div class="govuk-grid-column-one-half dfe-section-card__container">
         <div class="dfe-section-card">
-            <h2 class="govuk-heading-m"><a href="upon-new-directors?sending-page=alt_lead" class="govuk-link">Upon: new directors programme</a></h2>
+            <h3 class="govuk-heading-m"><a href="upon-new-directors?sending-page=alt_lead" class="govuk-link">Upon: new directors programme</a></h3>
             <p class="govuk-body">For new directors of children's services to develop their leadership, management and technical skills.</p>
         </div>
     </div>
@@ -47,7 +48,7 @@ Leaders – {{ serviceName }}
 <div class="govuk-grid-row dfe-section-card__container">
     <div class="govuk-grid-column-one-half dfe-section-card__container">
         <div class="dfe-section-card">
-            <h2 class="govuk-heading-m"><a href="pathway-4?sending-page=alt_lead" class="govuk-link">Pathway 4: practice leaders</a></h2>
+            <h3 class="govuk-heading-m"><a href="pathway-4?sending-page=alt_lead" class="govuk-link">Pathway 4: practice leaders</a></h3>
             <p class="govuk-body">For practice leaders to lead, champion and improve services across their local system.</p>
         </div>
     </div>
@@ -58,10 +59,37 @@ Leaders – {{ serviceName }}
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 <div class='govuk-grid-row'>
     <div class='govuk-grid-column-two-thirds'>
-        <h2 class="govuk-heading-l">Roles for Leaders</h2>
-        <h3 class="govuk-heading-m"><a href="explore-roles?sending-page=alt_lead" class="govuk-link">Explore roles in children and family social care</a></h3>
-        <p  class="govuk-body">Find out about roles and different career stages.</p>
+        <h2 class="govuk-heading-l">Roles</h2>
+        <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-heading-m"><a href="https://nationalcareers.service.gov.uk/job-profiles/social-worker" class="govuk-link">Assistant director (opens a new website)</a></h3>
+            </div>
+                <p class="govuk-body-s">Assistant directors oversee the strategic development, management, and delivery of services that support and protect children and families.</p>
+                <div class="govuk-!-padding-bottom-3">
+                        <ul class="govuk-list">
+                            <li>
+                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £70,000 to £90,000</span>
+                            </li>
+                        </ul>
+                    </div>
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-heading-m"><a href="https://nationalcareers.service.gov.uk/job-profiles/social-worker" class="govuk-link">Director of children's services (opens a new website)</a></h3>
+                        </div>
+                            <p class="govuk-body-s">Directors of children’s services lead, manage and take overall responsibility for the delivery of high-quality social care in their local authority.</p>
+                            <div class="govuk-grid-row govuk-!-padding-bottom-3">
+                                <div class="govuk-grid-column-one-half">
+                                    <ul class="govuk-list">
+                                        <li>
+                                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £100,000 to £150,000
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <p><a href="explore-roles?sending-page=alt_lead">Explore all roles</a></p>
+
     </div>
 </div>
+
 
 {% endblock %}

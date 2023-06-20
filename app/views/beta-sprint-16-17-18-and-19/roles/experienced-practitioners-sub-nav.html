@@ -1,24 +1,19 @@
-{% extends "layout_primarynav.html" %}
-{% set nav5Active = true %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Experienced practitioners – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBackLink({
-href: "javascript:window.history.back()",
-text: "Back"
-}) }}
+      {% include "../../includes/breadcrumbs.html" %}
 {% endblock %}
 
 
-
 {% block content %}
-
+<h1 class="govuk-heading-xl">Experienced practitioners</h1>
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Programmes for experienced practitioners</h1>
+        <h2 class="govuk-heading-l">Development programmes</h2>
         <p class="govuk-body">We fund the Social Work Leadership Pathways programme for child and family social workers.</p>
         <p class="govuk-body">It's delivered by the Frontline charity and includes 4 separate pathways, each aimed at a different level of social work leadership.</p>
         <p class="govuk-body">Experienced practitioners can do Pathways 1 and 2.</p>
@@ -27,13 +22,13 @@ text: "Back"
 <div class="govuk-grid-row dfe-section-card__container">
     <div class="govuk-grid-column-one-half dfe-section-card__container">
         <div class="dfe-section-card">
-            <h2 class="govuk-heading-m"><a href="pathway-1?sending-page=alt_expp" class="govuk-link">Pathway 1: practice supervisors</a></h2>
+            <h3 class="govuk-heading-m"><a href="pathway-1?sending-page=alt_expp" class="govuk-link">Pathway 1: practice supervisors</a></h3>
             <p class="govuk-body">For practice supervisors or  equivalent to develop excellent social work practice and leadership in others.</p>
         </div>
     </div>
     <div class="govuk-grid-column-one-half dfe-section-card__container">
         <div class="dfe-section-card">
-            <h2 class="govuk-heading-m"><a href="pathway-2?sending-page=alt_expp" class="govuk-link">Pathway 2: middle managers</a></h2>
+            <h3 class="govuk-heading-m"><a href="pathway-2?sending-page=alt_expp" class="govuk-link">Pathway 2: middle managers</a></h3>
             <p class="govuk-body">For experienced practitioners who want to become middle or team managers.</p>
         </div>
     </div>
@@ -45,7 +40,7 @@ text: "Back"
     <div class='govuk-grid-column-two-thirds'>
         <h2 class="govuk-heading-l">Roles</h2>
         <div class="govuk-heading-s govuk-!-margin-bottom-1">
-            <h3 class="govuk-heading-m"><a href="practice-supervisor-role.html" class="govuk-link">Senior practitioner</a></h3>
+            <h3 class="govuk-heading-m"><a href="https://nationalcareers.service.gov.uk/job-profiles/social-worker" class="govuk-link">Senior practitioner (opens a new website)</a></h3>
             </div>
                <p class="govuk-body-s">Senior practitioners manage complex caseloads, provide quality assurance and mentor and support less experienced social workers.</p>
                 <div class="govuk-!-padding-bottom-3">
@@ -56,7 +51,7 @@ text: "Back"
                         </ul>
                     </div>
           <div class="govuk-heading-s govuk-!-margin-bottom-1">
-            <h3 class="govuk-heading-m"><a href="practice-supervisor-role.html" class="govuk-link">Supervisor</a></h3>
+            <h3 class="govuk-heading-m"><a href="https://nationalcareers.service.gov.uk/job-profiles/social-worker" class="govuk-link">Supervisor (opens a new website)</a></h3>
                         </div>
                         <p class="govuk-body-s">Supervisors oversee the practice and decision-making of child and family practitioners and work with them to develop their skills.</p>
                             <div class="govuk-grid-row govuk-!-padding-bottom-3">

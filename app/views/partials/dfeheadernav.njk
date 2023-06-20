@@ -26,18 +26,22 @@
                <span class="govuk-visually-hidden">Close menu</span>
             </button>
          </p>
+
+<!--Homepage-->
          <ul class="dfe-header__navigation-list">
             <li class="dfe-header__navigation-item id="home">
-               <a class="dfe-header__navigation-link" href="/futurestate/roles/home">
+               <a class="dfe-header__navigation-link" href="/current/roles/home">
                   Home
                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   </svg>
                </a>
             </li>
+
+<!--About-->
                                       {% if nav1Active %}
                           <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
-                            <a class="dfe-header__navigation-link" href="/futurestate/roles/our-service">
+                            <a class="dfe-header__navigation-link" href="/current/roles/our-service">
                                   About
                                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -47,7 +51,7 @@
 
                           {% else %}
                           <li class="dfe-header__navigation-item">
-                            <a class="dfe-header__navigation-link" href="/futurestate/roles/our-service">
+                            <a class="dfe-header__navigation-link" href="/current/roles/our-service">
                                   About
                                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -56,25 +60,57 @@
                           </li>
 
                           {% endif %}
-            <li class="dfe-header__navigation-item ">
-               <a class="dfe-header__navigation-link" href="/futurestate/roles/career-stages">
-                  Career stages
-                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
-                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-                  </svg>
-               </a>
-            </li>
-            <li class="dfe-header__navigation-item ">
-               <a class="dfe-header__navigation-link" href="/futurestate/roles/development-programmes">
-                  Development programmes
-                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
-                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-                  </svg>
-               </a>
-            </li>
+
+<!--Career stages-->                          
+           {% if nav5Active %}
+                          <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
+                            <a class="dfe-header__navigation-link" href="/current/roles/career-stages">
+                                  Career stages
+                                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                                  </svg>
+                              </a>
+                          </li>
+
+                          {% else %}
+                          <li class="dfe-header__navigation-item">
+                            <a class="dfe-header__navigation-link" href="/current/roles/career-stages">
+                                  Career stages
+                                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                                  </svg>
+                              </a>
+                          </li>
+
+                          {% endif %}
+<!--Development programmes-->
+
+           {% if nav4Active %}
+                          <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
+                            <a class="dfe-header__navigation-link" href="/current/roles/development-programmes">
+                                  Development programmes
+                                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                                  </svg>
+                              </a>
+                          </li>
+
+                          {% else %}
+                          <li class="dfe-header__navigation-item">
+                            <a class="dfe-header__navigation-link" href="/current/roles/development-programmes">
+                                  Development programmes
+                                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                                  </svg>
+                              </a>
+                          </li>
+
+                          {% endif %}
+
+<!--Explore roles-->
            {% if nav3Active %}
                           <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
-                            <a class="dfe-header__navigation-link" href="/futurestate/roles/explore-roles">
+                            <a class="dfe-header__navigation-link" href="/current/roles/explore-roles">
                                   Explore roles
                                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -84,7 +120,7 @@
 
                           {% else %}
                           <li class="dfe-header__navigation-item">
-                            <a class="dfe-header__navigation-link" href="/futurestate/roles/explore-roles">
+                            <a class="dfe-header__navigation-link" href="/current/roles/explore-roles">
                                   Explore roles
                                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -93,9 +129,11 @@
                           </li>
 
                           {% endif %}
+
+<!--Resources-->
                                       {% if nav2Active %}
                           <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
-                            <a class="dfe-header__navigation-link" href="/futurestate/roles/resources">
+                            <a class="dfe-header__navigation-link" href="/current/roles/resources">
                                   Resources
                                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -105,7 +143,7 @@
 
                           {% else %}
                           <li class="dfe-header__navigation-item">
-                            <a class="dfe-header__navigation-link" href="/futurestate/roles/resources">
+                            <a class="dfe-header__navigation-link" href="/current/roles/resources">
                                   Resources
                                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -114,18 +152,21 @@
                           </li>
 
                           {% endif %}
-               
+
+<!--News-->               
             </li>
                         <li class="dfe-header__navigation-item ">
-               <a class="dfe-header__navigation-link" href="/futurestate/roles/news">
+               <a class="dfe-header__navigation-link" href="/current/roles/news">
                   News
                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   </svg>
                </a>
             </li>
+
+<!--Community-->            
                         <li class="dfe-header__navigation-item ">
-               <a class="dfe-header__navigation-link" href="/futurestate/roles/community">
+               <a class="dfe-header__navigation-link" href="/current/roles/community">
                   Community
                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>

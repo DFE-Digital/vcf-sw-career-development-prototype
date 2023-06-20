@@ -1,12 +1,16 @@
 {% set programmePage = "p3" %}
-{% extends "layout.html" %}
+{% extends "layout_primarynav.html" %}
+{% set nav4Active = true %}
 
 {% block pageTitle %}
 Pathway 3: heads of service - development programmes – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-      {% include "../../includes/breadcrumbs.html" %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
 {% endblock %}
 
 {% block content %}
@@ -88,20 +92,19 @@ Pathway 3: heads of service - development programmes – {{ serviceName }}
           <li>aspiring heads of service for promotion to head of service roles</li>
         </ul>
         <h2 class="govuk-heading-l">How it’s delivered</h2>
-        <h3 class="govuk-heading-m">Time scale</h3>
         <p class="govuk-body-m">Pathway 3 is a 12-month programme that:
           <ul class="govuk-list govuk-list--bullet">
             <li>runs once a year starting in November</li>
             <li>takes about 88 hours to complete</li>
             <li>combines online and in-person learning</li>
           </ul>
-        <h3 class="govuk-heading-m">In-person learning</h3>
+        <h2 class="govuk-heading-m">In-person learning</h2>
         <p class="govuk-body-m">Includes:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>4 days on site at the University of Warwick run as separate 2-day modules</li>
           <li>1 day visiting an innovative social work practice, either in another local authority or organisation like a charity</li>
         </ul>
-        <h3 class="govuk-heading-m">Online learning</h3>
+        <h2 class="govuk-heading-m">Online learning</h2>
         <p class="govuk-body-m">It'll take about 38 hours to complete the online modules, which include:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>workshops</li>
@@ -117,11 +120,12 @@ Pathway 3: heads of service - development programmes – {{ serviceName }}
         <p class="govuk-body-m">Speak to your line manager to get support for you doing Pathway 3.</p>
         <p class="govuk-body-m">If you’re an aspiring head of service, you’ll also need to answer questions about your work experience as part of your application.</p>
         <p class="govuk-body-m"><a href="https://thefrontline.org.uk/pathways-programme/pathways-programme-apply/">Find out more about Pathway 3 including how to apply</a> on the Frontline website.</p>
-    </div>
+    <br>
 
     <!--RIGHT HAND NAV -->
-    <div class="govuk-grid-column-one-third">
+    
       {% include "../../includes/dfe-pqs-aside.html" %}
+    </div>
     </div>
 </div>
 

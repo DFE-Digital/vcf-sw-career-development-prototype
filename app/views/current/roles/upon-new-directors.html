@@ -1,12 +1,16 @@
+{% extends "layout_primarynav.html" %}
 {% set programmePage = "un" %}
-{% extends "layout.html" %}
+{% set nav4Active = true %}
 
 {% block pageTitle %}
 Upon: new directors programme - development programmes – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-      {% include "../../includes/breadcrumbs.html" %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
 {% endblock %}
 
 {% block content %}
