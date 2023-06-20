@@ -1,0 +1,156 @@
+
+<!-- dynamically create the breadcrumbs for each content page depending on route taken to reach each -->
+{% set sendingPage = data["sending-page"] %}
+{% set programmePage = programmePage %}
+
+{{ sendingPage | log }}
+{{ programmePage | log }}
+
+
+
+<!-- ASYE AND HOME PART FOR ALL PAGES -->
+    {% if sendingPage == 'dp' and programmePage == 'ay' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+        {% elseif sendingPage == 'alt_prac' and programmePage == 'ay' %}
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
+            </li>
+    {% endif %}
+
+<!-- PATHWAY 1 -->
+    {% if sendingPage == 'ps' and programmePage == 'p1' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="practice-supervisors">Practice supervisors</a>
+        </li>
+        {% elseif sendingPage == 'dp' and programmePage == 'p1' %}
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+            </li>
+        {% elseif sendingPage == 'alt_expp' and programmePage == 'p1' %}
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="experienced-practitioners-sub-nav">Experienced practitioners</a>
+            </li>
+    {% endif %}
+<!-- PATHWAY 2 -->
+    {% if sendingPage == 'ps' and programmePage == 'p2' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="practice-supervisors">Practice supervisors</a>
+        </li>
+    {% elseif sendingPage == 'mm' and programmePage == 'p2' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="middle-managers-and-heads-of-service">Middle managers and heads of service</a>
+        </li>
+    {% elseif sendingPage == 'dp' and programmePage == 'p2' %}
+       <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+       </li>
+    {% elseif sendingPage == 'alt_expp' and programmePage == 'p2' %}
+       <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="experienced-practitioners-sub-nav">Experienced practitioners</a>
+       </li>
+    {% elseif sendingPage == 'alt_mgrs' and programmePage == 'p2' %}
+       <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="managers-sub-nav">Managers</a>
+       </li>
+    {% endif %}
+<!-- PATHWAY 3 -->
+    {% if sendingPage == 'mm' and programmePage == 'p3' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="middle-managers-and-heads-of-service">Middle managers and heads of service</a>
+        </li>
+    {% elseif sendingPage == 'dp' and programmePage == 'p3' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_mgrs' and programmePage == 'p3' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="managers-sub-nav">Managers</a>
+        </li>
+    {% elseif sendingPage == 'alt_smgr' and programmePage == 'p3' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-sub-nav">Senior managers</a>
+        </li>
+    {% endif %}
+<!-- PATHWAY 4 -->
+    {% if sendingPage == 'mm' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="middle-managers-and-heads-of-service">Middle managers and heads of service</a>
+        </li>
+    {% elseif sendingPage == 'sm' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-and-leaders">Senior managers and leaders</a>
+        </li>
+    {% elseif sendingPage == 'dp' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_smgr' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-sub-nav">Senior managers</a>
+        </li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'p4' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+        </li>
+    {% endif %}
+<!--ASPIRANT DIRECTORS -->
+    {% if sendingPage == 'sm' and programmePage == 'ua' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-and-leaders">Senior managers and leaders</a>
+        </li>
+    {% elseif sendingPage == 'dp' and programmePage == 'ua' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'ua' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+        </li>
+    {% endif %}
+<!--NEW DIRECTORS -->
+    {% if sendingPage == 'sm' and programmePage == 'un' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="senior-managers-and-leaders">Senior managers and leaders</a>
+        </li>
+    {% elseif sendingPage == 'dp' and programmePage == 'un' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="development-programmes">Development programmes for social workers</a>
+        </li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'un' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+        </li>
+    {% endif %}
+<!--PRACTITIONERS CONTENT PAGE -->
+    {% if sendingPage == 'alt_prac' and programmePage == 'pr' %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
+        </li>
+    {% endif %}
+
+<!--EXPLORE ROLES CONTENT PAGE -->
+    {% if sendingPage == 'alt_prac' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="practitioners-sub-nav">Practitioners</a>
+</li>
+    {% elseif sendingPage == 'alt_expp' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="experienced-practitioners-sub-nav">Experienced practitioners</a>
+</li>
+    {% elseif sendingPage == 'alt_mgrs' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="managers-sub-nav">Managers</a>
+</li>
+    {% elseif sendingPage == 'alt_smgr' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="senior-managers-sub-nav">Senior managers</a>
+</li>
+    {% elseif sendingPage == 'alt_lead' and programmePage == 'er' %}
+    <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="leaders-sub-nav">Leaders</a>
+</li>
+{% endif %}
+  </ol>
+</div>
