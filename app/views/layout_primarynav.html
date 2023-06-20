@@ -44,8 +44,6 @@
 {% endif %}
 
 {% block bodyEnd %}
-  {% block scripts %}
-    {% block pageScripts %}{% endblock %}
-  {% endblock %}
+{{ super() }}
   <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}
