@@ -51,6 +51,14 @@ body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr
   color: white;
 }
 
+.news-heading-font {
+  color:  #1d70b8;
+}
+
+.news-date-font {
+  color:  #505a5f;
+}
+
 /* DFE HEADER - CODE FROM DFE DESIGN GUIDE AND WITH EDITS
 --------------------------------------------------------- */
 
@@ -141,6 +149,29 @@ body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr
 
     &__container {
       display: grid;
+      width: 100;
+    }
+  }
+}
+
+/* DFE CARD COMPONENT - NEW HP
+--------------------------- */
+
+.dfe-section-card-new-hp {
+  padding: 16px;
+  margin-bottom: 20px;
+  flex: 1;
+  background-color: $colour-card-background;
+
+  &__container {
+    display: block;
+    width: 100;
+  }
+
+  @media (max-width: 40.0525em) {
+
+    &__container {
+      display: block;
       width: 100;
     }
   }
@@ -1451,5 +1482,231 @@ a,blockquote,body,div,h1,h2,h3,h4,h5,h6,li,p,span,table,td,th,tr {
 
 
 
+/* ==========================================================================
+CTAs
+========================================================================== */
+.campaign-cta--light-blue .campaign-cta__content h2,
+.campaign-cta--light-blue .campaign-cta__content h3, .campaign-cta--underline .campaign-cta__content h2,
+.campaign-cta--underline .campaign-cta__content h3,
+.campaign-cta--underline .campaign-cta__content .field-type-text {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.CtaPri {
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  position: relative;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 6px 42px 6px 8px;
+  color: #ffffff;
+  background: #0f568b;
+}
+
+.CtaPri:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  margin: -6px 0 0;
+  height: 12px;
+  width: 8px;
+  background: url("/sites/all/themes/healthcareers/_lib/img/sprite.png") no-repeat 0 -14px;
+}
+
+a[href].CtaPri {
+  color: #ffffff;
+}
+
+.campaign-cta {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 15px;
+  border: 5px solid #f19929;
+}
+
+@media (min-width: 38.75em) {
+  .campaign-cta {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 54.375em) {
+  .campaign-cta {
+    padding: 25px 50px;
+  }
+}
+
+@media (min-width: 38.75em) {
+  .campaign-cta > * + * {
+    margin-left: 40px;
+  }
+}
+
+.campaign-cta a {
+  background-color: #347ca9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+@media (max-width: 38.74em) {
+  .campaign-cta a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 38.75em) {
+  .campaign-cta a {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 54.375em) {
+  .campaign-cta a {
+    font-size: 1.5em;
+  }
+}
+
+.campaign-cta span {
+  color: #005eb8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 38.74em) {
+  .campaign-cta p {
+    margin: 60px 0;
+  }
+}
+
+@media (min-width: 38.75em) {
+  .campaign-cta p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.campaign-cta--bordered {
+  background: none;
+  border: 3px solid #707070;
+  padding: 0.9375rem;
+}
+
+@media (min-width: 54.375em) {
+  .campaign-cta--bordered {
+    padding: 1.875rem;
+  }
+}
+
+.campaign-cta--bordered h2 {
+  margin-bottom: 1rem;
+}
+
+.campaign-cta--bordered p {
+  margin: 1rem 0;
+}
+
+.campaign-cta--bordered a {
+  font-size: 1.2em;
+}
+
+.campaign-cta--light-blue {
+  border: none;
+  background-color: $colour-card-background;
+  padding: 1.875rem;
+}
+
+@media (min-width: 54.375em) {
+  .campaign-cta--light-blue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.campaign-cta--light-blue .campaign-cta__content p {
+  margin: 1rem 0;
+}
+
+@media (max-width: 38.74em) {
+  .campaign-cta--light-blue .campaign-cta__content p {
+    margin: 1rem 0;
+  }
+}
+
+.campaign-cta--light-blue .campaign-cta__content a {
+  margin: 0;
+}
+
+@media (min-width: 54.375em) {
+  .campaign-cta--light-blue .campaign-cta__content a {
+    -ms-flex-preferred-size: 248px;
+    flex-basis: 248px;
+  }
+}
+
+.campaign-cta--turquoise {
+  border-color: #33b6ad;
+}
+
+.campaign-cta--underline {
+  padding: 1.875rem;
+}
+
+.campaign-cta--underline .campaign-cta__content p,
+.campaign-cta--underline .campaign-cta__content .field-type-text-long {
+  margin: 1rem 0;
+}
+
+@media (max-width: 38.74em) {
+  .campaign-cta--underline .campaign-cta__content p,
+  .campaign-cta--underline .campaign-cta__content .field-type-text-long {
+    margin: 1rem 0;
+  }
+}
+
+.campaign-cta--underline a {
+  background-color: transparent;
+  color: #005eb8;
+  display: inline;
+  font-size: 1rem;
+  min-width: none;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.node-roles-page .campaign-cta__content h2,
+.node-roles-page .campaign-cta__content h3 {
+  color: #333333;
+}
+
+.campaign-cta__content h2,
+.campaign-cta__content h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
 
 
