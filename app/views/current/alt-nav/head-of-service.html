@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Head of service - Develop your career in child and family social work  {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Head of service</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Salary range
+              </dt>
+              <dd class="govuk-summary-list__value">
+                £28,000 to £45,000 depending on location, responsibilities and experience
+              </dd>
+            </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Summary
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Assist children and families in need by providing assessments, interventions and ongoing support to improve their well-being and 	safety
+            </dd>
+          </div>
+        <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Typical hours
+            </dt>
+            <dd class="govuk-summary-list__value">
+              37 to 40 hours a week
+            </dd>
+          </div> -->
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Other names
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Social work practitioner, frontline social worker
+            </dd>
+          </div>
+        <!--  <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Working patterns
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">All the live long day</p>
+            </dd>
+          </div> -->
+        </dl>
+
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2">
+                  What you'll do
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-2">
+              <p class="govuk-body-m">As a social worker you’ll:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>conduct assessments of children and families to identify needs and risks</li>
+                <li>develop care plans that address the needs of children and families and promote their well-being</li>
+                <li>provide emotional and practical support to children and families</li>
+                <li>keep up-to-date records of assessments, care plans and progress reports</li>
+                <li>have regular supervision sessions with managers</li>
+                <li>work with multi-agency partners such as health professionals, schools and community organisations</li>
+                <li>take part in training and development to enhance your skills and knowledge</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2">
+                  Skills and knowledge
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-2">
+              <p class="govuk-body-m">You'll need to:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>identify and analyse complex social, emotional and environmental issues affecting children and families</li>
+                <li>develop and put in place evidence-based care review plans</li>
+                <li>communicate effectively and build positive relationships with colleagues, service users and multi-agency partners</li>
+                <li>manage multiple cases at the same time</li>
+                <li>deal with difficult cases and situations and have self-care strategies to maintain your physical and emotional well-being</li>
+                <li>engage in reflective practice to enhance your skills and knowledge</li>
+                <li>take on feedback to improve your practice</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-1">
+                  How to become one
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-with-summary-sections-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-1">
+              <p class="govuk-body-m">To become a team manager you must have a degree in social work and be registered with Social Work England.</p>
+              <p class="govuk-body-m">You should also have:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>at least 5 years' experience as a registered child and family social worker</li>
+                <li>experience working with multi-agency partners such as healthcare providers, schools and police services</li>
+                <li>experience managing budgets and resources</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                  Career paths and progression
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+              <p class="govuk-body-m">With experience you could:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>progress into an advanced leadership role such as <a href="service-manager">service manager<a/> or <a href="head-of-service">head of service</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                  Current opportunities
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+              <p class="govuk-body-m">The <a href="https://findajob.dwp.gov.uk/">Find a job service</a> can help you with your search for jobs and send alerts when new jobs become available.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
