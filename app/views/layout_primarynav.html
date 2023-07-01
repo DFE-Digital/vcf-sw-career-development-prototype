@@ -1,8 +1,9 @@
 {#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
-{%- set assetPath = '/govuk/assets' -%}
+{# 1 #} 
+{% from 'node_modules/dfe-frontend-alpha/packages/components/header/macro.njk' import header %}
 
-{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
-
+{# 2 #}
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
 <!--project specific macros-->
 {% from "_components/navigation-card/macro.njk" import appNavigationCard %}
 

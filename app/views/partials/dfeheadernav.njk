@@ -11,7 +11,7 @@
       </div>
       <div class="dfe-header__content" id="content-header">
          <div class="dfe-header__menu">
-            <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+            <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="">Menu</button>
          </div>
       </div>
    </div>
@@ -89,7 +89,7 @@
 <!--Development programmes-->
 <!--Development programmes-->     
 {% if nav6Active %}       
-                        <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
+                        <li class="dfe-header__navigation-item ">
                <a class="dfe-header__navigation-link" href="/current/roles/development-programmes">
                   Development programmes
                   <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
@@ -181,8 +181,7 @@
    </nav>
 </header>
 
-
-<script>
+<script> 
    // Get the current page URL
    var currentPageUrl = window.location.pathname;
 
@@ -202,6 +201,31 @@
          navigationItem.classList.add("dfe-header__navigation-item--current");
       }
    }
+
+// Get the necessary elements
+const toggleButton = document.getElementById('toggle-menu');
+const navigationMenu = document.getElementById('header-navigation');
+
+// Add an event listener to the toggle button
+toggleButton.addEventListener('click', function() {
+  const expanded = toggleButton.getAttribute('aria-expanded');
+  const isExpanded = expanded === 'true';
+  
+  // Toggle the visibility of the navigation menu
+  if (isExpanded) {
+    toggleButton.setAttribute('aria-expanded', 'false');
+    navigationMenu.style.display = 'none';
+  } else {
+    toggleButton.setAttribute('aria-expanded', 'true');
+    navigationMenu.style.display = 'block';
+  }
+});
+   // JavaScript code to handle the click event on the close button
+   var closeMenuButton = document.getElementById('close-menu');
+   var headerNavigation = document.getElementById('header-navigation');
+
+   closeMenuButton.addEventListener('click', function() {
+      headerNavigation.style.display = 'none';
+   });
+
 </script>
-
-
