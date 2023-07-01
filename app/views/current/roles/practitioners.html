@@ -6,7 +6,10 @@ Practitioners – {{ serviceName }}
 {% endblock %}
 
 {% block beforeContent %}
-      {% include "../../includes/breadcrumbs.html" %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
 {% endblock %}
 
 {% block content %}
