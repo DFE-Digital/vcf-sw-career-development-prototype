@@ -636,9 +636,9 @@ a[href].CtaPri {
 }
 
 /* ==========================================================================
-Section card
+Section card home
 ========================================================================== */
-.section-card {
+.section-card-home {
   background-color: $colour-card-background;
   padding: 15px;
   height: 375px;
@@ -652,6 +652,54 @@ Section card
     height: auto; /* Reset height to auto for mobile viewports */
   }
 
+
+  &__wborder {
+    background-color: $colour-card-background;
+    padding: 15px;
+    box-shadow: 0px 2px $colour-drop-shadow;
+  }
+
+    &__wfullborder {
+    padding: 15px;
+    /*box-shadow: inset 0 0 0 2px $colour-drop-shadow;*/
+    border: 2px solid $colour-drop-shadow;
+  }
+
+  &__wbutton {
+    background-color: $colour-card-background;
+    padding: 30px;
+  }
+
+  &__wimage {
+
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__noborder {
+    background-color: $colour-card-background;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__clearwborder {
+    padding: 15px;
+    border: 1px solid $colour-border-grey;
+  }
+
+  &__clear {
+    padding: 15px;
+  }
+}
+
+/* ==========================================================================
+Section card
+========================================================================== */
+.section-card {
+  background-color: $colour-card-background;
+  padding: 15px;
 
   &__wborder {
     background-color: $colour-card-background;
