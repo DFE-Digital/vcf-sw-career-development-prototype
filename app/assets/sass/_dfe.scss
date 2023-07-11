@@ -641,6 +641,17 @@ Section card
 .section-card {
   background-color: $colour-card-background;
   padding: 15px;
+  height: 400px;
+  margin-bottom: 20px;
+
+  @media (max-width: 800px) {
+    height: 500px; /* Reset height to auto for mobile viewports */
+  }
+
+  @media (max-width: 640px) {
+    height: auto; /* Reset height to auto for mobile viewports */
+  }
+
 
   &__wborder {
     background-color: $colour-card-background;
@@ -682,11 +693,4 @@ Section card
     padding: 15px;
   }
 }
-
-
-
-
-
-
-
 
