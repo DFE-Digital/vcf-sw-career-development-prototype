@@ -1,0 +1,75 @@
+{% extends "layout_primarynav_aug.html" %}
+{% set nav5Active = true %}
+
+{% block pageTitle %}
+Experienced practitioners – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({ href: "javascript:window.history.back()", text: "Back" }) }}
+{% endblock %}
+
+
+{% block content %}
+<h1 class="govuk-heading-xl">Experienced practitioners</h1>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">Development programmes</h2>
+        <p class="govuk-body">We fund the Social Work Leadership Pathways programme for child and family social workers.</p>
+        <p class="govuk-body">It's delivered by the Frontline charity and includes 4 separate pathways, each aimed at a different level of social work leadership.</p>
+        <p class="govuk-body">Experienced practitioners can do Pathways 1 and 2.</p>
+    </div>
+</div>
+<div class="govuk-grid-row dfe-section-card__container">
+    <div class="govuk-grid-column-one-half dfe-section-card__container">
+        <div class="dfe-section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-1.html" class="govuk-link">Pathway 1: practice supervisors</a></h3>
+            <p class="govuk-body">For practice supervisors or  equivalent to develop excellent social work practice and leadership in others.</p>
+        </div>
+    </div>
+    <div class="govuk-grid-column-one-half dfe-section-card__container">
+        <div class="dfe-section-card">
+            <h3 class="govuk-heading-m"><a href="pathway-2.html" class="govuk-link">Pathway 2: middle managers</a></h3>
+            <p class="govuk-body">For experienced practitioners who want to become middle or team managers.</p>
+        </div>
+    </div>
+</div>
+<p><a href="development-programmes">View all programmes</a></p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-two-thirds'>
+        <h2 class="govuk-heading-l">Roles</h2>
+        <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-heading-m"><a href="senior-practitioner.html" class="govuk-link">Senior practitioner</a></h3>
+            </div>
+               <p class="govuk-body-s">Senior practitioners manage complex caseloads, provide quality assurance and mentor and support less experienced social workers.</p>
+                <div class="govuk-!-padding-bottom-3">
+                        <ul class="govuk-list">
+                            <li>
+                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £38,000 to £50,000</span>
+                            </li>
+                        </ul>
+                    </div>
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-heading-m"><a href="practice-supervisor.html" class="govuk-link">Practice supervisor</a></h3>
+                        </div>
+                        <p class="govuk-body-s">Supervisors oversee the practice and decision-making of child and family practitioners and work with them to develop their skills.</p>
+                            <div class="govuk-grid-row govuk-!-padding-bottom-3">
+                                <div class="govuk-grid-column-one-half">
+                                    <ul class="govuk-list">
+                                        <li>
+                                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £35,000 to £55,000</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <p><a href="explore-roles?sending-page=alt_expp">Explore all roles</a></p>
+
+    </div>
+</div>
+
+
+
+{% endblock %}

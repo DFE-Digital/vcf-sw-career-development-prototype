@@ -415,7 +415,7 @@ CTAs
 .campaign-cta--light-blue .campaign-cta__content h3, .campaign-cta--underline .campaign-cta__content h2,
 .campaign-cta--underline .campaign-cta__content h3,
 .campaign-cta--underline .campaign-cta__content .field-type-text {
-  color: #333333;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 1rem 0;
@@ -558,7 +558,7 @@ a[href].CtaPri {
 
 .campaign-cta--light-blue {
   border: none;
-  background-color: $colour-card-background;
+  background-color: $dfe-accent;
   padding: 1.875rem;
 }
 
@@ -572,6 +572,7 @@ a[href].CtaPri {
 
 .campaign-cta--light-blue .campaign-cta__content p {
   margin: 1rem 0;
+  color: #fff;
 }
 
 @media (max-width: 38.74em) {
