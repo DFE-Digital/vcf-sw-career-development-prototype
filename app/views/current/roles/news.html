@@ -10,6 +10,24 @@ Explore roles – {{ serviceName }}
 
 {% block content %}
 
+<script>
+  
+  function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  
+  const showBackLinkParam = "show_back_link";
+
+
+  if (getQueryParam(showBackLinkParam) === "true") {
+    document.write('<div id="backLinkContainer">');
+    document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
+    document.write('</div>');
+  }
+</script>
+<br>
    
    <!-- NEWS -->
 

@@ -9,6 +9,25 @@ Development programmes for social workers – {{ serviceName }}
 
 {% block content %}
 
+<script>
+  
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+  
+    
+    const showBackLinkParam = "show_back_link";
+  
+  
+    if (getQueryParam(showBackLinkParam) === "true") {
+      document.write('<div id="backLinkContainer">');
+      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
+      document.write('</div>');
+    }
+  </script>
+  <br>
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">Child and family social work development programmes</h1>
