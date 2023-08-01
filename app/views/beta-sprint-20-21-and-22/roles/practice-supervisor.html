@@ -1,0 +1,181 @@
+{% extends "layout_primarynav.html" %}
+{% set nav3Active = true %}
+
+{% block pageTitle %}
+Practice supervisor - Develop your career in child and family social work {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "javascript:window.history.back()",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Practice supervisor</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Salary range
+              </dt>
+              <dd class="govuk-summary-list__value">
+                £35,000 to £50,000 depending on location, responsibilities and experience
+              </dd>
+            </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Summary
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Supervise the practice and decision-making of child and family practitioners and develop the skills of individuals and teams
+            </dd>
+          </div>
+          <!-- <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Typical hours
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  37 to 40 hours a week
+                </dd>
+              </div> -->
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Other names
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Practice development manager, practice development consultant, practice development officer
+            </dd>
+          </div>
+        </dl>
+
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2">
+                  What you'll do
+                </span>
+              </h2>
+            <!--  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
+                Discover the day-to-day tasks you'll do in this role.
+              </div> -->
+            </div>
+            <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-2">
+            <!--  <h3 class="govuk-heading-s">Day-to-day tasks</h3> -->
+              <p class="govuk-body-m">As a practice supervisor you'll:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>support social workers to ensure best practice and compliance with policies and procedures</li>
+                <li>provide a space for social workers to reflect on and discuss their work with children and families</li>
+                <li>provide quality assurance of work done by social workers such as assessments, court statements and care plans</li>
+                <li>offer guidance on complex case assessments, risk management and safeguarding</li>
+                <li>give feedback to social workers about their strengths and areas where they can improve</li>
+                <li>review and monitor caseloads to ensure timely and effective service delivery</li>
+                <li>provide training and professional development opportunities to enhance the skills and knowledge of social workers</li>
+                <li>work with multi-agency partners within the child welfare system</li>
+                <li>work with team managers to develop policies and strategies to improve social work practice</li>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2">
+                  Skills and knowledge
+                </span>
+              </h2>
+            <!--  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
+                Find out what skills you'll use in this role.
+              </div> -->
+            </div>
+            <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-2">
+            <!--  <h3 class="govuk-heading-s">Skills and knowledge</h3> -->
+              <p class="govuk-body-m">You'll need:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>leadership skills to guide and inspire social work practitioners in delivering effective child and family support</li>
+                <li>knowledge of risk assessment and safeguarding procedures</li>
+                <li>knowledge of legislation and policies relating to the welfare of children</li>
+                <li>the ability to build effective relationships with colleagues, families and multi-agency partners</li>
+                <li>the ability to give constructive feedback to staff</li>
+                <li>knowledge of child development theories and a range of social work interventions</li>
+                <li>the ability to work with diverse service users and understand the impact of cultural factors on families</li>
+                <li>analytical skills to evaluate complex cases and identify the needs of children and families</li>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-1">
+                  How to become one
+                </span>
+              </h2>
+            <!--  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+                Explore the different ways to get into this role.
+              </div> -->
+            </div>
+            <div id="accordion-with-summary-sections-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-1">
+              <p class="govuk-body-m">To become a practice supervisor you must:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>have a degree in social work</li>
+                <li>be registered with Social Work England</li>
+                <li>have at least 4 years' post-qualifying experience as a registered child and family social worker</li>
+                <li>have experience of mentoring and supporting others to improve their practice</li>
+              </ul>
+              <p class="govuk-body-m">It’s helpful to have experience as a practice educator, providing guidance and support to social work students during their placements.</p>
+              <p class="govuk-body-m">You’ll also need to have passed <a href="https://www.gov.uk/criminal-record-checks-apply-role">enhanced background checks</a>.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                  Career paths and progression
+                </span>
+              </h2>
+            <!--  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+                Look at progression on this role and similar opportunities.
+              </div> -->
+            </div>
+            <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+              <p class="govuk-body-m">With experience you could become:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>a senior practitioner and specialise in an area such as child protection or adoption</li>
+                <li>a team manager and oversee a social work team</li>
+                <li>a service manager and oversee the operations of a social work service area</li>
+              </ul>
+              <p class="govuk-body-m">You can develop your practice and leadership skills by doing the <a href="https://vcf-sw-career-dev-prototype.herokuapp.com/current/roles/pathway-1">Pathway 1: practice supervisors programme</a>. It’s funded by the Department for Education and provided by Frontline.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                  Current opportunities
+                </span>
+              </h2>
+            <!--  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+                Find jobs available near you.
+              </div> -->
+            </div>
+            <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+              <!-- <h3 class="govuk-heading-s">Jobs</h3> -->
+              <p class="govuk-body-m">The <a href="https://findajob.dwp.gov.uk/">Find a job service</a> can help you with your search for jobs and send alerts when new jobs become available.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

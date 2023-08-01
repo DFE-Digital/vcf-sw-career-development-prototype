@@ -1,0 +1,264 @@
+{% extends "layout_primarynav_aug.html" %}
+
+
+{% block pageTitle %}
+Explore roles – {{ serviceName }}
+{% endblock %}
+
+
+
+{% block content %}
+<script>
+  
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+  
+    
+    const showBackLinkParam = "show_back_link";
+  
+ 
+    if (getQueryParam(showBackLinkParam) === "true") {
+      document.write('<div id="backLinkContainer">');
+      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
+      document.write('</div>');
+    }
+  </script>
+  <br>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <h1 class="govuk-heading-l">Roles in child and family social work</h1>
+      <p class="govuk-body">Find out about different roles at each career stage, what they involve and the skills and qualifications you’ll need.</p>
+
+      <hr class="govuk-section-break govuk-section-break--visible">  <div class="govuk-!-margin-top-6"></div>
+        <h2 class="govuk-heading-m">Practitioner</h2>
+        <div class="govuk-!-margin-top-6">
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-body govuk-!-font-weight-bold"><a href="newly-qualified-social-worker" class="govuk-link">Newly qualified social worker</a></h3>
+          </div>
+              <p class="govuk-body-s">Newly qualified social workers are social workers in their first 2 years of practice. They may get extra support through the assessed and supported year in employment (ASYE) programme.</p>
+              <div class="govuk-grid-row govuk-!-padding-bottom-3">
+                  <div class="govuk-grid-column-one-half">
+                      <ul class="govuk-list">
+                          <li>
+                          <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £24,000 to £28,000</span>
+                          </li>
+                      </ul>
+                  </div>
+                <!--  <div class="govuk-grid-column-one-half">
+                      <ul class="course-details govuk-list">
+                          <li>
+                          <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Typical hours (a week): 35 to 40</span>
+                          </li>
+                       </ul>
+                  </div> -->
+              </div>
+          </div>
+
+            <div class="govuk-heading-s govuk-!-margin-bottom-1">
+             <h3 class="govuk-body govuk-!-font-weight-bold"><a href="social-worker.html" class="govuk-link">Social worker</a></h3>
+            </div>
+               <p class="govuk-body-s">Child and family social workers assess risk, protect children, provide support to parents and establish relationships with all family members.</p>
+                <div class="govuk-grid-row govuk-!-padding-bottom-3">
+                    <div class="govuk-grid-column-one-half">
+                        <ul class="govuk-list">
+                            <li>
+                                <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £28,000 to £40,000</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr class="govuk-section-break govuk-section-break--visible">
+                <div class="govuk-!-margin-top-6"></div>
+                <h2 class="govuk-heading-m">Experienced practitioner</h2>
+          <div class="govuk-!-margin-top-6">
+            <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                <h3 class="govuk-body govuk-!-font-weight-bold"><a href="senior-practitioner.html" class="govuk-link">Senior practitioner</a></h3>
+            </div>
+               <p class="govuk-body-s">Senior practitioners manage complex caseloads, provide quality assurance and mentor and support less experienced social workers.</p>
+                <div class="govuk-grid-row govuk-!-padding-bottom-3">
+                    <div class="govuk-grid-column-one-half">
+                        <ul class="govuk-list">
+                            <li>
+                                <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £35,000 to £50,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                <h3 class="govuk-body govuk-!-font-weight-bold"><a href="practice-supervisor.html" class="govuk-link">Practice supervisor</a></h3>
+          </div>
+          <p class="govuk-body-s">Supervisors oversee the practice and decision-making of child and family practitioners and work with them to develop their skills.</p>
+          <div class="govuk-grid-row govuk-!-padding-bottom-3">
+              <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                      <li>
+                        <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £35,000 to £55,000</span>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+          <hr class="govuk-section-break govuk-section-break--visible">
+          <div class="govuk-!-margin-top-6"></div>
+          <h2 class="govuk-heading-m">Manager</h2>
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-body govuk-!-font-weight-bold"><a href="" class="govuk-link">Quality improvement manager</a></h3>
+      </div>
+        <p class="govuk-body-s">Quality improvement managers audit and analyse the performance of social workers, teams and processes to ensure the delivery of high-quality social care.</p>
+        <div class="govuk-grid-row govuk-!-padding-bottom-3">
+            <div class="govuk-grid-column-one-half">
+                <ul class="govuk-list">
+                    <li>
+                        <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £38,000 to £65,000</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-body govuk-!-font-weight-bold"><a href="" class="govuk-link">Child protection advisor</a></h3>
+    </div>
+       <p class="govuk-body-s">Child protection advisors provide specialist guidance, support and leadership to ensure the safety and wellbeing of children.</p>
+        <div class="govuk-grid-row govuk-!-padding-bottom-3">
+            <div class="govuk-grid-column-one-half">
+                <ul class="govuk-list">
+                    <li>
+                        <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £38,000 to £45,000</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+      <div class="govuk-heading-s govuk-!-margin-bottom-1">
+        <h3 class="govuk-body govuk-!-font-weight-bold"><a href="team-manager.html" class="govuk-link">Team manager</a></h3>
+</div>
+    <p class="govuk-body-s">Team managers lead, develop and support a group of social workers to assess and manage risk to children and families.</p>
+    <div class="govuk-grid-row govuk-!-padding-bottom-3">
+        <div class="govuk-grid-column-one-half">
+            <ul class="govuk-list">
+                <li>
+                    <span class="govuk-!-font-size-16 govuk-!-font-weight-bold"> Salary range: £45,000 to £65,000</span>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-body govuk-!-font-weight-bold"><a href="independent-reviewing-officer" class="govuk-link">Independent reviewing officer </a></h3>
+    </div>
+        <p class="govuk-body-s">Independent reviewing officers oversee and review care plans to ensure local authorities are acting in the best interests of children.</p>
+        <div class="govuk-grid-row govuk-!-padding-bottom-3">
+            <div class="govuk-grid-column-one-half">
+                <ul class="govuk-list">
+                    <li>
+                        <span class="govuk-!-font-size-16 govuk-!-font-weight-bold"> Salary range: £42,000 to £57,000</span>
+                    </li>
+                </ul>
+            </div>
+    </div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-!-margin-top-6"></div>
+  <h2 class="govuk-heading-m">Senior manager</h2>
+  <div class="govuk-heading-s govuk-!-margin-bottom-1">
+    <h3 class="govuk-body govuk-!-font-weight-bold"><a href="principal-social-worker" class="govuk-link">Principal social worker</a></h3>  </div>
+  <p class="govuk-body-s">Principal social workers manage complex cases, support social work teams and contribute to the strategic leadership of services.</p>
+  <div class="govuk-grid-row govuk-!-padding-bottom-3">
+  <div class="govuk-grid-column-one-half">
+      <ul class="govuk-list">
+          <li>
+              <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £50,000 to £65,000</span>
+          </li>
+      </ul>
+    </div>
+
+    </div>
+
+    <div class="govuk-heading-s govuk-!-margin-bottom-1">
+        <h3 class="govuk-body govuk-!-font-weight-bold"><a href="service-manager" class="govuk-link">Service manager</a></h3>
+</div>
+  <p class="govuk-body-s">Service managers oversee the performance and quality of practice of multiple teams of social workers across a service area.</p>
+  <div class="govuk-grid-row govuk-!-padding-bottom-3">
+      <div class="govuk-grid-column-one-half">
+          <ul class="govuk-list">
+              <li>
+                  <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £46,000 to £70,000</span>
+              </li>
+          </ul>
+      </div>
+
+  </div>
+
+  <div class="govuk-heading-s govuk-!-margin-bottom-1">
+    <h3 class="govuk-body govuk-!-font-weight-bold"><a href="head-of-service" class="govuk-link">Head of service</a></h3>
+</div>
+ <p class="govuk-body-s">Heads of service oversee the day-to-day operations of services, manage staff and work closely with other agencies to promote best practice in social work.</p>
+<div class="govuk-grid-row govuk-!-padding-bottom-3">
+    <div class="govuk-grid-column-one-half">
+        <ul class="govuk-list">
+            <li>
+                <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £60,000 to £80,000</span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-!-margin-top-6"></div>
+  <h2 class="govuk-heading-m">Leader</h2>
+  <div class="govuk-heading-s govuk-!-margin-bottom-1">
+    <h3 class="govuk-body govuk-!-font-weight-bold"><a href="assistant-director.html" class="govuk-link">Assistant director</a></h3>
+</div>
+ <p class="govuk-body-s">Assistant directors oversee the strategic development, management, and delivery of services that support and protect children and families.</p>
+<div class="govuk-grid-row govuk-!-padding-bottom-3">
+    <div class="govuk-grid-column-one-half">
+        <ul class="govuk-list">
+            <li>
+            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £70,000 to £90,000</span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+  <div class="govuk-heading-s govuk-!-margin-bottom-1">
+    <h3 class="govuk-body govuk-!-font-weight-bold"><a href="" class="govuk-link">Director of children's services</a></h3>
+</div>
+ <p class="govuk-body-s">Directors of children’s services lead, manage and take overall responsibility for the delivery of high-quality social care in their local authority.</p>
+<div class="govuk-grid-row govuk-!-padding-bottom-3">
+    <div class="govuk-grid-column-one-half">
+        <ul class="govuk-list">
+            <li>
+                <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £100,000 to £150,000</span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- {% from "govuk/components/pagination/macro.njk" import govukPagination %}
+
+{{ govukPagination({
+  next: {
+    href: ""
+  },
+  items: [
+    {
+      number: 1,
+      current: true,
+      href: "explore-roles"
+    },
+    {
+      number: 2,
+      href: ""
+    },
+    {
+      number: 3,
+      href: ""
+    }
+  ]
+}) }} -->
+        {% endblock %}

@@ -1,0 +1,77 @@
+{% set nav5Active = true %}
+{% set programmePage = "sub_prac" %}
+{% extends "layout_primarynav.html" %}
+
+
+{% block pageTitle %}
+Practitioners – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({ href: "javascript:window.history.back()", text: "Back" }) }}
+{% endblock %}
+
+
+{% block content %}
+<h1 class="govuk-heading-xl">Practitioners</h1>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-l">Development programmes</h2>
+        <p class="govuk-body">We fund the assessed and supported year in employment (ASYE) for newly qualified practitioners.</p>
+        <p class="govuk-body">ASYE is delivered by Skills for Care.</p>
+    </div>
+</div>
+<div class="govuk-grid-row dfe-section-card__container">
+    <div class="govuk-grid-column-one-half dfe-section-card__container">
+        <div class="dfe-section-card">
+            <h3 class="govuk-heading-m"><a href="asye?sending-page=alt_prac" class="govuk-link">Assessed and supported year in employment (ASYE)</a></h2>
+            <p class="govuk-body">For newly qualified social workers in their first year of employment.</p>
+        </div>
+    </div>
+</div>
+<p><a href="development-programmes">View all programmes</a></p>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-two-thirds'>
+        <h2 class="govuk-heading-l">Professional development</h2>
+        <h3 class="govuk-heading-m"><a href="practitioners?sending-page=alt_prac" class="govuk-link">Improve your social work practice</a></h3>
+        <p  class="govuk-body">Find out about continuing professional development (CPD) for social work practitioners.</p>
+    </div>
+</div>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<div class='govuk-grid-row'>
+    <div class='govuk-grid-column-two-thirds'>
+        <h2 class="govuk-heading-l">Roles</h2>
+
+        <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Newly qualified social worker</a></h3>
+            </div>
+               <p class="govuk-body-s">Newly qualified social workers are social workers in their first 2 years of practice. They may get extra support through the assessed and supported year in employment (ASYE) programme.</p>
+
+               <div class="govuk-!-padding-bottom-3">
+                        <ul class="govuk-list">
+                            <li>
+                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £24,000 to £28,000</span>
+                            </li>
+                        </ul>
+                    </div>
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h3 class="govuk-heading-m"><a href="social-worker" class="govuk-link">Social worker</a></h3>
+                        </div>
+                            <p class="govuk-body-s">Child and family social workers assess risk, protect children, provide support to parents and establish relationships with all family members.</p>
+                            <div class="govuk-grid-row govuk-!-padding-bottom-3">
+                                <div class="govuk-grid-column-one-half">
+                                    <ul class="govuk-list">
+                                        <li>
+                                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">Salary range: £28,000 to £40,000</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p><a href="explore-roles?sending-page=alt_prac">Explore all roles</a></p>
+
+    </div>
+</div>
+
+{% endblock %}
