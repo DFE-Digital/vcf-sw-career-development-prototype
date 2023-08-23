@@ -8,7 +8,6 @@ Explore roles – {{ serviceName }}
 
 
 {% block content %}
-
 <script>
   
     function getQueryParam(name) {
@@ -28,33 +27,6 @@ Explore roles – {{ serviceName }}
   </script>
   <br>
   <div class="govuk-grid-row">
-  <div class="govuk-width-container dfe-width-container">
-     
-      <div class="govuk-grid-column-one-quarter">
-        
-
-
-<nav class="dfe-vertical-nav">
-<ul class="dfe-vertical-nav__section">
-
-<li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore all roles</a>
-</li>
-
-<li class="dfe-vertical-nav__section-item ">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore areas of practice</a>
-</li>
-
-<li class="dfe-vertical-nav__section-item ">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Real life stories</a>
-</li>
-
-
-</ul>
-
-</nav>
-      </div>
-      
     <div class="govuk-grid-column-three-quarters"> 
 <div class="govuk-notification-banner" role="region"
 aria-labelledby="govuk-notification-banner-title"
@@ -70,8 +42,11 @@ data-module="govuk-notification-banner">
   </p>
 </div>
 </div>
+</div>
+</div>
 
-
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
       <h1 class="govuk-heading-xl">Roles in child and family social work</h1>
       <p class="govuk-body">Find out about different roles at each career stage, what they involve and the skills and qualifications you’ll need.</p>
 
@@ -294,7 +269,7 @@ data-module="govuk-notification-banner">
         </ul>
     </div>
 
-
+</div>
 <!-- {% from "govuk/components/pagination/macro.njk" import govukPagination %}
 
 {{ govukPagination({
