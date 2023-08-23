@@ -1,0 +1,120 @@
+{% extends "layout_primarynav_aug.html" %}
+
+
+{% block pageTitle %}
+Explore roles – {{ serviceName }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<script>
+  
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+  
+    
+    const showBackLinkParam = "show_back_link";
+  
+ 
+    if (getQueryParam(showBackLinkParam) === "true") {
+      document.write('<div id="backLinkContainer">');
+      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
+      document.write('</div>');
+    }
+  </script>
+  <br>
+  <div class="govuk-width-container dfe-width-container">
+    <div class="govuk-grid-row">
+     
+      <div class="govuk-grid-column-one-quarter">
+        
+
+
+<nav class="dfe-vertical-nav">
+<ul class="dfe-vertical-nav__section">
+
+<li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
+  <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore all roles</a>
+</li>
+
+<li class="dfe-vertical-nav__section-item ">
+  <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore areas of practice</a>
+</li>
+
+<li class="dfe-vertical-nav__section-item ">
+  <a class="dfe-vertical-nav__link" href="explore-roles.html">Real life stories</a>
+</li>
+
+
+</ul>
+
+</nav>
+      </div>
+      
+
+<div class="govuk-grid-column-three-quarters">
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <h1 class="govuk-heading-xl">Explore areas of practice</h1>
+      <p class="govuk-body">Areas of practice are teams within child and family social work. Your responsibilities and day to day may differ depending on your area of practice. Find out more about what specific areas of practices entail.</p>
+
+      <hr class="govuk-section-break govuk-section-break--visible">  <div class="govuk-!-margin-top-6"></div>
+        <div class="govuk-!-margin-top-6">
+          <div class="govuk-!-margin-bottom-1">
+            <h2 class="govuk-heading-l"><a href="" class="govuk-link">Child Protection & Family Safeguarding</a></h2>
+          </div>
+              <p class="govuk-body">Family Safeguarding is a strengths-based approach to working with families, aiming to help them stay together and ensure the safety of children. It involves multi-disciplinary joint teams, including children's social work, community mental health staff, domestic abuse specialists, and substance misuse workers.</p>
+              <div class="govuk-grid-row govuk-!-padding-bottom-3">
+              </div>
+          </div>
+
+            <div class="govuk-heading-s govuk-!-margin-bottom-1">
+             <h2 class="govuk-heading-l"><a href="" class="govuk-link">Domestic abuse</a></h2>
+            </div>
+               <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+
+              </div>
+                </div>
+
+                <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                  <h2 class="govuk-heading-l"><a href="" class="govuk-link">Drug and alcohol</a></h2>
+                 </div>
+                    <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+     
+    
+                     <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                      <h2 class="govuk-heading-l"><a href="" class="govuk-link">Family law and court</a></h2>
+                     </div>
+                        <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+         
+
+          <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                          <h2 class="govuk-heading-l"><a href="" class="govuk-link">Assesment intake and referrals</a></h2>
+                         </div>
+                            <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+             
+                     
+                
+       <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                              <h2 class="govuk-heading-l"><a href="" class="govuk-link">Fostering and adoption</a></h2>
+                             </div>
+                                <p class="govuk-body">Fostering and Adoption teams assess, support, and monitor prospective foster and adoptive parents throughout the application and approval process.</p>
+        
+      <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                                  <h2 class="govuk-heading-l"><a href="" class="govuk-link">Youth offending</a></h2>
+                                 </div>
+                                    <p class="govuk-body">Youth Offending Team (YOT) is a specialised unit within social work that focuses on working with children and young people who are involved in the criminal justice system or at risk of offending.</p>
+                     
+                             
+
+                               </div>
+                                 </div>
+                    
+                    
+        {% endblock %}

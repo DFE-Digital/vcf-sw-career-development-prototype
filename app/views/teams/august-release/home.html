@@ -1,6 +1,8 @@
 {% set pageName = "hp_futurev2" %}
 {% set brandType = "edu" %}
-{% extends "layout_primarynav.html" %}
+{% set sendingPage = "hp_futurev2" %}
+{% extends "layout_primarynav_aug_teams.html" %}
+
 
 
 {% block pageTitle %}
@@ -10,10 +12,10 @@ Develop your career in child and family social work - Department for Education
 
 
 {% block content %}
- <!-- ROW CTA -->
-<!--
+ <!-- ROW CTA
+
 <div class="govuk-grid-row">
-<div class="campaign-cta campaign-cta--light-blue">
+<div class="campaign-cta campaign-cta--light-blue campaign-cta__content">
 	<div class="campaign-cta__content">
 		<span></span>
 		<h2>Find development programmes by career stage</h2>
@@ -23,25 +25,14 @@ Develop your career in child and family social work - Department for Education
 </div>
 
 <br>
-<br> -->
+<br>  -->
     
 
 
  <!-- Jounry CARD links -->
- <div class='dfe-width-container'>
-<div class='dfe-grid-row govuk-!-margin-bottom-6'>
-    <div class='dfe-grid-column-one-third'>
-        <div class="section-card-home" >
-            <h2 class="govuk-heading-m">Getting in to child and family social work</a></h2>
-            <p class="govuk-!-margin-bottom-6">              <ul class="govuk-list">
-                <li><h3 class="govuk-heading-s"><a href="about-cfsw?show_back_link=true">About child and family social work</a></h3></li>
-                <li><h3 class="govuk-heading-s"><a href="starting-your-career?show_back_link=true">Starting your career</a></h3></li>
-                <li><h3 class="govuk-heading-s"><a href="career-paths?show_back_link=true">Career paths</a></h3></li>
-                <li><h3 class="govuk-heading-s"><a href="teams-info?show_back_link=true">Areas of practice</a></h3></li></p>
-                
-        </div>
-    </div>
-    <div class='dfe-grid-column-one-third'>
+ <div class="dfe-width-container">
+<div class='govuk-grid-row govuk-!-margin-bottom-6'>
+    <div class='govuk-grid-column-one-half'>
         <div class="section-card-home">
             <h2 class="govuk-heading-m">Explore career stages</a></h2>
             <p class="govuk-!-margin-bottom-6">                  <ul class="govuk-list">
@@ -54,12 +45,11 @@ Develop your career in child and family social work - Department for Education
               
         </div>
     </div>
-    <div class='dfe-grid-column-one-third'>
+    <div class='govuk-grid-column-one-half'>
         <div class="section-card-home">
             <h2 class="govuk-heading-m">Useful information</a></h2>
             <p class="govuk-!-margin-bottom-6">              <ul class="govuk-list">
                 <li><h3 class="govuk-heading-s"><a href="development-programmes?show_back_link=true">DFE funded programmes</a></h3></li>
-                <li><h3 class="govuk-heading-s"><a href="resources?show_back_link=true">Resources</a></h3></li>
                 <li><h3 class="govuk-heading-s"><a href="explore-roles?show_back_link=true">Explore roles</a></h3></li>
       
                 
@@ -70,42 +60,38 @@ Develop your career in child and family social work - Department for Education
 </div>
 
 
+    <!-- NEWS 
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-    <!-- NEWS -->
-
-    <div class="dfe-grid-row">
-      <div class="dfe-grid-column-two-thirds">
-        <h2 class="govuk-heading govuk-heading-l govuk-heading--padding govuk-!-margin-bottom-3">Latest news in child and family social work</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading govuk-heading-m govuk-heading--padding govuk-!-margin-bottom-3">Latest news in child and family social work</h2>
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
         <ul class="govuk-list">
-        <li><h3 class="govuk-heading-m govuk-!-margin-bottom-1"><a href="news?show_back_link=true">Post example 1 title</a></h3>
+        <li><h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="news">Post example 1 title</a></h3>
 
             <p>Lorem ipsum dolor sit amet, no vidit intellegam ullamcorper sea. Vim an aeque oporteat, agam dictas quo eu.</p>
         <div class="news-date-font govuk-!-font-size-16">29th June 2023 - Blog post</div>
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
     </li>
-    <li><h3 class="govuk-heading-m govuk-!-margin-bottom-1"><a href="news?show_back_link=true">Post example 2 title</a></h3>
+    <li><h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="news">Post example 2 title</a></h3>
 
         <p>Lorem ipsum dolor sit amet, no vidit intellegam ullamcorper sea. Vim an aeque oporteat, agam dictas quo eu.</p>
     <div class="news-date-font govuk-!-font-size-16">29th June 2023 - Blog post</div>
     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 </li>
-<li><h3 class="govuk-heading-m govuk-!-margin-bottom-1"><a href="news?show_back_link=true">Post example 3 title</a></h3>
+<li><h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="news">Post example 3 title</a></h3>
 
     <p>Lorem ipsum dolor sit amet, no vidit intellegam ullamcorper sea. Vim an aeque oporteat, agam dictas quo eu.</p>
 <div class="news-date-font govuk-!-font-size-16">29th June 2023 - Blog post</div>
 <hr class="govuk-section-break govuk-section-break--l">
 
-<p class="govuk-heading-s govuk-!-margin-bottom-1"><a href="news?show_back_link=true">See all news</a></p>
+<h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="news">See all news</a></h3>
 </li>
 
-
-
-    </ul>  
+    </ul> -->  
     </div>
     </div>
 </div>
