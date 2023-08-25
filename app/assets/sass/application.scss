@@ -11,3 +11,33 @@
 @import "alpha";
 @import 'node_modules/dfe-frontend-alpha/packages/dfefrontend';
 .govuk-width-container {max-width: 1200px;}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+table,
+th,
+td,
+blockquote,
+li,
+dt,
+dd,
+tr {
+    font-family:
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        'Helvetica Neue',
+        sans-serif !important;
+}
