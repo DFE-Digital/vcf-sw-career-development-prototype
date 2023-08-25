@@ -16,6 +16,7 @@ $dfe-accent: #347ca9;
 $gov-blue: #1d70b8;
 $color-dfe-white: #ffffff;
 
+
 /* Set fonts */
 body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr {
     font-family:
@@ -881,4 +882,95 @@ Back link
   border-color: currentcolor
 }
 
+/* ==========================================================================
+DFE banner
+========================================================================== */
+
+
+.dfe-o-banner {
+  display: flex;
+  width: 100%;
+  min-height: 10rem;
+  margin: 0 auto
+}
+
+.dfe-o-banner.dfe-o-banner--blog a {
+  text-decoration: none
+}
+
+.dfe-o-banner.dfe-o-banner--blog .dfe-o-banner__content-container {
+  border-radius: 12px 0 0 12px
+}
+
+.dfe-o-banner.dfe-o-banner--blog .dfe-o-banner__content-container img {
+  border-radius: 0 12px 12px 0
+}
+
+.dfe-o-banner.dfe-o-banner--blog .dfe-o-banner__image-container {
+  border-radius: 12px 0 0 12px
+}
+
+.dfe-o-banner.dfe-o-banner--blog .dfe-o-banner__image-container img {
+  border-radius: 0 12px 12px 0
+}
+
+.dfe-o-banner--mirrored {
+  flex-direction: row-reverse
+}
+
+.dfe-o-banner [class^=dfe-t-body],.dfe-o-banner [class^=dfe-t-heading] {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: end
+}
+
+.dfe-o-banner [class^=dfe-t-body] {
+  -webkit-line-clamp: 5
+}
+
+.dfe-o-banner__content-container,.dfe-o-banner__image-container {
+  width: 50%
+}
+
+.dfe-o-banner__content-container {
+  display: flex;
+  align-items: center;
+  background: #ebf2f6;
+}
+
+.dfe-o-banner__inner-content-container {
+  width: 100%;
+  padding: 3rem
+}
+
+.dfe-o-banner__inner-content-container .dfe-a-button {
+  max-width: 100%
+}
+
+@media (max-width: 63.99em) {
+  .dfe-o-banner {
+      width:100%;
+      flex-direction: column-reverse
+  }
+
+  .dfe-o-banner__content-container,.dfe-o-banner__image-container {
+      width: 100%
+  }
+
+  .dfe-light-blue-tint {
+    background: #ebf2f6
+}
+
+
+  .dfe-o-banner .dfe-a-image {
+      overflow: hidden
+  }
+
+  .dfe-o-banner .dfe-a-image img {
+      position: relative
+  }
+}
 

@@ -1,4 +1,5 @@
 {% extends "layout_primarynav_aug.html" %}
+{% set nav3Active = true %}
 
 
 {% block pageTitle %}
@@ -9,24 +10,7 @@ Explore roles – {{ serviceName }}
 
 {% block content %}
 
-<script>
-  
-    function getQueryParam(name) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(name);
-    }
-  
-    
-    const showBackLinkParam = "show_back_link";
-  
- 
-    if (getQueryParam(showBackLinkParam) === "true") {
-      document.write('<div id="backLinkContainer">');
-      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
-      document.write('</div>');
-    }
-  </script>
-  <br>
+
   <div class="govuk-width-container dfe-width-container">
     <div class="govuk-grid-row">
      
@@ -37,16 +21,16 @@ Explore roles – {{ serviceName }}
 <nav class="dfe-vertical-nav">
 <ul class="dfe-vertical-nav__section">
 
-<li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
+<li class="dfe-vertical-nav__section-item">
   <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore all roles</a>
 </li>
 
-<li class="dfe-vertical-nav__section-item ">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore areas of practice</a>
+<li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
+  <a class="dfe-vertical-nav__link" href="explore-areas-of-practice.html">Explore areas of practice</a>
 </li>
 
 <li class="dfe-vertical-nav__section-item ">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Real life stories</a>
+  <a class="dfe-vertical-nav__link" href="real-life-stories.html">Real life stories</a>
 </li>
 
 
@@ -60,7 +44,6 @@ Explore roles – {{ serviceName }}
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">
       <h1 class="govuk-heading-xl">Explore areas of practice</h1>
       <p class="govuk-body">Areas of practice are teams within child and family social work. Your responsibilities and day to day may differ depending on your area of practice. Find out more about what specific areas of practices entail.</p>
 
@@ -79,8 +62,7 @@ Explore roles – {{ serviceName }}
             </div>
                <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
 
-              </div>
-                </div>
+              
 
                 <div class="govuk-heading-s govuk-!-margin-bottom-1">
                   <h2 class="govuk-heading-l"><a href="" class="govuk-link">Drug and alcohol</a></h2>
@@ -115,6 +97,7 @@ Explore roles – {{ serviceName }}
 
                                </div>
                                  </div>
+                                </div>
                     
                     
         {% endblock %}

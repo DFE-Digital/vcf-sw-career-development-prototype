@@ -9,26 +9,9 @@ Explore roles – {{ serviceName }}
 
 {% block content %}
 
-<script>
-  
-    function getQueryParam(name) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(name);
-    }
-  
-    
-    const showBackLinkParam = "show_back_link";
-  
  
-    if (getQueryParam(showBackLinkParam) === "true") {
-      document.write('<div id="backLinkContainer">');
-      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
-      document.write('</div>');
-    }
-  </script>
-  <br>
-  <div class="govuk-grid-row">
   <div class="govuk-width-container dfe-width-container">
+    <div class="govuk-grid-row">
      
       <div class="govuk-grid-column-one-quarter">
         
@@ -42,11 +25,11 @@ Explore roles – {{ serviceName }}
 </li>
 
 <li class="dfe-vertical-nav__section-item ">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Explore areas of practice</a>
+  <a class="dfe-vertical-nav__link" href="explore-areas-of-practice.html">Explore areas of practice</a>
 </li>
 
 <li class="dfe-vertical-nav__section-item ">
-  <a class="dfe-vertical-nav__link" href="explore-roles.html">Real life stories</a>
+  <a class="dfe-vertical-nav__link" href="real-life-stories.html">Real life stories</a>
 </li>
 
 
