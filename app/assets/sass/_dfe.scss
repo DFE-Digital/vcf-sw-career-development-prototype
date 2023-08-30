@@ -141,6 +141,7 @@ body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr
   margin-bottom: 20px;
   flex: 1;
   background-color: $colour-card-background;
+  border-bottom: 3px solid #003a69;
 
   &__container {
     display: flex;
@@ -646,6 +647,7 @@ Section card home
   padding: 15px;
   height: 375px;
   margin-bottom: 20px;
+  border-bottom: 3px solid #003a69;
 
   @media (max-width: 800px) {
     height: 500px; /* Reset height to auto for mobile viewports */
@@ -696,6 +698,10 @@ Section card home
     padding: 15px;
   }
 }
+h2 .dfe-card-link--header {
+  text-decoration: none;
+  color: #003a69;
+}
 
 /* ==========================================================================
 Section card
@@ -703,6 +709,8 @@ Section card
 .section-card {
   background-color: $colour-card-background;
   padding: 15px;
+  border-bottom: 3px solid #003a69;
+  
 
   &__wborder {
     background-color: $colour-card-background;
