@@ -15,6 +15,7 @@ $dfe-yellow-link: #ffdd00;
 $dfe-accent: #347ca9;
 $gov-blue: #1d70b8;
 $color-dfe-white: #ffffff;
+$content-background: #ebf2f6;
 
 
 /* Set fonts */
@@ -996,4 +997,35 @@ DFE width container
   .dfe-width-container-fluid {
       margin:0 32px
   }
+}
+
+
+/* ==========================================================================
+DFE content banner 
+========================================================================== */
+
+
+.dfe-content-page--header {
+  background: #ebf2f6
+}
+.dfe-banner-title {
+  position: relative;
+  margin-bottom: -10px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 10px solid $dfe-accent;
+}
+
+
+/* CONTENT TITLE BANNER
+----------------------- */
+
+
+
+.app-section-content--blue {
+    background-color: $content-background;
+}
+
+.app-section-content {
+    padding: 30px 0
 }
