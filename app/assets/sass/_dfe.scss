@@ -909,9 +909,11 @@ DFE banner
   flex-direction: column;
   justify-content: center;
   background: #ebf2f6;
-  padding: 2rem;
+  
  
 }
+
+
 
 /* Banner Image Container */
 .dfe-o-banner__image-container {
@@ -959,7 +961,7 @@ DFE banner
   }
 
   .dfe-o-banner__content-container,.dfe-o-banner__image-container {
-      width: 100%
+      width: 100%;
   }
 
   .dfe-o-banner .dfe-a-image {
@@ -970,6 +972,12 @@ DFE banner
       position: relative
   }
 }
+
+.dfe-o-banner__inner-content-container {
+  width: 80%;
+  padding: 3rem;
+}
+
 
 
 
