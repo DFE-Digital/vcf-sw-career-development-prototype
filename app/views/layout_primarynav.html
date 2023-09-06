@@ -19,7 +19,9 @@
 {% block header %}
   {% include "./partials/dfeheadernav.njk" %}
   {% include "./partials/phasebanner.njk" %}
-  {% include "./partials/hero.njk" %}
+  {% include "./partials/hero.njk" %} 
+  {% include "./partials/contenttitle.njk" %}
+
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}

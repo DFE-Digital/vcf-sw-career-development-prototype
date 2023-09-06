@@ -910,6 +910,7 @@ DFE banner
   justify-content: center;
   background: #ebf2f6;
   padding: 2rem;
+ 
 }
 
 /* Banner Image Container */
@@ -920,6 +921,8 @@ DFE banner
   justify-content: center;
   overflow: hidden;
 }
+
+
 
 /* Image Styles */
 .dfe-o-banner__image-container img {
@@ -951,28 +954,23 @@ DFE banner
 /* Media Query for Mobile */
 @media (max-width: 63.99em) {
   .dfe-o-banner {
-    width: 100%;
-    flex-direction: column-reverse;
-    height: auto;
+      width:100%;
+      flex-direction: column-reverse
   }
 
-  .dfe-o-banner__content-container,
-  .dfe-o-banner__image-container {
-    width: 100%;
-  }
-  
-  .dfe-light-blue-tint {
-    background: #ebf2f6;
+  .dfe-o-banner__content-container,.dfe-o-banner__image-container {
+      width: 100%
   }
 
   .dfe-o-banner .dfe-a-image {
-    overflow: hidden;
+      overflow: hidden
   }
 
   .dfe-o-banner .dfe-a-image img {
-    position: relative;
+      position: relative
   }
 }
+
 
 
 /* ==========================================================================
@@ -1006,6 +1004,8 @@ DFE width container
       margin:0 32px
   }
 }
+
+
 
 
 /* ==========================================================================
