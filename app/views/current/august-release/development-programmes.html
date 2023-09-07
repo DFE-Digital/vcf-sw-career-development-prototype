@@ -9,24 +9,6 @@ Development programmes for social workers – {{ serviceName }}
 
 
 {% block content %}
-<script>
-    // Function to get the value of a query parameter from the URL
-    function getQueryParam(name) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(name);
-    }
-  
-    // Your specific query parameter name to indicate whether to show the back link
-    const showBackLinkParam = "show_back_link";
-  
-    // Show the back link if the query parameter is set to true
-    if (getQueryParam(showBackLinkParam) === "true") {
-      document.write('<div id="backLinkContainer">');
-      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
-      document.write('</div>');
-    }
-  </script>
-  
 
 <!-- ASYE -->
 <div class="govuk-grid-row govuk-!-margin-top-5">
