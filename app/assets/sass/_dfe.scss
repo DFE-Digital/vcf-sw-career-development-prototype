@@ -1045,3 +1045,14 @@ DFE content banner
 .app-section-content {
     padding: 30px 0
 }
+
+
+/* Increase specificity */
+.app-section-content.full-width-banner {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
