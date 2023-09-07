@@ -1,5 +1,6 @@
 {% extends "layout_primarynav.html" %}
 {% set nav6Active = true %}
+{% set pageName = "development programmes" %}
 
 {% block pageTitle %}
 Development programmes for social workers – {{ serviceName }}
@@ -10,33 +11,7 @@ Development programmes for social workers – {{ serviceName }}
 
 {% block content %}
 
-<script>
-  
-    function getQueryParam(name) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(name);
-    }
-  
-    
-    const showBackLinkParam = "show_back_link";
-  
-  
-    if (getQueryParam(showBackLinkParam) === "true") {
-      document.write('<div id="backLinkContainer">');
-      document.write('<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>');
-      document.write('</div>');
-    }
-  </script>
-  <br>
-
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">
-        <h1 class="govuk-heading-xl">Child and family social work development programmes</h1>
-   <p class="govuk-body">The following programmes are funded by the Department for Education.</p>
-    </div>
-</div>
-
-      <hr class="govuk-section-break govuk-section-break--visible">  <div class="govuk-!-margin-top-6"></div>
       
       <!-- ASYE -->
 <div class="govuk-grid-row govuk-!-margin-top-5">
