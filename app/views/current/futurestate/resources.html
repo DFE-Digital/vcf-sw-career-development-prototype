@@ -5,23 +5,450 @@
 {% block content %}
 
 <div class="dfe-width-container govuk-grid-row">
-  <div class="govuk-grid-column-three-quarters">
-        <div class="govuk-!-margin-top-6"></div>
-  <div class="govuk-!-margin-top-6">
-    <div class="govuk-heading-s govuk-!-margin-bottom-1">
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Knowledge articles</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Videos</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Podcasts</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Research papers</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Case studies</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Direct tools</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Legislation updates</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">DFE programmes</a></h2>
-        <h2 class="govuk-heading-l"><a href="" class="govuk-link">Training courses</a></h2>
+<div class="govuk-grid-column-one-quarter">
+
+<div class="moj-filter">
+
+  <div class="moj-filter__header">
+
+    <div class="moj-filter__header-title">
+      <h2 class="govuk-heading-m">Filter</h2>
     </div>
-   
+
+    <div class="moj-filter__header-action">
+
+    </div>
+
+  </div>
+
+  <div class="moj-filter__content">
+
+    <div class="moj-filter__selected">
+
+      <div class="moj-filter__selected-heading">
+
+        <div class="moj-filter__heading-title">
+          <h2 class="govuk-heading-m">Selected filters</h2>
+        </div>
+
+        <div class="moj-filter__heading-action">
+          <p><a class="govuk-link govuk-link--no-visited-state" href="">Clear filters</a></p>
+        </div>
+
       </div>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Type</h3>
+
+      <ul class="moj-filter-tags">
+
+        <li><a class="moj-filter__tag" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Blue</a></li>
+
+        <li><a class="moj-filter__tag" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Yellow</a></li>
+
+      </ul>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Status</h3>
+
+      <ul class="moj-filter-tags">
+
+        <li><a class="moj-filter__tag" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Completed</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class="moj-filter__options">
+
+      <button class="govuk-button" data-module="govuk-button" data-test-id="submit-button">
+        Apply filters
+      </button>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-label--m" for="keywords">
+          Keywords
+        </label>
+
+        <input class="govuk-input" id="keywords" name="keywords" type="text">
+
+      </div>
+
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+            Type
+
+          </legend>
+
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                Blue (18)
+              </label>
+
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="2" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="type-2">
+                Yellow (5)
+              </label>
+
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type-3" name="type" type="checkbox" value="3">
+              <label class="govuk-label govuk-checkboxes__label" for="type-3">
+                Red (2)
+              </label>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+      </div>
+
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+            Status
+
+          </legend>
+
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="status">
+                Completed (2)
+              </label>
+
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+              <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                Incomplete (5)
+              </label>
+
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox" value="inprogress">
+              <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                In progress (3)
+              </label>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
-</div> 
+
+</div>
+
+
+
+
+<div class="govuk-grid-column-three-quarters">
+  
+
+<h3 class="govuk-heading-m"><a href="" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+        <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+ 
+
+          <ul class="course-details govuk-list">
+              <li>
+              <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+              </li>
+              
+           </ul>
+
+
+           <h3 class="govuk-heading-m"><a href="" class="govuk-link">Legislation update example   </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">LEGISLATION UPDATE</strong></h3>
+
+           <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+    
+   
+             <ul class="course-details govuk-list">
+                 <li>
+                 <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                 </li>
+                 
+              </ul>
+
+
+              <h3 class="govuk-heading-m"><a href="" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+              <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+       
+      
+                <ul class="course-details govuk-list">
+                    <li>
+                    <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                    </li>
+                    
+                  </ul>
+
+
+                  <h3 class="govuk-heading-m"><a href="" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                  <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+           
+          
+                    <ul class="course-details govuk-list">
+                        <li>
+                        <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                        </li>
+                        
+                     </ul>
+
+                     <h3 class="govuk-heading-m"><a href="" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                     <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+              
+             
+                       <ul class="course-details govuk-list">
+                           <li>
+                           <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                           </li>
+                           
+                        </ul>
+
+                        <h3 class="govuk-heading-m"><a href="" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                        <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                 
+                
+                          <ul class="course-details govuk-list">
+                              <li>
+                              <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                              </li>
+                              
+                           </ul>
+
+                           <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                           <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                    
+                   
+                             <ul class="course-details govuk-list">
+                                 <li>
+                                 <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                 </li>
+                                 
+                              </ul>
+
+                              <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                              <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                       
+                      
+                                <ul class="course-details govuk-list">
+                                    <li>
+                                    <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                    </li>
+                                    
+                                 </ul>
+
+                                 <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                 <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                          
+                         
+                                   <ul class="course-details govuk-list">
+                                       <li>
+                                       <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                       </li>
+                                       
+                                    </ul>
+
+                                    <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                    <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                             
+                            
+                                      <ul class="course-details govuk-list">
+                                          <li>
+                                          <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                          </li>
+                                          
+                                       </ul>
+
+                                       <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                       <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                                
+                               
+                                         <ul class="course-details govuk-list">
+                                             <li>
+                                             <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                             </li>
+                                             
+                                          </ul>
+
+                                          <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                          <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                                   
+                                  
+                                            <ul class="course-details govuk-list">
+                                                <li>
+                                                <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                                </li>
+                                                
+                                             </ul>
+
+                                             <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                             <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                                      
+                                     
+                                               <ul class="course-details govuk-list">
+                                                   <li>
+                                                   <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                                   </li>
+                                                   
+                                                </ul>
+
+                                                <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                                <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                                         
+                                        
+                                                  <ul class="course-details govuk-list">
+                                                      <li>
+                                                      <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                                      </li>
+                                                      
+                                                   </ul>
+
+                                                   <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                                   <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                                            
+                                           
+                                                     <ul class="course-details govuk-list">
+                                                         <li>
+                                                         <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                                         </li>
+                                                         
+                                                      </ul>
+
+                                                      <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                                                      <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+                                               
+                                              
+                                                        <ul class="course-details govuk-list">
+                                                            <li>
+                                                            <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                                                            </li>
+                                                            
+                                                         </ul>
+
+                                                         <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+        <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+ 
+
+          <ul class="course-details govuk-list">
+              <li>
+              <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+              </li>
+              
+           </ul>
+
+           <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+           <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+    
+   
+             <ul class="course-details govuk-list">
+                 <li>
+                 <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                 </li>
+                 
+              </ul>
+
+
+              <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+              <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+       
+      
+                <ul class="course-details govuk-list">
+                    <li>
+                    <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                    </li>
+                    
+                 </ul>
+
+
+
+                 <h3 class="govuk-heading-m"><a href="newly-qualified-social-worker" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+
+                 <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
+          
+         
+                   <ul class="course-details govuk-list">
+                       <li>
+                       <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">From: Author 1 or service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updated: 8 September 2023</span>
+                       </li>
+                       
+                    </ul>
+      
+
+
+
+
+
+
+
+
+
+
+{% from "govuk/components/pagination/macro.njk" import govukPagination %}
+
+{{ govukPagination({
+  next: {
+    href: ""
+  },
+  items: [
+    {
+      number: 1,
+      current: true,
+      href: "explore-roles"
+    },
+    {
+      number: 2,
+      href: ""
+    },
+    {
+      number: 3,
+      href: ""
+    }
+  ]
+}) }}
+</div>
+</div>
 
 {% endblock %}
