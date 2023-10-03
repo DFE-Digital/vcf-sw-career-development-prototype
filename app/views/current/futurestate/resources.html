@@ -207,7 +207,7 @@
   <div class="govuk-!-margin-top-6"></div>
   
 
-<h3 class="govuk-heading-m"><a href="" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
+<h3 class="govuk-heading-m"><a href="resources-example-content.html" class="govuk-link">Case study example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Case study</strong></h3>
 
         <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
  
@@ -236,7 +236,7 @@
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
 
-              <h3 class="govuk-heading-m"><a href="" class="govuk-link">Podcast example  </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Podcast</strong></h3>
+              <h3 class="govuk-heading-m"><a href="resources-example-podcast.html" class="govuk-link">Podcast example  </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Podcast</strong></h3>
 
               <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
        
@@ -250,7 +250,7 @@
 
                   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-                  <h3 class="govuk-heading-m"><a href="" class="govuk-link">Video example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Video</strong></h3>
+                  <h3 class="govuk-heading-m"><a href="resources-example-video.html" class="govuk-link">Video example </a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">Video</strong></h3>
 
                   <p class="govuk-body">Lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in. An stet ridens vim, meliore offendit reprimique his in, an vim wisi audire. Vim cu option regione cotidieque. Id choro eleifend pro.</p>
            
@@ -498,20 +498,18 @@
                         {% from "govuk/components/pagination/macro.njk" import govukPagination %}
                 
                         {{ govukPagination({
-                            previous: {
-                                href: "#"
-                            },
+
                             next: {
                                 href: "#"
                             },
                             items: [
                                 {
                                     number: 1,
+                                    current: true,
                                     href: "#"
                                 },
                                 {
                                     number: 2,
-                                    current: true,
                                     href: "#"
                                 },
                                 {

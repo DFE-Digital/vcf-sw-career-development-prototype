@@ -1,0 +1,45 @@
+{% extends "layout_futurestate.html" %}
+{% set nav2Active = true %}
+
+{% block content %}
+
+
+
+<div class="dfe-width-container govuk-grid-row">
+<div class="govuk-grid-column-three-quarter">
+  <span class="govuk-caption-l">Resources</span>
+  <h1 class="govuk-heading-xl">Video example title</h1>
+  <p class="govuk-body">Summary lorem ipsum dolor sit amet, at cetero numquam feugait nam, mei mundi inimicus in.</p>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  <ul class="course-details govuk-list">
+    <li>
+    <span class="govuk-!-font-size-16">From: Author 1 or service</span>
+    </li>
+    <li>
+    <span class="govuk-!-font-size-16">Published: 8 September 2023</span>
+    </li>
+    <li>
+      <span class="govuk-!-font-size-16">Last updated: 8 September 2023</span>
+      </li>
+      <li>
+        <span class="govuk-!-font-size-16">Resource type: Video</span>
+        </li>
+        <li>
+          <span class="govuk-!-font-size-16">Career stage: Practitioner</span>
+          </li>
+  </ul>
+
+  <iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/MMfqMSPKGj4?si=zG6jaNhjalkN0rfD" frameborder="0"></iframe>
+  <details class="govuk-details govuk-!-margin-top-3" data-module="govuk-details">
+      <summary class="govuk-details__summary"> <span class="govuk-details__summary-text">View transcript  </span></summary>
+      <div class="govuk-details__text">
+          @{
+              await Html.RenderPartialAsync("_RichText", Model.Transcript);
+          }
+      </div>
+  </details>
+
+</div>
+</div>
+
+{% endblock %}
