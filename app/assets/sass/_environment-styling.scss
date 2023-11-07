@@ -540,67 +540,6 @@ $content-status-draft: #d4351c;
   margin: 0
 }
 
-.ons-document-list__item-image {
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
-  margin-bottom: 1rem;
-  width: 136px
-}
-
-@media(min-width: 400px) {
-  .ons-document-list__item-image {
-      margin-right:1.5rem
-  }
-}
-
-@media(min-width: 740px) {
-  .ons-document-list__item-image {
-      margin-bottom:0
-  }
-}
-
-.ons-document-list__item-image .ons-document-list__image-link--placeholder {
-  height: 96px
-}
-
-.ons-document-list__item-image--file {
-  width: 96px
-}
-
-.ons-document-list__item-image--file .ons-document-list__image-link {
-  border-color: var(--ons-color-borders-document-image)
-}
-
-.ons-document-list__item-image--file .ons-document-list__image-link--placeholder {
-  height: 136px
-}
-
-.ons-document-list__image-link {
-  border: 2px solid transparent;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  display: block;
-  width: 100%
-}
-
-.ons-document-list__image-link:focus {
-  background-color: var(--ons-color-placeholder)!important;
-  border: 2px solid var(--ons-color-borders-document-image-focus);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: 4px solid var(--ons-color-focus)!important;
-  outline-offset: 0
-}
-
-.ons-document-list__image-link--placeholder {
-  background-clip: padding-box;
-  background-color: var(--ons-color-borders-document-image);
-  background-image: url(data:image/svg+xml;charset=UTF-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMic+PHBhdGggZmlsbD0nI2ZmZicgZD0nTTAgMTkuMzljLjQ5LTEgMS0yIDEuNTUtMi45M0EzMS41OSAzMS41OSAwIDAgMSAwIDExLjcydjcuNjdaTTMgMFMwIDAgMCAzLjd2MmEzNC44NSAzNC44NSAwIDAgMCAyLjE3IDkuNzZBMzEuMiAzMS4yIDAgMCAxIDguMyA4LjNjNC44NC00LjE2IDExLjM2LTcgMjAuMjEtOC4yOVptMjguODQgMmMtMTAuMTEgMS0xNyAzLjg2LTIyIDguMWEyOS43OCAyOS43OCAwIDAgMC02LjQ5IDhDNy4yNiAyNS42NSAxNC42NiAzMS4xOSAyNyAzMmgxLjIxQTMuNzEgMy43MSAwIDAgMCAzMiAyNy45MVYyYS40MS40MSAwIDAgMS0uMTYgMFptLTI2IDIxLjQ5YTI1Ljk0IDI1Ljk0IDAgMCAxLTMtNC40QTQ4IDQ4IDAgMCAwIDAgMjUuNzFWMzJoMjAuMjNhMjYuNDEgMjYuNDEgMCAwIDEtMTQuMzktOC40OVonLz48L3N2Zz4=);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 32px 32px;
-  height: 100%
-}
 
 .ons-document-list__item-metadata {
   line-height: 1.2!important
