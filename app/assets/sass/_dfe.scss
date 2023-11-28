@@ -1218,3 +1218,17 @@ DFE content banner
   right: 0;
   bottom: 0
 }
+
+/* Feedback form container
+--------------------------------------- */
+
+    .feedback-container {
+        width: 75%;
+        margin-top: 1.5em; /* Adjust the margin as needed */
+    }
+
+    @media (max-width: 600px) {
+        .feedback-container {
+            width: 100%;
+        }
+    }

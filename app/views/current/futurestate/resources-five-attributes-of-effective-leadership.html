@@ -127,12 +127,17 @@
         </div>
       </div>
       <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
       <details class="govuk-details" data-module="govuk-details">
+  
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
             Give feedback about this page
           </span>
         </summary>
+        
+        <div class="govuk-details__text">We are consistently improving our resources, please fill out the form below to provide feedback. <br>
+          Alternatively you can give more general feedback about the service <a href="">here</a></div>
         <div class="govuk-details__text">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
@@ -154,21 +159,20 @@
                 </div>
                 
                 </div>
-                <div class="govuk-!-margin-top-4">
+                <div class="govuk-!-margin-top-4 feedback-container">
                   <label class="govuk-label" for="feedback">
                     Do you have any feedback about this resource?
                   </label>
-                 
-                  <textarea class="govuk-textarea"  id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
-                </div>
-                <div class="govuk-!-margin-top-4">
-                  <label class="govuk-label" for="feedback">
-                    Do you have an additional comments?
-                  </label>
-                 
-                  <textarea class="govuk-textarea"  id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
-                </div>
-                <div class="govuk-button-group">
+                  <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+              </div>
+              <div class="govuk-!-margin-top-4 feedback-container">
+                <label class="govuk-label" for="feedback">
+                    Do you have additional comments?
+                </label>
+                <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+
+                  <div class="govuk-button-group">
                   <button class="govuk-button" data-module="govuk-button">
                     Send
                   </button>
@@ -178,6 +182,7 @@
                 
       </details>
     </div>
+  
   </div>
  
 {% endblock %}
