@@ -1124,10 +1124,8 @@ DFE content banner
 }
 
 .dfeuk-document-list .dfeuk-document-list__item .dfeuk-document-list__item-metadata .gdfeuk-document-list__attribute {
-  font-weight: 400;
-  font-size: 14px;
-  font-size: 12px;
-  font-size: .75rem;
+  
+  font-size: 20;
   line-height: 1.25;
   color: #505a5f;
   display: inline-block;
@@ -1137,18 +1135,12 @@ DFE content banner
 
 @media (min-width: 40.0625em) {
   .dfeuk-document-list .dfeuk-document-list__item .dfeuk-document-list__item-metadata .gdfeuk-document-list__attribute {
-      font-size:14px;
-      font-size: .875rem;
+      font-size:18px;
       line-height: 1.4285714286
   }
 }
 
-@media print {
-  .dfeuk-document-list .dfeuk-document-list__item .dfeuk-document-list__item-metadata .gdfeuk-document-list__attribute {
-      font-size: 12pt;
-      line-height: 1.2
-  }
-}
+
 
 
 /* DFE card container
