@@ -836,4 +836,15 @@ $content-status-draft: #d4351c;
 }
 
 
-
+/* Custom styles for mobile */
+@media only screen and (max-width: 768px) {
+  .govuk-form-group .govuk-input__wrapper,
+  .govuk-form-group .govuk-search-group,
+  .govuk-form-group .govuk-button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0 !important; /* Override desktop margin */
+    margin-top: 1rem;
+    display: block; /* Force elements to stack on top of each other */
+  }
+}

@@ -1,0 +1,497 @@
+{% extends "layout_futurestate.html" %}
+{% set nav2Active = true %}
+{% set pageName = "resources" %}
+
+{% block content %}
+<div class="dfe-width-container">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-m">Results</h2>
+
+        <p class="govuk-body-m">We found <strong>4</strong> results</p>
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Clear all filters
+        </button>
+
+
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-heading-m">Filters</h2>
+        <ul class="govuk-summary-card__actions">
+          <li class="govuk-summary-card__action">
+
+          </li>   
+        </ul>
+      </div>
+      <div class="govuk-summary-card__content">
+
+        <form method="post" action="resources-filter-applied">
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Topic
+                </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+
+
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                          Diversity and inclusion (5)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Practice frameworks (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Strategic partnerships (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Supervision (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Wellbeing (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Workforce planning (4)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Workloads and case allocation (5)
+                         </label>
+                      </div>
+                      
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                          Continuing professional development (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                          Diversity and inclusion (5)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Practice frameworks (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Strategic partnerships (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Supervision (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Staff wellbeing (3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Workforce planning (4)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Workloads and case allocation (5)
+                         </label>
+                      </div>
+                      
+                    </fieldset>
+                  </div>
+                </div>
+              
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Resource provider
+                </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                          Families First Children Pathfinder (18)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                          Strengthening Families, Protecting Children (5)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Virtual Hubs (2)
+                         </label>
+                      </div>
+                      
+                      
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+         
+
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Format
+                </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                          Case study (18)
+                         </label>
+                      </div>
+
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Direct tool (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Knowledge articles (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Research papers (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Training courses (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Legislation updates (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Podcasts (2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                          Videos (4)
+                         </label>
+                      </div>
+                      
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+         
+                <div class="govuk-accordion__section">
+                  <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                      <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                        Career stage
+                    </span>
+                    </h2>
+                  </div>
+                  <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+    
+                        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" >
+                            <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                              Newley qualified practitioner (2)
+                             </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" >
+                            <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                              Practitioner (2)
+                             </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" >
+                            <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                              Experienced practitoner (5)
+                             </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                            <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                              Manager (3)
+                             </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                            <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                              Senior manager (3)
+                             </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" >
+                            <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                              Leader (3)
+                             </label>
+                          </div>
+                          
+                          
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <button class="govuk-button" data-module="govuk-button">
+             Apply filter
+             </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  
+
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+          <h2 class="govuk-heading-m"> Search resources </h2>
+        </label>
+        <p class="govuk-body-m">Enter a keyword or search term</p>
+        <div class="govuk-grid-row">      
+          <div class="govuk-form-group govuk-grid-column-full">
+            <div class="govuk-input__wrapper govuk-search-group"><input type="text" class="govuk-input" id="searchAgainTermInput" data-cy="cySearchAgainInput" value="" placeholder="">
+              <button class="govuk-button govuk-!-margin-left-2" data-module="govuk-button" data-cy="cySearchAgainButton" for="searchAgainTermInput">Search</button></div></div>
+      </div>
+
+      <div class="grid-row pagination-container">
+        <div class="column-half">
+            <span class="summary">
+                Showing 1 - 4 of <span id="ResultCount" class="result-count">4</span> results
+            </span>
+        </div>
+        
+    
+        <div class="column-half">
+            <div id="js-sort-options" data-ga4-change-category="update-sort select">
+                <div class="govuk-form-group sort-options gem-c-select">
+                    <label for="order" class="sort-options__label govuk-label">Sort by</label>
+                    <select class="js-order-results govuk-select sort-options__select" name="order" id="order" aria-controls="js-search-results-info" data-default-sort-option="relevance" data-relevance-sort-option="relevance" data-module="track-select-change">
+                        <option value="updated-newest" selected data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Updated (newest)">Relavence</option>
+                        <option value="updated-oldest" data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Updated (oldest)">Updated (newest)</option>
+                        <option value="most-viewed" data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Most viewed">Updated (oldest)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+          <ul class="dfeuk-document-list">
+
+           
+
+<li class="dfeuk-document-list__item dfeuk-document-list--no-underline ">
+  <h3 class="govuk-heading-m"><a href="resources-exploring-the-role-of-leadership.html" class="govuk-link">Exploring the role of leadership: Event presentation (June 2022)</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">VIDEO</strong></h3>
+
+  <p class="govuk-body">As a part of a two day Strengthening Families, Protecting Children National Online Learning Event that took place in June 2022, we explored what types of leadership we require to adopt and sustain the SFPC models successfully.
+  </p>
+
+<ul class="dfeuk-document-list__item-metadata">
+<li class="gdfeuk-document-list__attribute">
+From: Strengthening Families, Protecting Children
+</li>
+<li class="gdfeuk-document-list__attribute">
+Published: 8 Sept 2023
+</li>
+<li class="gdfeuk-document-list__attribute">
+Updated: 18 Sept 2023
+</li>
+<li class="gdfeuk-document-list__attribute">
+Topic: Workforce planning
+</li>
+<li class="gdfeuk-document-list__attribute">
+  Video duration:  10 mins
+      </li>
+<li class="gdfeuk-document-list__attribute">
+  Page views:  70
+      </li>
+</ul>
+</li>
+
+<li class="dfeuk-document-list__item dfeuk-document-list--no-underline ">
+  <h3 class="govuk-heading-m"><a href="resources-professional-and-families-working-together.html" class="govuk-link">Professional and families working together in new ways: Event presentation (June 2022)</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">VIDEO</strong></h3>
+
+  <p class="govuk-body">As a part of a two day Strengthening Families, Protecting Children National Online Learning Event that took place in June 2022, we heard from experiences across all three SFPC models to consider some of the benefits, challenges and success factors of working in partnership across the wider system to support families.
+  </p>
+
+<ul class="dfeuk-document-list__item-metadata">
+<li class="gdfeuk-document-list__attribute">
+From: Strengthening Families, Protecting Children 
+</li>
+<li class="gdfeuk-document-list__attribute">
+Published: 8 Sept 2023
+</li>
+<li class="gdfeuk-document-list__attribute">
+Updated: 18 Sept 2023
+</li>
+<li class="gdfeuk-document-list__attribute">
+Topic: Workforce planning
+</li>
+<li class="gdfeuk-document-list__attribute">
+  Video duration:  10 mins
+      </li>
+<li class="gdfeuk-document-list__attribute">
+  Page views:  70
+      </li>
+</ul>
+</li>
+
+<li class="dfeuk-document-list__item dfeuk-document-list--no-underline ">
+  <h3 class="govuk-heading-m"><a href="resources-workforce-and-retention.html" class="govuk-link">Workforce and retention: Event presentation (June 2022)</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">VIDEO</strong></h3>
+
+  <p class="govuk-body">As a part of a two day Strengthening Families, Protecting Children National Online Learning Event that took place in June 2022, we explored the opportunities and challenges of the SFPC models on workforce recruitment and retention.</p>
+
+<ul class="dfeuk-document-list__item-metadata">
+<li class="gdfeuk-document-list__attribute">
+From: Strengthening Families, Protecting Children
+</li>
+<li class="gdfeuk-document-list__attribute">
+Published: 15 Jun 2022
+</li>
+<li class="gdfeuk-document-list__attribute">
+Updated: 15 June 2022
+</li>
+<li class="gdfeuk-document-list__attribute">
+Topic: Workforce planning
+</li>
+<li class="gdfeuk-document-list__attribute">
+  Estimated read time:  10 mins
+      </li>
+<li class="gdfeuk-document-list__attribute">
+  Page views:  70
+      </li>
+</ul>
+</li>
+
+
+            <li class="dfeuk-document-list__item dfeuk-document-list--no-underline ">
+              <h3 class="govuk-heading-m"><a href="resources-connecting-SFPC.html" class="govuk-link">Connecting SFPC and Supporting Families: Event presentation (June 2022)</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--blue">VIDEO</strong></h3>
+      
+              <p class="govuk-body">As a part of a two day Strengthening Families, Protecting Children National Online Learning Event that took place in June 2022, Bekah Atherton - Assistant Director at DfE, explored how implementing one of the SFPC models could contribute to meeting the outcomes of the Supporting Families programme.</p>
+      
+      <ul class="dfeuk-document-list__item-metadata">
+        <li class="gdfeuk-document-list__attribute">
+          From:  Strengthening Families, Protecting Children 
+        </li>
+        <li class="gdfeuk-document-list__attribute">
+          Published: 15 Jun 2022
+      </li>
+        <li class="gdfeuk-document-list__attribute">
+         Updated: 15 Jun 2022
+      </li>
+        <li class="gdfeuk-document-list__attribute">
+      Topic: Workforce planning
+          </li>
+          <li class="gdfeuk-document-list__attribute">
+            Video duration:  10 mins
+                </li>
+          <li class="gdfeuk-document-list__attribute">
+            Page views:  70
+        </ul>
+      </li>
+                    
+                      
+           
+        
+                    </div>
+  
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  
+                    <div class="dfe-width-container">
+                    
+                <div class="grid-row pagination-container">
+                  <div class="column-half">
+                      <span class="summary">
+                          Showing 1 - 4 of <span id="ResultCount" class="result-count">4</span> results
+                      </span>
+                  </div>
+                  
+              
+                
+            </div>
+  
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% set programmePage = "pr" %}
+{% extends "layout_futurestate.html" %}
+
+{% block pageTitle %}
+Practitioners – {{ serviceName }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+        <span class="govuk-caption-l">Practitioners</span>
+        <h1 class="govuk-heading-xl">Improve your social work practice</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+        <p class="govuk-body-m">As a child and family social work practitioner, you need to do continuing professional development (CPD).</p>
+        <p class="govuk-body-m">CPD is the process of improving your professional skills and knowledge through ongoing learning.</p>
+        <p class="govuk-body-m">It will help improve your practice so you can provide the best possible support to children and families.</p>
+          <h2 class="govuk-heading-l">Types of CPD</h2>
+          <p class="govuk-body-m">CPD can be any activity you feel would benefit you and improve your current or future practice, including:</p>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>training courses</li>
+          <li>learning achieved as part of a formal qualification or certification</li>
+          <li>activity from your day-to-day role</li>
+          <li>reflecting on work practices through supervision</li>
+          <li>researching new techniques</li>
+          <li>attending a relevant conference, seminar or event</li>
+          <li>reading or contributing to a sector-related article</li>
+          </ul>
+          <p class="govuk-body-m">Speak to your manager or workforce development team about the CPD opportunities available to you in your local authority.</p>
+          <p class="govuk-body-m"><a href="https://www.socialworkengland.org.uk/cpd/what-counts-as-cpd/">Find out more about the types of CPD you can do</a> on the Social Work England website.</p>
+        <h2 class="govuk-heading-l">Record your CPD</h2>
+        <p class="govuk-body-m">You need to record your CPD to renew your registration with Social Work England.</p>
+        <p class="govuk-body-m">You must record at least 2 pieces of CPD, including at least one with a peer reflection. This means that you’ve discussed your CPD activity with a peer, your manager or another social work professional.</p>
+        <p class="govuk-body-m">Record your CPD in your Social Work England online account.</p>
+        <p class="govuk-body-m">You must do this by midnight on 30 November every year.</p>
+        <p class="govuk-body-m"><a href="https://www.socialworkengland.org.uk/cpd/">Find out more about CPD requirements</a> on the Social Work England website.</p>
+    </div>
+    <!--RIGHT HAND NAV -->
+    <div class="govuk-grid-column-one-third">
+      {% include "../../includes/dfe-pqs-aside.html" %}
+    </div>
+</div>
+
+
+{% endblock %}
