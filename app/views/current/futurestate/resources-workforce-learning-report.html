@@ -33,6 +33,61 @@
           
   </ul>
 
+  <details class="govuk-details" data-module="govuk-details">
+    
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Give feedback about this resource
+      </span>
+    </summary>
+    
+    <div class="govuk-details__text">Use this form to provide feedback about this resource.</div>
+    <div class="govuk-details__text">If you have more general feedback about this website, please use the form <a href="">here</a>.</div>
+    <div class="govuk-details__text">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend">
+            Did you find this resource useful?
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
+                No
+              </label>
+            </div>
+            
+            </div>
+            <div class="govuk-!-margin-top-4 feedback-container">
+              <label class="govuk-label" for="feedback">
+                Tell us about your experience with this resource.
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+          </div>
+          <div class="govuk-!-margin-top-4 feedback-container">
+            <label class="govuk-label" for="feedback">
+                Do you have any additional comments?
+            </label>
+            <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+  
+              <div class="govuk-button-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Send
+              </button>
+              <a class="govuk-link" href="#">Cancel</a>
+            </div>
+              
+            
+  </details>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
   <p class="govuk-body-m">In the light of recruitment pressures and rising vacancy rates, this report seeks to highlight innovative practice from across local authorities forming part of the SFPC programme. The report is based on in-depth conversations and interviews with staff from eleven SFPC local authorities who are applying a range of strategies to address workforce-related challenges, attract values-driven and motivated people and create a supportive culture for staff to practise safely, develop and thrive.</p>
 
 
@@ -104,61 +159,8 @@
         </div>
       </div>
     </div>
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+ 
 
-    <details class="govuk-details" data-module="govuk-details">
-    
-      <summary class="govuk-details__summary">
-        <span class="govuk-details__summary-text">
-          Give feedback about this resource
-        </span>
-      </summary>
-      
-      <div class="govuk-details__text">Use this form to provide feedback about this resource.</div>
-      <div class="govuk-details__text">If you have more general feedback about this website, please use the form <a href="">here</a>.</div>
-      <div class="govuk-details__text">
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset">
-            <legend class="govuk-fieldset__legend">
-              Did you find this resource useful?
-            </legend>
-            <div class="govuk-radios" data-module="govuk-radios">
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes">
-                <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
-                  Yes
-                </label>
-              </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no">
-                <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
-                  No
-                </label>
-              </div>
-              
-              </div>
-              <div class="govuk-!-margin-top-4 feedback-container">
-                <label class="govuk-label" for="feedback">
-                  Tell us about your experience with this resource.
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
-            </div>
-            <div class="govuk-!-margin-top-4 feedback-container">
-              <label class="govuk-label" for="feedback">
-                  Do you have any additional comments?
-              </label>
-              <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
-          </div>
-    
-                <div class="govuk-button-group">
-                <button class="govuk-button" data-module="govuk-button">
-                  Send
-                </button>
-                <a class="govuk-link" href="#">Cancel</a>
-              </div>
-                
-              
-    </details>
   </div>
 
 {% endblock %}
