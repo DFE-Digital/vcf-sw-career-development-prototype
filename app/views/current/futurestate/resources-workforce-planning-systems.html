@@ -33,58 +33,110 @@
           </li>
   </ul>
   <details class="govuk-details" data-module="govuk-details">
-
     <summary class="govuk-details__summary">
       <span class="govuk-details__summary-text">
-        Give feedback about this resource
+        Give feedback about this page
       </span>
     </summary>
     
-    <div class="govuk-details__text">Use this form to provide feedback about this resource.</div>
-    <div class="govuk-details__text">If you have more general feedback about this website, please use the form <a href="">here</a>.</div>
+    <div id="introductoryText" class="govuk-details__text">Use this form to provide feedback about this page. If you have more general feedback about this website, please use the form <a href="#">here</a>. <br><br><span id="usefulQuestion">Did you find this page useful?</span></div>
+    
     <div class="govuk-details__text">
-      <div class="govuk-form-group">
+      <div class="govuk-form-group" id="fieldsetContainer">
         <fieldset class="govuk-fieldset">
-          <legend class="govuk-fieldset__legend">
-            Did you find this resource useful?
-          </legend>
+  
           <div class="govuk-radios" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes" onclick="showAdditionalFeedback()">
               <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
                 Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no" onclick="showAdditionalFeedback()">
               <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
                 No
               </label>
             </div>
-            
-            </div>
-            <div class="govuk-!-margin-top-4 feedback-container">
-              <label class="govuk-label" for="feedback">
-                Tell us about your experience with this resource.
-              </label>
-              <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
           </div>
-          <div class="govuk-!-margin-top-4 feedback-container">
-            <label class="govuk-label" for="feedback">
-                Do you have any additional comments?
-            </label>
-            <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </fieldset>
+      </div>
+    
+      <div class="govuk-!-margin-top-4 feedback-container" id="additionalFeedbackContainer" style="display: none;">
+        <p id="feedbackMessage">Thank you for your feedback. Any further details you can provide will help us to improve this page:</p>
+    
+        <div class="govuk-!-margin-top-4 feedback-container">
+          <label class="govuk-label" for="more-detail">
+            Tell us about your experience with this page.
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
         </div>
-
-              <div class="govuk-button-group">
-              <button class="govuk-button" data-module="govuk-button">
-                Send
-              </button>
-              <a class="govuk-link" href="#">Cancel</a>
-            </div>
-              
-            
-  </details>
+    
+        <div class="govuk-!-margin-top-4 feedback-container">
+          <label class="govuk-label" for="additional-comments">
+            Do you have any additional comments?
+          </label>
+          <textarea class="govuk-textarea" id="additional-comments" name="additionalComments" rows="5" aria-describedby="additional-comments-hint"></textarea>
+        </div>
+    
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button" onclick="submitFeedback()">
+            Submit Feedback
+          </button>
+          <a class="govuk-link" href="#" onclick="resetForm()">Cancel</a>
+        </div>
+      </div>
+    
+      <div id="thankYouMessage" style="display: none;">
+        Thank you for your feedback on this resource! If you have more general feedback about this website, please use the form <a href="#">here</a>.
+      </div>
+    </div>
+    
+    <script>
+      function showAdditionalFeedback() {
+        // Hide the introductory text
+        document.getElementById('introductoryText').style.display = 'none';
+    
+        // Hide the useful question
+        document.getElementById('usefulQuestion').style.display = 'none';
+    
+        // Hide the fieldset
+        document.getElementById('fieldsetContainer').style.display = 'none';
+    
+        // Show the additional feedback container
+        document.getElementById('additionalFeedbackContainer').style.display = 'block';
+    
+        // Update the feedback message
+        document.getElementById('feedbackMessage').innerHTML = "Thank you for your feedback. Any further details you can provide will help us to improve this page:";
+      }
+    
+      function resetForm() {
+        // Show the introductory text
+        document.getElementById('introductoryText').style.display = 'block';
+    
+        // Show the useful question
+        document.getElementById('usefulQuestion').style.display = 'block';
+    
+        // Show the fieldset
+        document.getElementById('fieldsetContainer').style.display = 'block';
+    
+        // Hide the additional feedback container
+        document.getElementById('additionalFeedbackContainer').style.display = 'none';
+    
+        // Clear the textareas
+        document.getElementById('more-detail').value = '';
+        document.getElementById('additional-comments').value = '';
+      }
+    
+      function submitFeedback() {
+        // Replace the form with a thank you message
+        document.getElementById('additionalFeedbackContainer').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+      }
+    </script>
+    
+    
+    </details>
 </div>
 
 </div>
