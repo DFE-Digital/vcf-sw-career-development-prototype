@@ -10,6 +10,7 @@
     </span>
   </summary>
   
+  
   <div id="introductoryText" class="govuk-details__text">Use this form to provide feedback about this page. If you have more general feedback about this website, please use the form <a href="#">here</a>. <br><br><span id="usefulQuestion">Did you find this page useful?</span></div>
   
   <div class="govuk-details__text">
@@ -28,27 +29,20 @@
             <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
               No
             </label>
-          </div>
-        </div>
-      </fieldset>
-    </div>
-  
-    <div class="govuk-!-margin-top-4 feedback-container" id="additionalFeedbackContainer" style="display: none;">
-      <p id="feedbackMessage">Thank you for your feedback. Any further details you can provide will help us to improve this page:</p>
-  
-      <div class="govuk-!-margin-top-4 feedback-container">
-        <label class="govuk-label" for="more-detail">
-          Tell us about your experience with this page.
-        </label>
-        <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
-      </div>
-  
-      <div class="govuk-!-margin-top-4 feedback-container">
-        <label class="govuk-label" for="additional-comments">
-          Do you have any additional comments?
-        </label>
-        <textarea class="govuk-textarea" id="additional-comments" name="additionalComments" rows="5" aria-describedby="additional-comments-hint"></textarea>
-      </div>
+</div>
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="250">
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="additional-comments">
+      Do you have any additional comments?
+    </label>
+ 
+    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+  </div>
+  <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+    You can enter up to 250 characters
+  </div>
+</div>
+
   
       <div class="govuk-button-group">
         <button class="govuk-button" data-module="govuk-button" onclick="submitFeedback()">
@@ -57,54 +51,13 @@
         <a class="govuk-link" href="#" onclick="resetForm()">Cancel</a>
       </div>
     </div>
+      </fieldset>
   
     <div id="thankYouMessage" style="display: none;">
       Thank you for your feedback on this resource! If you have more general feedback about this website, please use the form <a href="#">here</a>.
     </div>
   </div>
   
-  <script>
-    function showAdditionalFeedback() {
-      // Hide the introductory text
-      document.getElementById('introductoryText').style.display = 'none';
-  
-      // Hide the useful question
-      document.getElementById('usefulQuestion').style.display = 'none';
-  
-      // Hide the fieldset
-      document.getElementById('fieldsetContainer').style.display = 'none';
-  
-      // Show the additional feedback container
-      document.getElementById('additionalFeedbackContainer').style.display = 'block';
-  
-      // Update the feedback message
-      document.getElementById('feedbackMessage').innerHTML = "Thank you for your feedback. Any further details you can provide will help us to improve this page:";
-    }
-  
-    function resetForm() {
-      // Show the introductory text
-      document.getElementById('introductoryText').style.display = 'block';
-  
-      // Show the useful question
-      document.getElementById('usefulQuestion').style.display = 'block';
-  
-      // Show the fieldset
-      document.getElementById('fieldsetContainer').style.display = 'block';
-  
-      // Hide the additional feedback container
-      document.getElementById('additionalFeedbackContainer').style.display = 'none';
-  
-      // Clear the textareas
-      document.getElementById('more-detail').value = '';
-      document.getElementById('additional-comments').value = '';
-    }
-  
-    function submitFeedback() {
-      // Replace the form with a thank you message
-      document.getElementById('additionalFeedbackContainer').style.display = 'none';
-      document.getElementById('thankYouMessage').style.display = 'block';
-    }
-  </script>
   
   
   </details>
