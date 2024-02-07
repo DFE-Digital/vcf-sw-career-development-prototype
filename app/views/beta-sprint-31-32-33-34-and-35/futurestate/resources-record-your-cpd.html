@@ -1,0 +1,201 @@
+{% extends "layout_futurestate.html" %}
+{% set nav2Active = true %}
+
+{% block content %}
+
+
+
+<div class="dfe-width-container govuk-grid-row">
+<div class="govuk-grid-column-three-quarter">
+  <span class="govuk-caption-l">Resources</span>
+  <h1 class="govuk-heading-xl">How to record your CPD</h1>
+  <p class="govuk-body">This video provides step-by-step guidance on how to record your continuing professional development (CPD) on the Research in Practice website and upload it to Social Work England.</p>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  <ul class="course-details govuk-list">
+    <li>
+    <span class="govuk-!-font-size-16">From: Research in practice</span>
+    </li>
+    <li>
+    <span class="govuk-!-font-size-16">Published: 4 September 2023</span>
+    </li>
+    <li>
+      <span class="govuk-!-font-size-16">Last updated: 4 September 2023</span>
+      </li>
+      <li>
+        <span class="govuk-!-font-size-16">Topic: Continuing professional development</span>
+        </li>
+      <li>
+        <span class="govuk-!-font-size-16">Resource type: Video</span>
+        </li>
+        <li>
+          <span class="govuk-!-font-size-16">Career stage: All</span>
+          </li>
+  </ul>
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Give feedback about this page
+      </span>
+    </summary>
+    
+    <div id="introductoryText" class="govuk-details__text">Use this form to provide feedback about this page. If you have more general feedback about this website, please use the form <a href="#">here</a>. <br><br><span id="usefulQuestion">Did you find this page useful?</span></div>
+    
+    <div class="govuk-details__text">
+      <div class="govuk-form-group" id="fieldsetContainer">
+        <fieldset class="govuk-fieldset">
+  
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes" onclick="showAdditionalFeedback()">
+              <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no" onclick="showAdditionalFeedback()">
+              <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    
+      <div class="govuk-!-margin-top-4 feedback-container" id="additionalFeedbackContainer" style="display: none;">
+        <p id="feedbackMessage">Thank you for your feedback. Any further details you can provide will help us to improve this page:</p>
+    
+        <div class="govuk-!-margin-top-4 feedback-container">
+          <label class="govuk-label" for="more-detail">
+            Tell us about your experience with this page.
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+    
+        <div class="govuk-!-margin-top-4 feedback-container">
+          <label class="govuk-label" for="additional-comments">
+            Do you have any additional comments?
+          </label>
+          <textarea class="govuk-textarea" id="additional-comments" name="additionalComments" rows="5" aria-describedby="additional-comments-hint"></textarea>
+        </div>
+    
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button" onclick="submitFeedback()">
+            Submit Feedback
+          </button>
+          <a class="govuk-link" href="#" onclick="resetForm()">Cancel</a>
+        </div>
+      </div>
+    
+      <div id="thankYouMessage" style="display: none;">
+        Thank you for your feedback on this resource! If you have more general feedback about this website, please use the form <a href="#">here</a>.
+      </div>
+    </div>
+    
+    <script>
+      function showAdditionalFeedback() {
+        // Hide the introductory text
+        document.getElementById('introductoryText').style.display = 'none';
+    
+        // Hide the useful question
+        document.getElementById('usefulQuestion').style.display = 'none';
+    
+        // Hide the fieldset
+        document.getElementById('fieldsetContainer').style.display = 'none';
+    
+        // Show the additional feedback container
+        document.getElementById('additionalFeedbackContainer').style.display = 'block';
+    
+        // Update the feedback message
+        document.getElementById('feedbackMessage').innerHTML = "Thank you for your feedback. Any further details you can provide will help us to improve this page:";
+      }
+    
+      function resetForm() {
+        // Show the introductory text
+        document.getElementById('introductoryText').style.display = 'block';
+    
+        // Show the useful question
+        document.getElementById('usefulQuestion').style.display = 'block';
+    
+        // Show the fieldset
+        document.getElementById('fieldsetContainer').style.display = 'block';
+    
+        // Hide the additional feedback container
+        document.getElementById('additionalFeedbackContainer').style.display = 'none';
+    
+        // Clear the textareas
+        document.getElementById('more-detail').value = '';
+        document.getElementById('additional-comments').value = '';
+      }
+    
+      function submitFeedback() {
+        // Replace the form with a thank you message
+        document.getElementById('additionalFeedbackContainer').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+      }
+    </script>
+    
+    
+    </details>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <p class="govuk-body">This video provides step-by-step guidance on how to record your continuing professional development (CPD) on the Research in Practice website and upload it to Social Work England.</p>
+  <p class="govuk-body">CPD can range from attending a learning event to reflecting on a piece of research, listening to a podcast or using a practice tool – anything that has had a positive impact upon your practice and development.</p>
+  <p class="govuk-body">Research in Practice learning resources enable you to make evidence-informed decisions and support you to continue to develop in your role. Anyone with an account can easily keep an ongoing record of their CPD by signing in and navigating to ‘Your CPD’. </p>
+  <p class="govuk-body">Length: 5 minutes</p>
+
+
+
+  <iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/MMfqMSPKGj4?si=zG6jaNhjalkN0rfD" frameborder="0"></iframe>
+  <details class="govuk-details govuk-!-margin-top-3" data-module="govuk-details">
+      <summary class="govuk-details__summary"> <span class="govuk-details__summary-text">View transcript  </span></summary>
+      <div class="govuk-details__text">
+        
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+      </div>
+  </details>
+
+</div>
+</div>
+
+<h2 class="govuk-heading-l">Talking Points</h2>
+<p class="govuk-body">This video looks at: </p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>
+    How you can record CPD on the Research in Practice website.
+  </li>
+  <li>
+    How you can use the Research in Practice CPD page to record CPD with Social Work England.
+  </li>
+  <li>
+    The range of resources that are available with your Research in Practice account that can support you to access to meet your CPD requirements.
+    </li>
+    </ul>
+
+    <h2 class="govuk-heading-l">Reflective questions  
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        What Research in Practice resources, research or blogs have you read that have impacted your social work practice?
+      </li>
+      <li>
+        Have you attended any Research in Practice learning events that have influenced your practice?
+      </li>
+      <li>
+      
+        How might you use different types of resources to embed learning in your work?   </li>
+        </ul>
+        <h2 class="govuk-heading-l">Related resources </h2>
+<p class="govuk-body">All Research in Practice resources allow you to add to your CPD record. We are providing guidance and information to support the recording, registration and regulation of CPD over the coming months which will be available on our dedicated CPD page.</p>
+
+
+<h2 class="govuk-heading-l">Professional Standards</h2>
+<p class="govuk-body">PQS:KSS - Promote and govern excellent practice | Developing excellent practitioners | Purposeful and effective social work | Performance management and improvement | Lead and govern excellent practice | Creating a context for excellent practice | Designing a system to support effective practice | Developing excellent practitioners | Support effective decision-making | Quality assurance and improvement | The role of social workers | Developing confident and capable social workers</p>
+
+<p class="govuk-body">PCF - Professionalism | Knowledge | Critical reflection and analysis</p>
+<p class="govuk-body">RCOT - Support development | Identify needs</p>
+
+</div>
+
+{% endblock %}
