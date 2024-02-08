@@ -1,0 +1,241 @@
+{% extends "layout_futurestate.html" %}
+{% set nav2Active = true %}
+
+{% block content %}
+
+
+
+<div class="dfe-width-container govuk-grid-row">
+<div class="govuk-grid-column-three-quarter">
+  <span class="govuk-caption-l">Resources</span>
+  <h1 class="govuk-heading-xl">Five Attributes of Effective Leadership within the SFPC Programme
+  </h1>
+  <p class="govuk-body">Leadership has a huge influence on the successful implementation of any innovation. This learning report describes five attributes of effective leadership, which were gathered through interviews with leaders in local authorities that are currently successfully implementing with fidelity one of the three innovations: No Wrong Door, Family Safeguarding or Family Valued.</p>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  <ul class="course-details govuk-list">
+    <li>
+    <span class="govuk-!-font-size-16">From: Strengthening Families, Protecting Children</span>
+    </li>
+    <li>
+    <span class="govuk-!-font-size-16">Published: 8 June 2022</span>
+    </li>
+    <li>
+      <span class="govuk-!-font-size-16">Last updated: 8 June 2022</span>
+      </li>
+      <li>
+        <span class="govuk-!-font-size-16">Resource type: CPD resource </span>
+        </li>
+        <li>
+          <span class="govuk-!-font-size-16">Career stage: Practitioner</span>
+          </li>
+          
+  </ul>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Give feedback about this page
+      </span>
+    </summary>
+    
+    <div id="introductoryText" class="govuk-details__text">Use this form to provide feedback about this page. If you have more general feedback about this website, please use the form <a href="#">here</a>. <br><br><span id="usefulQuestion">Did you find this page useful?</span></div>
+    
+    <div class="govuk-details__text">
+      <div class="govuk-form-group" id="fieldsetContainer">
+        <fieldset class="govuk-fieldset">
+  
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes" onclick="showAdditionalFeedback()">
+              <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no" onclick="showAdditionalFeedback()">
+              <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    
+      <div class="govuk-!-margin-top-4 feedback-container" id="additionalFeedbackContainer" style="display: none;">
+        <p id="feedbackMessage">Thank you for your feedback. Any further details you can provide will help us to improve this page:</p>
+    
+        <div class="govuk-!-margin-top-4 feedback-container">
+          <label class="govuk-label" for="more-detail">
+            Tell us about your experience with this page.
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+    
+        <div class="govuk-!-margin-top-4 feedback-container">
+          <label class="govuk-label" for="additional-comments">
+            Do you have any additional comments?
+          </label>
+          <textarea class="govuk-textarea" id="additional-comments" name="additionalComments" rows="5" aria-describedby="additional-comments-hint"></textarea>
+        </div>
+    
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button" onclick="submitFeedback()">
+            Submit Feedback
+          </button>
+          <a class="govuk-link" href="#" onclick="resetForm()">Cancel</a>
+        </div>
+      </div>
+    
+      <div id="thankYouMessage" style="display: none;">
+        Thank you for your feedback on this resource! If you have more general feedback about this website, please use the form <a href="#">here</a>.
+      </div>
+    </div>
+    
+    <script>
+      function showAdditionalFeedback() {
+        // Hide the introductory text
+        document.getElementById('introductoryText').style.display = 'none';
+    
+        // Hide the useful question
+        document.getElementById('usefulQuestion').style.display = 'none';
+    
+        // Hide the fieldset
+        document.getElementById('fieldsetContainer').style.display = 'none';
+    
+        // Show the additional feedback container
+        document.getElementById('additionalFeedbackContainer').style.display = 'block';
+    
+        // Update the feedback message
+        document.getElementById('feedbackMessage').innerHTML = "Thank you for your feedback. Any further details you can provide will help us to improve this page:";
+      }
+    
+      function resetForm() {
+        // Show the introductory text
+        document.getElementById('introductoryText').style.display = 'block';
+    
+        // Show the useful question
+        document.getElementById('usefulQuestion').style.display = 'block';
+    
+        // Show the fieldset
+        document.getElementById('fieldsetContainer').style.display = 'block';
+    
+        // Hide the additional feedback container
+        document.getElementById('additionalFeedbackContainer').style.display = 'none';
+    
+        // Clear the textareas
+        document.getElementById('more-detail').value = '';
+        document.getElementById('additional-comments').value = '';
+      }
+    
+      function submitFeedback() {
+        // Replace the form with a thank you message
+        document.getElementById('additionalFeedbackContainer').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+      }
+    </script>
+    
+    
+    </details>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+  <p class="govuk-body-m">The implementation of these innovations in these adopting authorities will be challenged as the leaders that introduced these innovations move on to new roles in their careers.
+
+    This learning report does not form part of the formal Strengthening Families, Protecting Children evaluation process. Implementation is yet to be validated by the independent evaluation and the content in this learning report will be revised once that evaluation is available.</p>
+
+    <p class="govuk-body-m">The content described in this report aims to answer the following three key questions: </p>
+
+    <p class="govuk-body-m">1. What are the attributes of leadership, and the contexts for leadership, most associated with successful implementation of: </p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      Family Safeguarding;
+    </li>
+    <li>
+      Family Valued;
+    </li>
+    <li>
+      No Wrong Door?
+      </li>
+      
+  </ul>
+
+  <p class="govuk-body-m">2. How can we best support local authorities faced with a change of leaders in key roles?</p>
+
+  <p class="govuk-body-m">3. How can we best support existing leaders with tools for self-reflection and coaching?</p>
+
+  <p class="govuk-body-m">This review has found five key attributes of successful SFPC leadership.</p>
+ 
+
+  <ul class="course-details govuk-list">
+    <li>
+      1. Values driven leadership
+    </li>
+    <li>
+      2. Leadership that changes how decisions are made in the interests of families
+    </li>
+    <li>
+      3. Leadership that changes practice and culture
+      </li>
+      <li>
+        4. Leadership that creates successful partnerships
+        </li>
+        <li>
+         5. Leadership that secures buy in from corporate leaders and politicians
+          </li>
+  </ul>
+
+
+
+<div class="dfe-o-banner__image-container">
+  <img src="/public/images/sfpc-five-attributes-of-effective-leadership-visual.png" alt="five attributes of effective leadership visual">
+</div>
+<div class="govuk-!-margin-top-8">
+
+
+<p class="govuk-body-m">Collectively, these five attributes describe leadership which is most associated with successful implementation with fidelity of Family Safeguarding, No Wrong Door and Family Valued.
+</p>
+
+<p class="govuk-body-m">Two recommendations have been made from these findings.
+</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>
+    The first recommendation is that these five attributes are carefully considered and communicated throughout the recruitment, advertisement and selection of new leaders.
+  </li>
+  <li>
+    The second recommendation is that these five attributes form part of ongoing leadership development, self-reflection and leadership coaching for leaders in children’s social care.
+  </li>
+</ul>
+
+<div class="govuk-!-margin-top-8">
+
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    
+        <div class="ons-document-list__item">
+          <div class="ons-document-list__item-image ons-document-list__item-image--file" aria-hidden="true">
+            <a class="ons-document-list__image-link ons-document-list__image-link--placeholder" href="https://www.scie.org.uk/files/strengthening-families/sfpc-five-attributes-of-effective-leadership.pdf" tabindex="-1">
+             
+              <img src="/public/images/five-attributes-pdf.png" alt="Five Attributes of Effective Leadership within the SFPC Programme odf cover image" style="width: 100px; height: 140px;">
+            </a>
+          </div>
+     
+          <div class="ons-document-list__item-description" style="margin-left: 2rem;"> 
+            <!-- Description content -->
+            <h3><a href="https://www.scie.org.uk/files/strengthening-families/sfpc-five-attributes-of-effective-leadership.pdf">Five Attributes of Effective Leadership within the SFPC Programme</a></h3>
+            <ul class="course-details govuk-list">
+              <li>
+                <span class="govuk-!-font-size-16 govuk-!-font-weight-bold">PDF document download, 499KB, 1 page</span>
+              </li>
+              <li>
+                Download the learning report for further discussion of the five attributes of effective leadership within the SFPC programme and helpful tools for applying the attributes.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+ 
+{% endblock %}

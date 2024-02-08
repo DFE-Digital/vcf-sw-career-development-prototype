@@ -1,0 +1,65 @@
+{% extends "layout_futurestate.html" %}
+{% set nav2Active = true %}
+
+{% block content %}
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Give feedback about this page
+    </span>
+  </summary>
+  
+  
+  <div id="introductoryText" class="govuk-details__text">Use this form to provide feedback about this page. If you have more general feedback about this website, please use the form <a href="#">here</a>. <br><br><span id="usefulQuestion">Did you find this page useful?</span></div>
+  
+  <div class="govuk-details__text">
+    <div class="govuk-form-group" id="fieldsetContainer">
+      <fieldset class="govuk-fieldset">
+
+        <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful" type="radio" value="yes" onclick="showAdditionalFeedback()">
+            <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful" type="radio" value="no" onclick="showAdditionalFeedback()">
+            <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
+              No
+            </label>
+</div>
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="400">
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="additional-comments">
+      Do you have any additional comments?
+    </label>
+ 
+    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+  </div>
+  <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+    You can enter up to 400 characters
+  </div>
+</div>
+
+  
+      <div class="govuk-button-group">
+        <button class="govuk-button" data-module="govuk-button" onclick="submitFeedback()">
+          Submit Feedback
+        </button>
+        <a class="govuk-link" href="#" onclick="resetForm()">Cancel</a>
+      </div>
+    </div>
+      </fieldset>
+  
+    <div id="thankYouMessage" style="display: none;">
+      Thank you for your feedback on this resource! If you have more general feedback about this website, please use the form <a href="#">here</a>.
+    </div>
+  </div>
+  
+  
+  
+  </details>
+
+{% endblock %}
