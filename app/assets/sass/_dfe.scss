@@ -1224,20 +1224,3 @@ DFE content banner
             width: 100%;
         }
     }
-
-<style>
-  .govuk-accordion__section-button.collapsed::before {
-    content: "+";
-  }
-
-  .govuk-accordion__section-button::before {
-    content: "-";
-  }
-
-  @media screen and (max-width: 767px) {
-    .govuk-accordion__section-content {
-      display: none;
-    }
-  }
-</style>
-
