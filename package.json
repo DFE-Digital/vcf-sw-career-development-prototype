@@ -10,7 +10,7 @@
     "@govuk-prototype-kit/step-by-step": "^2.1.0",
     "@govuk-prototype-kit/task-list": "1.0.0",
     "dfe-frontend-alpha": "^0.1.8",
-    "govuk-frontend": "5.2.0",
+    "govuk-frontend": "4.6.0",
     "govuk-prototype-kit": "^13.6.2",
     "jquery": "^3.6.4",
     "notifications-node-client": "^5.2.3"
