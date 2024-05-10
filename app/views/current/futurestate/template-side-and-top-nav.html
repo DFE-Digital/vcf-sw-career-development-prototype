@@ -1,0 +1,465 @@
+<!--Notes-->
+
+ <!--pulls in the template from the HFEY service - DOES NOT WORK, says template name should be string.  Don't know if we need this-->
+{#{% extends "../../layout-dfe-updated.html" %}#}
+
+<!--don't know what this does yet, it was from our service-->
+{#{% set removeAllLinks = true %}#}
+
+<!--End Notes-->
+
+
+
+<!--pulls in the template from our service, but have had to manually add header and footer in the code body because it won't pull these in for some reason-->
+{% extends "layout_futurestate.html" %}
+
+<!--sets button active in nav-->
+{% set nav2Active = true %}
+
+<!--sets page title-->
+{% block pageTitle %}
+Develop your career in child and family social work prototype
+{% endblock %}
+
+<!--pulls in the header from our service-->
+{% block header %}
+{% include "../../partials/dfeheadernav_futurestate.njk" %}
+{% include "../../partials/phasebanner.njk" %}
+{% include "../../partials/hero.njk" %}
+{% include "../../partials/contenttitle.njk" %}
+
+<div class="dfe-content-page--header">
+  <div class="dfe-width-container ">
+
+    <!--breadcrumbs - these need updating manually as they are hardcoded-->
+    <div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-padding-top-4 govuk-breadcrumbs--collapse-on-mobile">
+      <ol class="govuk-breadcrumbs__list govuk-body-s">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/home">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/resources">Resources and learning</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Employer Standards for Social Workers - Intro</a>
+        </li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row ">
+      <div class="govuk-grid-column-three-quarters"></div>
+    </div>
+
+    <div class="govuk-grid-row govuk-!-padding-top-7 govuk-!-padding-bottom-0">
+      <div class="govuk-grid-column-three-quarters">
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Big title that makes me happy</h1>
+        <p class="govuk-body-l">Description of page content which now actually shows.</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+      <div class="govuk-grid-column-full"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+
+  <!--Sidenav this needs updating per page as is hardcoded-->
+  <div class="govuk-grid-column-one-quarter sticky mob-section">
+    <input type="checkbox" name="menu-icon" id="menu-icon-chk" class="menu-btn" checked>
+    <label class="menu-icon govuk-body-l" for="menu-icon-chk"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path fill="#1d70b8"
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+      </svg><span class="sm-open">Open</span><span class="sm-close">Close</span>&nbsp;section menu</label>
+    <nav class="dfe-vertical-nav">
+      <h2 class="dfe-vertical-nav--section-header">The Employer Standards</h2>
+      <ul class="dfe-vertical-nav__section">
+
+        <li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
+          <a class="dfe-vertical-nav__link" href="#">Introduction</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 1: Strong and clear social work framework</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item ">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 2: Effective workforce 
+            planning systems</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item ">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 3: Safe workloads and case 
+            allocation</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 4: Wellbeing</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item ">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 5: Supervision</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item ">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 6: Continuing Professional Development (CPD)</a>
+        </li>
+        
+        <li class="dfe-vertical-nav__section-item ">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 7: Professional registration</a>
+        </li>
+
+        <li class="dfe-vertical-nav__section-item ">
+          <a class="dfe-vertical-nav__link"
+            href="#">Standard 8: Strategic partnerships </a>
+        </li>           
+
+      </ul>
+    </nav>
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+
+    <div class="content-with-side-menu">
+      <!--Intro text - may not be needed-->
+      <!--<p>These resources will help you when reviewing your current curriculum to make sure you are meeting the
+        requirement of the revised communication and language area of learning.</p>-->
+
+      <div class="contents-on-page">
+        <p id="contents-list-heading" class="govuk-body govuk-!-margin-bottom-1 govuk-!-font-weight-bold">
+          Contents on this page:
+        </p>
+        <ul class="contents-list__list">
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a
+              href="#why-interactions-are-important">Why interactions are important</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a href="#video">Video</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a
+              href="#what-the-eyfs-framework-says">What the EYFS framework says</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a
+              href="#what-this-means-in-practice">What this means in practice</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a
+              href="#suggested-activities">Suggested activities</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a href="#other-activities">Other
+              activities</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a
+              href="#what-other-nurseries-and-childminders-are-doing">What other nurseries and childminders are
+              doing</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a href="#summary">Summary</a></li>
+          <li class="contents-list__list-item contents-list__list-item--dashed"><a href="#next-steps">Next steps</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="gem-c-print-link print-button govuk-!-margin-top-7"><button
+          class="govuk-link gem-c-print-link__button" onclick="window.print()" data-module="print-link">Print this
+          page</button></div>
+
+      <div class="govuk-!-margin-top-4">
+        <h2 id="why-interactions-are-important">Why interactions are important</h2>
+
+        <p>From birth, babies want to connect with others and are eager to interact. For example, they might kick their
+          legs ready to play a peekaboo game. These are important parts of an interaction that adults should notice and
+          encourage.</p>
+
+        <p>Being with others helps children to build social relationships which provide opportunities for friendship,
+          empathy and sharing emotions.</p>
+
+        <p>Research shows that good interactions between adults and children make a big difference to how well
+          communication and language skills develop. Children benefit from being with responsive and enthusiastic adults
+          who show interest in talking with them.</p>
+
+        <h2 id="video">Video</h2>
+
+        <p>In this video, an early years expert explains the importance of interactions in the early years foundation
+          stage framework. There are also some tips on how to support children in this area.</p>
+
+        <div class="govspeak-embed-container"><iframe class="govspeak-embed-video"
+            src="https://www.youtube.com/embed/QHXipia3u-0?enablejsapi=1&amp;origin=https://help-for-early-years-providers.education.gov.uk"
+            title="OPTIONAL TITLE" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""></iframe></div>
+
+        <h2 id="what-the-eyfs-framework-says">What the EYFS framework says</h2>
+
+        <p>Children’s back-and-forth interactions from an early age form the foundations for language and mental
+          development.</p>
+
+        <p>The number and quality of the conversations they have with adults and other children throughout the day in a
+          language-rich environment is crucial.</p>
+
+        <p>By commenting on what children are doing or interested in and echoing back what they say with new vocabulary
+          added, you will build children’s language effectively.</p>
+
+        <p><a href="https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2">Statutory
+            framework for the early years foundation stage</a>.</p>
+
+        <h2 id="what-this-means-in-practice">What this means in practice</h2>
+
+        <p>The setting, relationships and the role of the adults are important in maintaining good interactions with
+          children.</p>
+
+        <p>Good interactions use:</p>
+
+        <ul>
+          <li>words</li>
+          <li>body language</li>
+          <li>facial expressions</li>
+          <li>actions</li>
+          <li>songs</li>
+        </ul>
+
+        <p>To support children who are non-verbal use objects, pictures, or visual cues, such as showing a coat to
+          indicate going outside.</p>
+
+        <p>Taking turns and waiting for a child to respond builds confidence and independence. Maintain a conversation
+          by being warm and attentive and adapting your language to meet the needs of individual children.</p>
+
+        <p>If you join in with children’s play and comment, repeat back, wonder aloud and add new words you will extend
+          their language.</p>
+
+        <p>You should plan the curriculum to allow for these good interactions and share ideas with parents to support
+          the children at home.</p>
+
+        <h2 id="suggested-activities">Suggested activities</h2>
+
+        <h3 id="blowing-bubbles">Blowing bubbles</h3>
+
+        <p>You’ll need:</p>
+
+        <ul>
+          <li>a bubble wand and bubble mixture</li>
+          <li>an uncluttered, quiet, familiar place to play on the floor where both child and adult can see each other
+            well</li>
+          <li>uninterrupted time so that the interactions can be unrushed and the adult has time to notice and tune in
+            to the child</li>
+        </ul>
+
+        <p>Simple games like blowing bubbles can help babies and non-verbal children to learn to take turns and
+          communicate.</p>
+
+        <p>Capture the child’s attention and interest by blowing the bubbles and watching them pop.</p>
+
+        <p>Build anticipation by saying “ready, steady……” but do not blow the bubbles yet. Smile and wait for the child
+          to gesture (reach out) before blowing the bubbles again as you say “Go.”</p>
+
+        <p>Respond to their reaction and notice what they do. Use words to accompany their reaction, such as “yay,
+          bubbles.”</p>
+
+        <p>Repeat when the child reaches out again “ah, you want more bubbles?” Wait until they are ready to play again,
+          they might show you with facial expressions, giggles, gestures, eye contact and movement.</p>
+
+        <p>This fun game is a great way to engage very young learners who are pre-verbal or older learners who may have
+          communication difficulties. It teaches about the back and forth of communication and interaction to support
+          the idea of a conversation.</p>
+
+        <h3 id="communication-boxes">Communication boxes</h3>
+
+        <p>Encourage children to bring in boxes filled with things from home to share and to talk about with you. You
+          can make one too, to show to your group of children and their parents and carers.</p>
+
+        <p>The box may include:</p>
+
+        <ul>
+          <li>photos of important people and pets</li>
+          <li>a favourite toy or book</li>
+          <li>objects from a special trip</li>
+        </ul>
+
+        <p>This encourages children to share and engage in meaningful interactions, about things that are important and
+          familiar to them.</p>
+
+        <p>As part of this activity, you might:</p>
+
+        <ul>
+          <li>introduce new vocabulary</li>
+          <li>ask questions, allowing children time to answer to learn more about the child and their parents or carers
+          </li>
+          <li>encourage children to practise using new vocabulary in a meaningful context</li>
+        </ul>
+
+        <p>This activity will also help to develop the important relationships between you, the children and their
+          parents and carers, which will support warm and positive interactions in the future.</p>
+
+        <h3 id="how-the-activity-links-to-the-other-areas-of-learning">How the activity links to the other areas of
+          learning</h3>
+
+        <p>Developing <a href="/personal-social-and-emotional-development/relationships">relationships</a> through
+          communication and sharing experiences supports <a href="/personal-social-and-emotional-development">personal,
+            social and emotional development</a> as well as early <a href="/literacy">literacy</a> skills. Being able to
+          connect socially as well as use language to explain ideas and share thinking with others is central to
+          successful learning in all areas.</p>
+
+        <h2 id="other-activities">Other activities</h2>
+
+        <p>Simple games like
+          <a rel="external"
+            href="https://www.youtube.com/watch?app=desktop&amp;v=PgpddACbPSs&amp;feature=youtu.be">blowing bubbles in
+            this clip from the community children’s health partnership</a>
+          can help children to take turns and communicate from an early age.
+        </p>
+
+        <p><a rel="external"
+            href="https://resources.leicestershire.gov.uk/education-and-children/early-years/childcare-practice/teaching-learning-and-assessment/every-child-a-talker-ecat/strategies-and-resources">Speech
+            language and communication strategies and resources</a> from birth to 5.</p>
+
+        <h2 id="what-other-nurseries-and-childminders-are-doing">What other nurseries and childminders are doing</h2>
+
+        <div role="note" aria-label="Information" class="application-notice info-notice">
+          <p>“In practice we use ‘Ask me about…’ stickers to encourage communication through positive adult-child
+            interactions. Practitioners will write a brief note on a sticker about something interesting each child has
+            done at pre-school that day and give it to the child to share. Children and their parents or carers can then
+            talk about it together on their way home. The intention was to spark discussion, create opportunities for
+            meaningful interactions, and develop those important two-way relationships between early years providers and
+            home.”</p>
+        </div>
+
+        <p>Anna, Noah’s Ark Preschool, Northamptonshire.</p>
+
+        <h2 id="summary">Summary</h2>
+
+        <ul>
+          <li>Children are born to communicate and will seek out interaction.</li>
+          <li>Good interactions and conversations depend on social relationships and tuned-in adults.</li>
+          <li>A well-planned language rich environment is important to facilitate good interactions.</li>
+          <li>Planning and reflecting on the quality and time available for conversations will increase opportunities
+            for learning language and communication skills.</li>
+          <li>Listening, asking open questions, commenting, repeating, extending, adapting, and valuing non-verbal
+            communication will support children’s communication.</li>
+        </ul>
+
+        <h2 id="next-steps">Next steps</h2>
+
+        <ul>
+          <li>Consider if you make enough time and space for conversations based on the interests of children.</li>
+          <li>Make sure your interactions support the children’s communication and language.</li>
+          <li>Make sure that your interactions reflect the individual communication needs of each child.</li>
+          <li>Consider if the learning environments are set up in a way that enables communication and talk.</li>
+          <li>Review your curriculum to ensure you cover the requirements in the EYFS for this area of learning.</li>
+        </ul>
+
+        {% include "../../includes/citation.html" %}
+        {% include "../../includes/back-to-top.html" %}
+        {% include "../../includes/print-this-page.html" %}
+
+        <!--Feedback component-->
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text" id="section1">
+              Give feedback about this page
+            </span>
+          </summary>
+
+          <div id="feedbackContainer">
+            <div id="introductoryText" class="govuk-details__text">Use this form to provide feedback about this page.
+              <br><br>
+              If you have more general feedback about this website, please use the form <a href="#">here</a>.
+              <br><br><span id="usefulQuestion">Did you find this page useful?</span>
+            </div>
+            <div class="govuk-details__text">
+              <div class="govuk-form-group" id="fieldsetContainer">
+                <fieldset class="govuk-fieldset">
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="DidYouFindThisPageUseful" name="DidYouFindThisPageUseful"
+                        type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="DidYouFindThisPageUseful-2" name="DidYouFindThisPageUseful"
+                        type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="DidYouFindThisPageUseful-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="400">
+                    <div class="govuk-form-group">
+                      <div class="govuk-!-margin-top-4 feedback-container">
+                        <label class="govuk-label" for="additional-comments">
+                          Tell us about your experience with this page.
+                        </label>
+                        <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5"
+                          aria-describedby="more-detail-hint"></textarea>
+                      </div>
+                      <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                        You can enter up to 400 characters
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="govuk-button-group">
+                    <button class="govuk-button" data-module="govuk-button" id="submitButton">
+                      Submit Feedback
+                    </button>
+                    <a class="govuk-link" href="#" id="cancelLink">Cancel</a>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+
+          <div id="thankYouMessage" style="display: none;">
+            Thank you for your feedback on this resource! If you have more general feedback about this website, please
+            use the form <a href="#">here</a>.
+          </div>
+
+        </details>
+
+
+        <script>
+          document.getElementById("submitButton").addEventListener("click", function () {
+            // Code to submit feedback
+            // For now, just hide the form and show the thank you message
+            document.getElementById("feedbackContainer").style.display = "none";
+            document.getElementById("thankYouMessage").style.display = "block";
+          });
+
+          document.getElementById("cancelLink").addEventListener("click", function (event) {
+            event.preventDefault();
+            // Code to reset the form
+            // For now, just show the form and hide the thank you message
+            document.getElementById("feedbackContainer").style.display = "block";
+            document.getElementById("thankYouMessage").style.display = "none";
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+<!--footer-->
+{% block footer %}
+{{ govukFooter({
+  meta: {
+    items: [
+    {
+      href: "sitemap",
+      text: "Sitemap"
+    },
+        {
+          href: "https://govuk-prototype-kit.herokuapp.com/",
+          text: "GOV.UK Prototype Kit " + releaseVersion
+        },
+        {
+          href: "/prototype-admin/clear-data",
+          text: "Clear data"
+        }
+    ],
+    visuallyHiddenTitle: "Footer links"
+  }
+ }) }}
+{% endblock %}
